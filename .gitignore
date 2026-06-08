@@ -1,0 +1,16 @@
+# LaTeX auxiliaires
+sources_latex/*.aux
+sources_latex/*.log
+sources_latex/*.out
+sources_latex/*.toc
+sources_latex/*.bbl
+sources_latex/*.bcf
+sources_latex/*.blg
+sources_latex/*.run.xml
+sources_latex/*.synctex.gz
+sources_latex/*.fls
+sources_latex/*.fdb_latexmk
+
+# Logs de compilation temporaires
+sources_latex/pass*.log
+sources_latex/biber.log

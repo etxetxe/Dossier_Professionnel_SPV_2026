@@ -1,0 +1,47 @@
+Retake Dossier Professionnel SPV - NoClip PDF
+
+Lit le document PDF "Dossier Professionnel SPV - NoClip" pour savoir ouù faire les modifications
+
+Créer un dépôt git du projet sur mon GitHub personnel, met à jour systématiquement la branche après chaque génération de PDF avec git push et git pull en précisant comme modification "RTK_Dossier_SPV_[date_heure]". forcer le merge en cas de fetching accidentel pour conserver une similarité entre le dépôt local et celui de GitHub.
+
+Intégrer un commentaire d'avertissement en préambule spécifiant l'utilisation de l'intelligence artificielle agentique et générative pour la réalisation du document en te référant à la législation en vigueur (ex. AI Act etc..)
+
+Préciser le cadre de la Formation à l'Ecole Georges Méliès à Orly
+
+Créer une page de remerciement consacrée à Justine Coulmy (Directrice d'étude de la formation SPV de l'école Georges Méliès) Laurent Stelhin (Directeur Technique de l'école george méliès), Guillaume Bourlet (Chargé de Formation de l'école georges Méliès) et Franck Petitta (Directeur et Fondateur de l'école Georges Méliès). Vérifie leur profil en ligne
+
+Créée une partie consacrée à la veille technologique : "Intelligence, outils locaux et Open Source, environnement, écoproduction".
+
+Inspire-toi de ma manière d'écrire comme dans baron etienne bifurcation PDF. Ne rajoute pas ce document dans ma base de donnée LaTeX.
+
+Page de Garde : changer le style de la page de Titre, enlever le bandeau et le cadre jaune et juste laisser l'écriture en noir (ou couleur sombre correspondant à la charte graphique précédemment décidée dans les autres pages) sur fond blanc.
+
+Créer un fichier .bib ou toute les références bibliographiques signifiées dans le documents seront mis.
+
+Sommaire : Rajouter une partie consacrée à la veille technologique et une bibliographie dans le fichier .bib consacrée pour l'ensemble du dossier au format APA.
+
+Page 5 : Rajouter un dispositif C de tournage en Décors réel et retenir le dispositif tournage décor réel pour les séque,ces de début / fin et Mur Led pour celle dans les Backrooms. Remplacer les dimensions du Mur Led estimé par celle réelle définie en Page 19 et fournir la référence Sony Crystal Led Verona qui appartient à l'école. remplacer la version 5.4 par 5.6 (non préjudiciable en terme de licence car vouée à l'éducation). Utiliser le Tracking Camera Zeiss CinCraft Scenario en précisant que ça appartient à l'école. Utiliser la Sony Venice 2 (CineAlta) en précisant que ça appartient à l'école.
+
+Page 6 : Utiliser les optiques fixes Zeiss de 24mm, 35mm, 50mm, et 85mm en précisant que ça appartient à l'école. Préciser que le render node est une RTX A6000 48go ram. Préciser que le studio est équipé d'un cyclo vert en dur. Préciser que l'éclairage appartient à l'école. Remplacer "Superviseur PV" par "Superviseur VP". Préciser "étudiant M2" pour "Graphiste 3D" et "Loane" pour "Opératrice 3D". Préciser "Charlotte pour "Réalisatrice". Préciser "Arnaud" pour "opérateur tracking caméra". Préciser "Femy" "DOP". Préciser "Anil" pour "Chef électricien".
+
+Page 7 : Remplacer "Chef Déco" par "Scripte / Accessoiriste" et préciser "Saph". Ajouter "Machiniste" et préciser "Thomas". Ajouter "Son" et préciser "Timothé". Ajouter "Behind The Shot" et préciser "Ignacio". Ajouter les rôles mis à jour dans la proposition de devis détaillé et leur coût unitaire HT en te référant à la grille salariale du document "PAV salaire minimum convention" et mettre à jour le total HT.
+
+Page 8 : Mettre à jour les préconisations technique de prise de vue et photoréalisme à partir des moyens techniques envisagés existant.
+
+Page 10 : supprime le saut de page en redimensionnant l'image "backroom_key.jpg"
+
+Page 12 : supprime le saut de page en redimensionnant la figure suivante qui sera remplacée par celle de la Page 19 mis à jour avec les moyens techniques envisagés.**
+
+Page 13 : Met à jour l'argumentaire du choix de la solution de tracking en te référant aux moyens techniques envisagés (Zeiss CineCraft Scenario)
+
+Page 14 : Dans le diagramme de flux -- Workflow de fabrication des images, intervertie "Assemblage scène UE5" et "éclairage virtuel (Lumen). Dans le diagramme de flux -- entrées / sorties des signaux sur le plateau, corrige la superposition des données caméras avec le genloc. Met à jour l'organigramme des profils et missions de l'équipe en préproduction à partir des moyens humains envisagés.
+
+Page 15 : supprimer le tableau de répartition "planning_board.jpg" et rajouter sous la forme de graphiques le rétroplanning, la revue d'asset et l'indicateur de performance.
+
+Page 17 : supprimer Nanite des recommendations d'optimisation de la scène 3D car trop instable pour un  framerate constant et rédhibitoire pour le nombre de géométrie à afficher en temps réel.
+
+Page 18 : évite le Blabla sur le protocole DMX / ArtNet mais confirme ou non les informations en te référant à belyakov à intégrer dans la bibliographie (trouver son ISBN). Rajouter une séquence consacrée au Pixel-mapping
+
+Page 19 : supprimer le plan de feu -- configuration nDisplay / mur LED
+
+Page 21 : préciser 23 juin date de tournage.
