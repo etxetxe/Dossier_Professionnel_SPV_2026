@@ -2,8 +2,23 @@
 
 > Décrit **comment le document est fabriqué** : chaîne de compilation, préambule,
 > conventions de design, arborescence des chapitres et fichiers de support.
-> Pour *quoi* écrire (contenu rédactionnel, données sources) → voir `input.md`.
-> Pour *initialiser* le projet la première fois → voir `setup.md`.
+> Pour *quoi* écrire (contenu rédactionnel, données sources) → voir `input.md` (même dossier).
+> Pour *initialiser* le projet la première fois → voir `../stages/01-setup/references/setup.md`.
+
+---
+
+## Index (charger UNE section)
+
+| § | Sujet |
+|---|-------|
+| 1 | Source unique |
+| 2 | Chaîne de compilation (4 passes) |
+| 3 | Préambule & paquets |
+| 4 | Conventions de design (palette, boîtes, colonnes) |
+| 5 | Arborescence du document (chapitres) |
+| 6 | Diagrammes TikZ |
+| 7 | Bibliographie |
+| 8 | Fichiers de support |
 
 ---
 

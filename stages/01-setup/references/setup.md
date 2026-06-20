@@ -9,7 +9,8 @@ description: Initialise pour la première fois l'environnement du Dossier Profes
 > compilation. Une fois l'environnement prêt, ce fichier n'est plus rejoué — le cycle
 > courant (éditer → build → versionner) est décrit dans `CLAUDE.md`.
 >
-> Forme, dépendances LaTeX → `system.md`. Contenu, données sources → `input.md`.
+> Forme, dépendances LaTeX → `../../../references/system.md`.
+> Contenu, données sources → `../../../references/input.md`.
 
 ---
 

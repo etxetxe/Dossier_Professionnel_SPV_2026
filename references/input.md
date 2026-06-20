@@ -6,7 +6,33 @@
 > **l'historique git** (commit « Initial commit » et antérieurs) et, pour les deux documents
 > publiés (mémoire Belyakov, carnet EESI), auprès de leurs éditeurs.
 >
-> Pour la *forme* LaTeX → `system.md`. Pour l'*initialisation* → `setup.md`.
+> Pour la *forme* LaTeX → `system.md` (même dossier). Pour l'*initialisation* →
+> `../stages/01-setup/references/setup.md`.
+
+---
+
+## Index (Pattern 4 — charger UNE section, jamais tout le fichier)
+
+| § | Sujet | Charger pour… |
+|---|-------|----------------|
+| 1 | Le projet | Identité du dossier, pitch *NoClip* |
+| 2 | Inventaire des sources | Liste des documents extraits |
+| 3.1 | Histoire de la VP | Veille, contexte industrie |
+| 3.2 | Prise de vue en VP | Réglages caméra, moiré, LED |
+| 3.3 | Unreal Engine | Pipeline 3D temps réel |
+| 3.4 | Optique appliquée | Focale, PdC, objectifs |
+| 3.5 | Réglementation | Droit du travail, AI Act |
+| 3.6 | Scénario *NoClip* | Trame narrative |
+| 3.7 | Découpage technique | Plans, valeurs de cadre, notes SPV |
+| 3.8 | Devis (grille PAV) | Chiffres des postes |
+| 3.9 | Config nDisplay | Données du diagramme mur LED |
+| 3.10 | Pipeline VP | Chaîne du signal plateau |
+| 3.11 | Mémoire Belyakov | DMX / Art-Net / lexique |
+| 3.12 | Carnet EESI | Voix « carnet » (style Ch. 7) |
+| 4 | Matériel réel | Mur LED, VENICE 2, UE 5.6 |
+| 5 | Crédits | Personnes à remercier |
+| 6 | Contenu par chapitre | Quoi va dans quel chapitre |
+| 7 | Garde-fous | Règles rédactionnelles |
 
 ---
 
