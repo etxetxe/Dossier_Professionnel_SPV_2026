@@ -56,8 +56,10 @@ Pré-requis et premier build : voir `stages/01-setup/`.
 
 ## Organisation du dépôt (méthodologie ICM)
 
-Ce dépôt est structuré selon l'**Interpreted Context Methodology** (Jake Van Clief) : *la structure
-de dossiers est l'architecture de l'agent*. Un agent IA (y compris un petit modèle local) lit la
+Ce dépôt est structuré selon l'**Interpreted Context Methodology** (ICM, Jake Van Clief) : *la structure
+de dossiers est l'architecture de l'agent*. Dépôt de référence de la méthodologie :
+[github.com/RinDig/Interpreted-Context-Methdology](https://github.com/RinDig/Interpreted-Context-Methdology).
+Un agent IA (y compris un petit modèle local) lit la
 couche 0 (`CLAUDE.md`), puis le routage (`CONTEXT.md`), puis **un seul** contrat d'étape
 (`stages/NN-*/CONTEXT.md`), puis la **seule** section de référence utile (`references/`).
 
@@ -77,4 +79,4 @@ les choix techniques et la responsabilité du contenu** restent ceux de l'auteur
 
 ---
 
-*Auteur : Etienne Baron · École Georges Méliès · 2026. Licence : voir [`LICENSE`](LICENSE).*
+*Auteur : Etienne Baron · École Georges Méliès · 2026. Licence : [MIT](LICENSE).*
