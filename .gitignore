@@ -14,3 +14,14 @@ sources_latex/*.fdb_latexmk
 # Logs de compilation temporaires
 sources_latex/pass*.log
 sources_latex/biber.log
+
+# Documents de tiers (dossiers d'autres etudiants) - ne jamais versionner
+SPV1_EP1_*.pdf
+
+# Notes de travail personnelles / materiel brut non integre
+Retour d'experience*.txt
+Retour d'exp*.txt
+RAPPORT_CRITIQUE_DOSSIER.md
+IMG_*.JPG
+WhatsApp Image*.jpeg
+Dossier de prod*.pdf

@@ -171,7 +171,7 @@ Je remercie enfin l'équipe étudiante de \textit{NoClip} --- réalisation, imag
 \chapter*{Avertissement --- usage de l'intelligence artificielle}
 \addcontentsline{toc}{chapter}{Avertissement --- usage de l'IA}
 \begin{notebox}[title={Transparence sur l'usage d'outils d'intelligence artificielle}]
-Conformément à une exigence de transparence et à l'esprit du \textbf{règlement européen sur l'intelligence artificielle} (\emph{AI Act}, Règlement (UE) 2024/1689), je signale que la mise en forme éditoriale de ce dossier a bénéficié d'outils d'\textbf{intelligence artificielle générative et agentique} (assistance à la rédaction, à la structuration LaTeX et à la production de diagrammes). Ces outils ont été employés comme \emph{aide} à la rédaction et à la composition : l'analyse, les choix techniques, les arbitrages de supervision et la responsabilité du contenu demeurent intégralement les miens. Aucune donnée personnelle de tiers n'a été traitée à des fins de profilage, et les sources mobilisées sont créditées dans la bibliographie. Cette déclaration s'inscrit dans la logique de classification par les risques et d'information de l'utilisateur promue par l'AI Act \autocite{aiact2024}.
+Conformément à une exigence de transparence et à l'esprit du \textbf{règlement européen sur l'intelligence artificielle} (\emph{AI Act}, Règlement (UE) 2024/1689), je signale que la mise en forme éditoriale de ce dossier a bénéficié d'outils d'\textbf{intelligence artificielle générative et agentique}. Concrètement, le modèle \textbf{Claude} (Anthropic), opéré en \emph{harnais agentique} depuis un terminal, a été mobilisé comme \textbf{corédacteur} : reformulation, structuration LaTeX, production des diagrammes TikZ et tenue du dépôt de versions. Ces outils ont été employés comme \emph{aide} à la rédaction et à la composition : l'analyse, les choix techniques, les arbitrages de supervision et la responsabilité du contenu demeurent intégralement les miens. Aucune donnée personnelle de tiers n'a été traitée à des fins de profilage, et les sources mobilisées sont créditées dans la bibliographie. Le choix de l'outil, ses limites et ses implications de souveraineté sont discutés et assumés au chapitre~6 (§~« Mon propre harnais »). Cette déclaration s'inscrit dans la logique de classification par les risques et d'information de l'utilisateur promue par l'AI Act \autocite{aiact2024}.
 \end{notebox}
 
 %================= SOMMAIRE =================
@@ -182,7 +182,10 @@ Conformément à une exigence de transparence et à l'esprit du \textbf{règleme
 \tableofcontents}
 
 \begin{infobox}[title={Guide de lecture}]
-Ce dossier suit la chronologie réelle du projet : il présente d'abord les documents fournis à la production pour \emph{vendre} le recours à la production virtuelle (chapitre~2), puis les documents de \emph{préproduction} des séquences supervisées (chapitre~3), enfin les \emph{analyses critiques} rédigées au terme de la fabrication (chapitre~4). Les chapitres~5 et~6 rassemblent une synthèse méthodologique du tournage en fond vert et un bilan personnel d'alternance. Les diagrammes, plans d'implantation et plans de feu sont intégrés au fil du texte.
+Ce dossier suit la chronologie réelle du projet : il présente d'abord les documents fournis à la production pour \emph{vendre} le recours à la production virtuelle (chapitre~2), puis les documents de \emph{préproduction} des séquences supervisées (chapitre~3), enfin les \emph{analyses critiques} rédigées au terme de la fabrication (chapitre~4). Le chapitre~5 dresse le bilan de la période d'alternance et le projet professionnel ; le chapitre~6 expose la veille technologique. Les diagrammes, plans d'implantation et plans de feu sont intégrés au fil du texte.
+
+\medskip
+\textbf{Avertissement de lecture.} Le chapitre~4 a été réécrit \emph{après} le tournage et assume un ton d'auto-critique sévère. Les chapitres~2 et~3 restituent les documents tels qu'ils ont été produits \emph{en amont} : le lecteur y trouvera donc des préconisations que le tournage a démenties. Cet écart est volontaire --- c'est lui que le chapitre~4 analyse.
 \end{infobox}
 
 \cleardoublepage
@@ -219,10 +222,10 @@ Le film alterne décor naturel (skatepark) et séquences en production virtuelle
 \rowcolor{brjaune}\multicolumn{1}{l}{\textbf{Time code}} & \textbf{Séquence} & \textbf{Nature \& supervision VP} \\
 \midrule
 \tc{00:00:00 -- 00:00:48} & EXT. Skatepark (jour) & Décor naturel --- \textit{hors VP}. Raccord d'étalonnage assuré avec l'équipe. \\
-\tc{00:00:48 -- 00:01:35} & INT. Backrooms --- Réveil & \textbf{VP} : plateau hybride, sol moquette physique + prolongement virtuel du couloir. \\
+\tc{00:00:48 -- 00:01:35} & INT. Backrooms --- Réveil & \textbf{VP} : plateau hybride, sol traité en drap noir + prolongement virtuel du couloir. \\
 \tc{00:01:35 -- 00:02:40} & Séquence labyrinthe (montage) & \textbf{VP} : couloirs identiques, rotation nDisplay, plans répétés. \\
 \tc{00:02:40 -- 00:03:15} & Salle du corps / Salle des noms & \textbf{VP} : inserts 3D (cadavre, inscriptions), fond vert + extension. \\
-\tc{00:03:15 -- 00:04:05} & Salle des 6 couloirs / Rupture & \textbf{VP} : pièce hexagonale full-CG, symétrie, flicker DMX. \\
+\tc{00:03:15 -- 00:04:05} & Salle des 6 couloirs / Rupture & \textbf{VP} : pièce hexagonale full-CG, symétrie, éclairage plateau fixe. \\
 \tc{00:04:05 -- 00:05:00} & EXT. Skatepark --- Réalité (soir) & Décor naturel --- \textit{hors VP}. \\
 \bottomrule
 \end{tabularx}
@@ -273,7 +276,7 @@ L'analyse du découpage révèle des contraintes que seule la production virtuel
 \begin{enumerate}
 \item \textbf{Un décor infini et impossible à construire.} Le scénario impose des couloirs « interminables », une pièce hexagonale à six couloirs, des salles répétées à l'identique. Construire physiquement ne serait-ce qu'une fraction de ce dédale dépasserait tout budget étudiant. L'extension virtuelle d'un module de décor réutilisé résout le problème.
 \item \textbf{La répétition et le sentiment de boucle.} Ryan « retombe toujours dans les mêmes salles ». La production virtuelle permet de re-décliner un même environnement 3D sous des angles différents (rotation \texttt{nDisplay}), créant un labyrinthe cohérent sans reconstruire.
-\item \textbf{La maîtrise totale de la lumière et de l'ambiance.} Le jaune monochrome maladif, le flicker des néons synchronisé à la dramaturgie, sont pilotables image par image en temps réel (DMX piloté par le moteur), ce qu'un décor réel rendrait coûteux et instable.
+\item \textbf{La maîtrise totale de la lumière et de l'ambiance.} Le jaune monochrome maladif, la densité et la température des néons se règlent \emph{dans le moteur}, sur le décor virtuel affiché au mur : un pré-light se rejoue à l'identique d'une prise à l'autre, ce qu'un décor réel rendrait coûteux et instable. L'éclairage physique du plateau, lui, reste volontairement \textbf{fixe} (voir §\ref{sec:lumiere_fixe}).
 \item \textbf{Le photoréalisme et le raccord sur le plateau.} Le rendu temps réel offre à l'acteur et au chef opérateur un retour \emph{in-camera} immédiat : les reflets jaunes sur le visage de Ryan, les ombres portées, sont captés en prise de vue, réduisant drastiquement le travail de compositing.
 \end{enumerate}
 \end{infobox}
@@ -296,8 +299,12 @@ Limites & Moiré et profondeur de champ à maîtriser ; calibration tracking. & 
 \end{center}
 
 \begin{infobox}[title={Dispositifs retenus : décor réel (début / fin) + Mur LED \& fond vert (Backrooms)}]
-La règle d'arbitrage retenue suit la dramaturgie du film. Les \textbf{séquences de début et de fin}, qui se déroulent dans le monde réel (skatepark), sont tournées en \textbf{décor réel (dispositif C)} : la lumière naturelle et l'authenticité du lieu y sont préférables à toute reconstruction. Les \textbf{séquences des Backrooms} sont tournées en \textbf{production virtuelle sur Mur LED (dispositif A)} pour les plans où la lumière jaune du décor baigne l'acteur, complétées par des \textbf{plans en fond vert (dispositif B)} pour les inserts et gros plans. Un \emph{socle commun} de décor physique (banc, sol moquette, bureau, chaise) ancre l'acteur quel que soit le dispositif VP.
+La règle d'arbitrage retenue suit la dramaturgie du film. Les \textbf{séquences de début et de fin}, qui se déroulent dans le monde réel (skatepark), sont tournées en \textbf{décor réel (dispositif C)} : la lumière naturelle et l'authenticité du lieu y sont préférables à toute reconstruction. Les \textbf{séquences des Backrooms} sont tournées en \textbf{production virtuelle sur Mur LED (dispositif A)} pour les plans où la lumière jaune du décor baigne l'acteur, complétées par des \textbf{plans en fond vert (dispositif B)} pour les inserts et gros plans. Un \emph{socle commun} de décor physique (banc, bureau, chaise, accessoires) ancre l'acteur quel que soit le dispositif VP.
 \end{infobox}
+
+\begin{notebox}[title={Traitement du sol --- drap noir plutôt que moquette}]
+Le décor virtuel montre une moquette ; la tentation était d'en poser une réellement au sol pour raccorder. Elle a été \textbf{écartée} : une moquette claire face à un mur LED se comporte comme un réflecteur, elle renvoie le jaune du mur et remonte le niveau des noirs sur toute la partie basse du cadre --- exactement ce qu'on cherche à éviter dans un décor dont l'ambiance repose sur des basses lumières tenues. Le sol de la zone physique est donc couvert d'un \textbf{grand drap noir mat}, qui absorbe les retours du mur et laisse le raccord de sol se faire dans le décor virtuel. Contrepartie assumée : plus aucun plan ne peut cadrer franchement le sol au premier plan --- contrainte reportée dans le découpage.
+\end{notebox}
 
 \section{Moyens techniques envisagés (fournisseurs / prestataires)}
 La liste ci-dessous détaille et argumente les moyens techniques, en nommant les fournisseurs et prestataires pressentis. Les choix privilégient la fiabilité, la compatibilité du \emph{pipeline} temps réel et la disponibilité auprès de prestataires accessibles à une production étudiante (tarifs école / location courte durée).
@@ -319,8 +326,7 @@ Optiques & \textbf{Optiques fixes Zeiss 24 / 35 / 50 / 85\,mm} & \textbf{Apparti
 Synchronisation & Générateur genlock + timecode & Indispensable pour synchroniser caméra, rendu et mur LED. \\
 Render nodes & \textbf{RTX A6000 (48\,Go)} pour le mur LED + RTX 2080 pour le pilotage & \textbf{Appartient à l'école}. La A6000 (48\,Go de VRAM) tient les 24/25\,fps en rendu temps réel sur la scène optimisée ; la 2080 assure la vue de supervision. \\
 Fond vert & \textbf{Cyclo vert en dur} du studio & \textbf{Équipement du studio} (cyclo vert fixe). Pour les inserts et gros plans (dispositif B). \\
-Éclairage & Projecteurs LED pilotables DMX & \textbf{Appartient à l'école}. Les sources DMX sont pilotées par le moteur pour le flicker des néons. \\
-Pupitre / DMX & \texttt{nodle} USB-DMX + protocole Art-Net & Pilotage de l'éclairage synchronisé au moteur temps réel. \\
+Éclairage & Panneaux et barres LED bicolores, intensité et température réglables --- \textbf{posés et figés au pré-light} & \textbf{Appartient à l'école}. \emph{Aucun pilotage dynamique de la lumière n'est préconisé} : le parti pris est un plan de feu fixe, calé une fois pour toutes et raccordant le jaune du mur (cf.~§\ref{sec:lumiere_fixe}). \\
 Compositing & Nuke (Foundry) & Licence école. Détourage (keyer), extension de décor, raccord des inserts. \\
 3D / assets & Blender + Quixel Megascans & Modélisation et texturing photoréaliste du décor Backrooms. \\
 Stockshot plate & Plate skatepark 360\textdegree{} (séquence 1) & Banque d'images / captation repérage. \\
@@ -346,7 +352,7 @@ Opératrice 3D --- \textit{Loane} & Texturing, optimisation temps réel, intégr
 Opérateur tracking caméra --- \textit{Arnaud} & Calibration et exploitation du tracking, gestion du frustum. & Connaissance du CinCraft Scenario, rigueur de calibration. \\
 Ingénieur LED / média serveur & Mapping du mur LED, gestion \texttt{nDisplay}, genlock. & Expérience plateau LED, réseau Art-Net/SDI. \\
 Chef opérateur --- DOP \textit{Femy} & Lumière, exposition, raccords avec le décor virtuel. & Sensibilité au tournage VP, gestion de l'exposition fond vert. \\
-Chef électricien --- \textit{Anil} & Plan de feu, sources DMX, sécurité électrique. & Maîtrise DMX/Art-Net, pilotage par moteur. \\
+Chef électricien --- \textit{Anil} & Plan de feu, implantation et calage des sources, sécurité électrique. & Lecture d'un raccord lumière face à un mur LED ; rigueur du pré-light. \\
 Scripte / Accessoiriste --- \textit{Saph} & Continuité (script), gestion des accessoires (skate, alliance, fleurs), raccords plan à plan. & Sens du raccord physique/virtuel, rigueur de continuité. \\
 Machiniste --- \textit{Thomas} & Mise en place caméra, travellings, machinerie plateau. & Sécurité plateau, fluidité des mouvements. \\
 Son --- \textit{Timothé} & Prise de son plateau, repérage sonore, raccords. & Captation propre malgré le bourdonnement des sources. \\
@@ -368,7 +374,7 @@ Le devis ci-dessous valorise l'équipe selon la \textbf{grille des salaires mini
 Plateau LED Sony Crystal LED VERONA + render nodes (RTX A6000 / 2080) & 1 & 1 & \multicolumn{1}{c}{--} & \multicolumn{1}{r}{(école)} \\
 Caméra Sony VENICE 2 + optiques Zeiss (24/35/50/85) & 1 & 2 & \multicolumn{1}{c}{--} & \multicolumn{1}{r}{(école)} \\
 Tracking Zeiss CinCraft Scenario & 1 & 1 & \multicolumn{1}{c}{--} & \multicolumn{1}{r}{(école)} \\
-Éclairage DMX + cyclo vert en dur & 1 & 2 & \multicolumn{1}{c}{--} & \multicolumn{1}{r}{(école)} \\
+Éclairage LED (panneaux / barres) + cyclo vert en dur & 1 & 2 & \multicolumn{1}{c}{--} & \multicolumn{1}{r}{(école)} \\
 \midrule
 \rowcolor{brgrispale}\multicolumn{5}{l}{\textit{\textbf{Équipe --- grille minima conventionnels PAV (1\textsuperscript{er} janvier 2026)}}} \\
 Réalisatrice (Charlotte)              & 1 & 2 & 300 \euro & 600 \euro \\
@@ -480,7 +486,7 @@ Le cahier des charges fixe les étapes, livrables et critères de validation de 
 2 & Blockout 3D & Géométrie grise des salles et couloirs, échelle réelle. & Volumes validés, raccord avec décor physique. \\
 3 & Modélisation & Modélisation détaillée (murs, néons, mobilier, chaise, bureau). & Modèles propres, topologie maîtrisée. \\
 4 & Texturing / matériaux & Moquette, papier peint jauni, moisissures, usure. & Matériaux PBR photoréalistes. \\
-5 & Éclairage virtuel & Néons, GI Lumen, ambiance jaune maladive, flicker. & Ambiance conforme à la note d'intention. \\
+5 & Éclairage virtuel & Néons (\emph{emissive}), GI Lumen, ambiance jaune maladive. & Ambiance conforme à la note d'intention. \\
 6 & Optimisation temps réel & LOD manuels (sans Nanite), instanciation, budget poly/draw calls, profilage. & $\geq$ 24\,fps stable sur render node. \\
 7 & Intégration nDisplay & Configuration mur LED, frustum, calibration. & Rendu in-camera sans artefact. \\
 8 & Inserts & Mur des noms, cadavre, inscriptions (fond vert). & Inserts prêts pour compositing. \\
@@ -490,104 +496,146 @@ Le cahier des charges fixe les étapes, livrables et critères de validation de 
 
 \section{Plan d'implantation du décor (physique vs virtuel)}
 \label{sec:implantation}
-Le plan ci-dessous, réalisé à partir de la configuration réelle du plateau VP de l'école, distingue les parties \textbf{construites physiquement} (zone verte : moquette, mobilier, acteur) des parties \textbf{affichées sur le mur LED} et prolongées virtuellement. Il précise le découpage du \textbf{Mur LED Sony Crystal LED VERONA} en quatre zones \texttt{nDisplay} (Gauche, Centre, Droite, Plafond) avec leurs résolutions et dimensions réelles, les liaisons vidéo vers les \emph{render nodes} et la zone de frustum couverte par la caméra.
+Le plan ci-dessous est un \textbf{plan au sol} (vue de dessus) du plateau VP de l'école tel qu'il a
+été réellement implanté. Il a été redressé après coup à partir des photos de tournage : il ne
+reprend pas la configuration « volume enveloppant » imaginée en amont, mais la
+\textbf{configuration effectivement montée} --- un panneau LED central encadré de deux
+\textbf{volets latéraux sur roulettes, orientés vers l'intérieur}, un \textbf{drap noir} au sol, et
+l'ensemble des postes techniques massés en un demi-cercle serré derrière la caméra. Il distingue
+les parties \textbf{construites physiquement} des parties \textbf{affichées sur le mur LED} et
+prolongées virtuellement, précise le découpage \texttt{nDisplay} (Gauche, Centre, Droite,
+Plafond) avec les résolutions et dimensions réelles, et \textbf{situe chaque personne} sur le
+plateau --- information absente du plan initial, et qui s'est révélée être la contrainte la plus
+structurante de la journée.
 
 \begin{center}
 \resizebox{\textwidth}{!}{%
 \begin{tikzpicture}[scale=1.0, every node/.style={font=\small}]
-  % Fond salle
-  \fill[brgrispale] (0,0) rectangle (14,10.5);
-  \draw[brdark] (0,0) rectangle (14,10.5);
-  % Titre
-  \node[brdark,font=\small\bfseries] at (7,10.28){Mur LED Sony Crystal LED VERONA --- 4 zones \texttt{nDisplay} (pas 1,56\,mm)};
-  % --- Plafond LED (Zone 4) ---
-  \fill[braccent!65] (2.0,9.3) rectangle (12.0,9.85);
-  \draw[braccent,thick] (2.0,9.3) rectangle (12.0,9.85);
-  \node[white,font=\scriptsize\bfseries] at (7.0,9.57){Zone 4 --- Plafond \textbf{(1536\,px $\approx$ 2,44\,m)}};
-  % --- Mur LED face : Zone 1 Gauche ---
-  \fill[brbleu!55] (0.5,7.0) rectangle (3.5,9.0);
-  \draw[brbleu,thick] (0.5,7.0) rectangle (3.5,9.0);
-  \node[white,font=\scriptsize\bfseries] at (2.0,8.6){Zone 1};
-  \node[white,font=\tiny] at (2.0,8.2){Gauche};
-  \node[white,font=\tiny] at (2.0,7.75){\textbf{1536\,px $\approx$ 2,44\,m}};
-  % Zone 2 Centre
-  \fill[braccent!80] (3.5,7.0) rectangle (10.5,9.0);
-  \draw[braccent,thick] (3.5,7.0) rectangle (10.5,9.0);
-  \node[white,font=\scriptsize\bfseries] at (7.0,8.6){Zone 2};
-  \node[white,font=\tiny] at (7.0,8.2){Centre};
-  \node[white,font=\tiny] at (7.0,7.75){\textbf{3072\,px $\approx$ 4,88\,m}};
-  % Zone 3 Droite
-  \fill[brbleu!55] (10.5,7.0) rectangle (13.5,9.0);
-  \draw[brbleu,thick] (10.5,7.0) rectangle (13.5,9.0);
-  \node[white,font=\scriptsize\bfseries] at (12.0,8.6){Zone 3};
-  \node[white,font=\tiny] at (12.0,8.2){Droite};
-  \node[white,font=\tiny] at (12.0,7.75){\textbf{1536\,px $\approx$ 2,44\,m}};
-  % Hauteur murs
-  \node[brdark,font=\tiny] at (13.7,8.0){\rotatebox{90}{hauteur 1728\,px $\approx$ 2,74\,m}};
-  % Zone physique plateau
-  \fill[brvert!25] (3.5,4.8) rectangle (10.5,7.0);
-  \draw[brvert,very thick] (3.5,4.8) rectangle (10.5,7.0);
-  \node[brvert!70!black,font=\scriptsize] at (7.0,6.65){\textbf{Zone physique construite}};
-  \node[brvert!70!black,font=\tiny] at (7.0,6.3){(moquette, banc, bureau, chaise, acteur)};
-  % Render Node A6000 (gauche) — mur LED
-  \fill[brjaunepale] (0.0,3.4) rectangle (3.2,5.2);
-  \draw[braccent,thick] (0.0,3.4) rectangle (3.2,5.2);
-  \node[brdark,font=\scriptsize\bfseries] at (1.6,5.0){Render Node};
-  \node[brdark,font=\tiny] at (1.6,4.65){\textbf{RTX A6000 48\,Go}};
-  \node[brdark,font=\tiny] at (1.6,4.3){VP0 / VP1 / VP2};
-  \node[brdark,font=\tiny] at (1.6,3.95){+ Plafond (VP3)};
-  \node[brdark,font=\tiny] at (1.6,3.6){(Mur LED)};
-  % Render Node 2080 (droite) — pilotage
-  \fill[brjaunepale] (10.8,3.4) rectangle (14.0,5.2);
-  \draw[braccent,thick] (10.8,3.4) rectangle (14.0,5.2);
-  \node[brdark,font=\scriptsize\bfseries] at (12.4,5.0){Render Node};
-  \node[brdark,font=\tiny] at (12.4,4.65){\textbf{RTX 2080}};
-  \node[brdark,font=\tiny] at (12.4,4.3){Vue pilotage};
-  \node[brdark,font=\tiny] at (12.4,3.95){(supervision)};
-  % nDisplay Master
-  \fill[brjaunepale] (4.5,2.0) rectangle (9.5,3.2);
-  \draw[braccent,very thick] (4.5,2.0) rectangle (9.5,3.2);
-  \node[brdark,font=\scriptsize\bfseries] at (7.0,2.85){\texttt{nDisplay} Master};
-  \node[brdark,font=\tiny] at (7.0,2.45){Unreal Engine 5.6 / switch réseau};
-  % Caméra + tracking
-  \draw[brdark,very thick] (7.0,0.4)--(6.5,1.3)--(7.5,1.3)--cycle;
-  \node[brdark,font=\scriptsize] at (7.0,0.1){Caméra Sony VENICE 2 + CinCraft Scenario};
-  % Frustum (pointillés)
-  \draw[brbleu,dashed,thick] (7.0,1.3)--(4.2,7.0);
-  \draw[brbleu,dashed,thick] (7.0,1.3)--(9.8,7.0);
-  \node[brbleu,font=\tiny] at (10.6,4.5){frustum};
-  % Liaisons vidéo A6000 -> Zones 1,2,3 (DisplayPort)
-  \draw[-{Stealth[length=2mm]},brbleu,thick]
-    (1.6,5.2) -- (1.6,7.0) node[midway,right,font=\tiny,brbleu]{DP};
-  % Liaison A6000 -> Plafond (Zone 4)
-  \draw[-{Stealth[length=2mm]},brbleu,thick]
-    (3.2,4.3) to[out=30,in=250] (5.5,9.3) node[midway,above,font=\tiny,brbleu,sloped]{DP};
-  % Liaison RTX 2080 -> zone droite (sortie pilotage)
-  \draw[-{Stealth[length=2mm]},brbleu,thick]
-    (12.4,5.2) -- (12.4,7.0) node[midway,right,font=\tiny,brbleu]{DP};
-  % Liaisons Ethernet nDisplay master -> render nodes
-  \draw[-{Stealth[length=2mm]},braccent,thick]
-    (4.5,2.6) -- (3.2,4.3) node[midway,above,font=\tiny,braccent,sloped]{Ethernet};
-  \draw[-{Stealth[length=2mm]},braccent,thick]
-    (9.5,2.6) -- (10.8,4.3) node[midway,above,font=\tiny,braccent,sloped]{Ethernet};
-  % Position tracking -> nDisplay master
-  \draw[-{Stealth[length=2mm]},brbleu,thick]
-    (7.0,1.3) -- (7.0,2.0) node[midway,right,font=\tiny,brbleu]{pos.\ tracking};
-  % Légende
-  \begin{scope}[shift={(0,-1.5)}]
-    \draw[-{Stealth[length=2mm]},brbleu,thick] (0.5,0) -- (1.5,0);
-    \node[anchor=west,font=\tiny] at (1.6,0){Signal vidéo (DisplayPort)};
-    \draw[-{Stealth[length=2mm]},braccent,thick] (6.0,0) -- (7.0,0);
-    \node[anchor=west,font=\tiny] at (7.1,0){Ethernet \texttt{nDisplay}};
-    \draw[brbleu,dashed,thick] (11.0,0) -- (12.0,0);
-    \node[anchor=west,font=\tiny] at (12.1,0){Frustum};
+  % ---------- sol studio (cyclo vert) ----------
+  \fill[brvert!14] (0,0) rectangle (15,11.6);
+  \draw[brvert!45] (0,0) rectangle (15,11.6);
+  \node[brvert!55!black,font=\tiny,anchor=north west] at (0.15,11.45){Sol cyclo vert du studio};
+  \node[brdark,font=\small\bfseries] at (7.5,11.1)
+    {Plan au sol --- implantation réelle du plateau VP (24 juin 2026)};
+
+  % ---------- plafond LED (zone 4) ----------
+  \draw[braccent,dashed,thick] (3.9,7.0) rectangle (11.1,10.1);
+  \node[braccent,font=\tiny] at (7.5,9.85){Zone 4 --- Plafond LED \textbf{1536\,px $\approx$ 2,44\,m} (au-dessus)};
+
+  % ---------- panneau LED central (zone 2) ----------
+  \fill[braccent!80] (4.0,10.1) rectangle (11.0,10.5);
+  \draw[braccent,thick]  (4.0,10.1) rectangle (11.0,10.5);
+  \node[white,font=\scriptsize\bfseries] at (7.5,10.31){Zone 2 --- Centre \ \ 3072\,px $\approx$ 4,88\,m};
+
+  % ---------- volets lateraux orientes vers l'interieur ----------
+  \fill[brbleu!60] (4.0,10.5) -- (4.0,10.1) -- (2.35,8.05) -- (2.05,8.35) -- cycle;
+  \draw[brbleu,thick] (4.0,10.5) -- (4.0,10.1) -- (2.35,8.05) -- (2.05,8.35) -- cycle;
+  \node[white,font=\tiny,rotate=51] at (3.05,9.35){Zone 1 --- Gauche};
+  \node[brbleu!60!black,font=\tiny,rotate=51] at (2.45,9.75){1536\,px $\approx$ 2,44\,m};
+
+  \fill[brbleu!60] (11.0,10.5) -- (11.0,10.1) -- (12.65,8.05) -- (12.95,8.35) -- cycle;
+  \draw[brbleu,thick] (11.0,10.5) -- (11.0,10.1) -- (12.65,8.05) -- (12.95,8.35) -- cycle;
+  \node[white,font=\tiny,rotate=-51] at (11.95,9.35){Zone 3 --- Droite};
+  \node[brbleu!60!black,font=\tiny,rotate=-51] at (12.55,9.75){1536\,px $\approx$ 2,44\,m};
+
+  \node[brdark,font=\tiny,anchor=west] at (13.1,10.3){\rotatebox{-90}{hauteur 1728\,px $\approx$ 2,74\,m}};
+
+  % ---------- drap noir au sol (zone physique) ----------
+  \fill[brdark!92] (2.6,6.1) -- (12.4,6.1) -- (12.55,8.2) -- (11.0,10.05) -- (4.0,10.05) -- (2.45,8.2) -- cycle;
+  \node[white,font=\scriptsize\bfseries] at (7.5,6.75){Zone physique --- \textbf{grand drap noir mat} (pas de moquette)};
+  \node[brjaunepale,font=\tiny] at (7.5,6.42){absorbe les retours du mur LED ; le sol vu à l'image est virtuel};
+
+  % ---------- accessoires physiques ----------
+  \fill[brjaunepale] (9.15,8.15) rectangle (11.05,8.75);
+  \draw[braccent] (9.15,8.15) rectangle (11.05,8.75);
+  \node[brdark,font=\tiny] at (10.1,8.45){tréteaux / bureau};
+  \fill[brjaunepale] (4.05,8.15) rectangle (5.5,8.6);
+  \draw[braccent] (4.05,8.15) rectangle (5.5,8.6);
+  \node[brdark,font=\tiny] at (4.78,8.38){banc + skate};
+
+  % ---------- acteur ----------
+  \filldraw[brjaune,draw=brdark,thick] (7.3,8.5) circle (0.26);
+  \node[white,font=\tiny\bfseries] at (7.3,8.5){R};
+  \node[brjaune,font=\tiny] at (7.3,9.0){\textbf{Ryan} (acteur)};
+  \draw[brgris,<->,dashed] (7.3,8.76) -- node[left,font=\tiny,brgris,pos=0.55]{\ \ 2,6\,m} (7.3,10.08);
+
+  % ---------- sources lumiere FIXES ----------
+  \foreach \x/\y/\lab/\ang in {2.35/5.35/Barre LED gauche/35, 12.65/5.35/Panneau LED droite/-35}{
+    \filldraw[brjaune!85!black,draw=brdark] (\x-0.42,\y-0.16) rectangle (\x+0.42,\y+0.16);
+    \node[brdark,font=\tiny] at (\x,\y-0.48){\lab};
+    \draw[brjaune!70!black,->,thick] (\x,\y+0.16) -- ++(\ang:1.9);
+  }
+  \filldraw[brjaune!85!black,draw=brdark] (7.5,5.15) circle (0.22);
+  \node[brdark,font=\tiny] at (7.5,4.82){Plafonnier softbox (fixe, en hauteur)};
+  \draw[brjaune!70!black,->,thick] (7.5,5.37) -- (7.35,8.2);
+  \node[brdark,font=\tiny\bfseries,align=center] at (7.5,3.95)
+    {\textcolor{brjaune!60!black}{Plan de feu \textbf{entièrement fixe} --- aucune source pilotée, aucun \emph{flicker}}};
+
+  % ---------- camera + tracking desactive ----------
+  \draw[brdark,very thick,fill=brgrispale] (7.3,2.15)--(6.85,3.05)--(7.75,3.05)--cycle;
+  \node[brdark,font=\tiny,anchor=north] at (7.3,2.08){Caméra Sony VENICE 2 (pied)};
+  \node[red!65!black,font=\tiny\bfseries,anchor=north] at (7.3,1.72){CinCraft Scenario \textbf{DÉSACTIVÉ}};
+  \node[red!65!black,font=\tiny,anchor=north] at (7.3,1.42){(dysfonctionnement --- cf. ch.~4)};
+  % frustum fige
+  \draw[brbleu,dashed,thick] (7.3,3.05)--(4.6,10.05);
+  \draw[brbleu,dashed,thick] (7.3,3.05)--(10.0,10.05);
+  \node[brbleu,font=\tiny,align=center] at (10.75,5.6){frustum\\\textbf{calé à la main}};
+
+  % ---------- postes techniques ----------
+  \tikzset{poste/.style={rectangle,rounded corners=2pt,draw=brdark,fill=brgrispale,
+    font=\tiny,align=center,inner sep=2pt}}
+  \node[poste] at (4.75,5.55) {Perchman\\(Timothé)};
+  \node[poste] at (4.55,3.15) {DOP (Femy)\\+ chef élec. (Anil)};
+  \node[poste] at (5.35,2.05) {Réalisatrice\\(Charlotte)};
+  \node[poste] at (9.35,3.05) {Moniteur retour\\programme};
+  \node[poste] at (10.45,2.05) {Scripte (Saph)\\table + ordinateur};
+  \node[poste] at (2.55,2.15) {\textbf{SPV --- Etienne Baron}\\(poste flottant)};
+
+  % regie 3D
+  \fill[brjaunepale] (12.65,2.75) rectangle (14.8,4.55);
+  \draw[braccent,very thick] (12.65,2.75) rectangle (14.8,4.55);
+  \node[brdark,font=\tiny\bfseries,align=center] at (13.72,4.25){Régie 3D};
+  \node[brdark,font=\tiny,align=center] at (13.72,3.75){Opératrice 3D\\(Loane)};
+  \node[braccent!70!black,font=\tiny,align=center] at (13.72,3.12){\textbf{pilote le frustum}\\\textbf{manuellement}};
+
+  % render nodes
+  \fill[brjaunepale] (0.2,2.75) rectangle (2.1,4.55);
+  \draw[braccent,thick] (0.2,2.75) rectangle (2.1,4.55);
+  \node[brdark,font=\tiny\bfseries] at (1.15,4.25){Render nodes};
+  \node[brdark,font=\tiny,align=center] at (1.15,3.75){RTX A6000 48\,Go\\VP0/VP1/VP2/VP3};
+  \node[brdark,font=\tiny,align=center] at (1.15,3.05){RTX 2080\\(supervision)};
+
+  % liaisons
+  \draw[-{Stealth[length=2mm]},brbleu,thick] (1.15,4.55) -- (1.15,6.3) -- (2.9,8.6)
+    node[midway,left,font=\tiny,brbleu]{DP};
+  \draw[-{Stealth[length=2mm]},braccent,thick] (12.65,3.65) -- (2.1,3.65)
+    node[pos=0.42,above,font=\tiny,braccent]{Ethernet \texttt{nDisplay} / Multi-User};
+
+  % ---------- legende ----------
+  \begin{scope}[shift={(0.2,0.25)}]
+    \filldraw[brdark!92] (0,0) rectangle (0.42,0.26);
+    \node[anchor=west,font=\tiny] at (0.5,0.13){Drap noir (zone physique)};
+    \filldraw[braccent!80] (3.9,0) rectangle (4.32,0.26);
+    \node[anchor=west,font=\tiny] at (4.4,0.13){Mur LED / \texttt{nDisplay}};
+    \filldraw[brjaune!85!black] (7.4,0) rectangle (7.82,0.26);
+    \node[anchor=west,font=\tiny] at (7.9,0.13){Source lumière fixe};
+    \draw[brbleu,dashed,thick] (10.7,0.13) -- (11.3,0.13);
+    \node[anchor=west,font=\tiny] at (11.4,0.13){Frustum (figé, réglé à la main)};
   \end{scope}
 \end{tikzpicture}}
 \end{center}
-\begin{center}\footnotesize\textit{Configuration réelle du plateau VP (École Méliès) : le render node RTX~A6000 (48\,Go) alimente en DisplayPort les trois zones face (Gauche~1536\,px, Centre~3072\,px, Droite~1536\,px) et le plafond (1536\,px) du Mur LED Sony Crystal LED VERONA ; le render node RTX~2080 assure la vue de supervision. Le master Unreal Engine~5.6 synchronise l'ensemble et reçoit en temps réel la position caméra du ZEISS CinCraft Scenario.}\end{center}
+\begin{center}\footnotesize\textit{Plan au sol relevé d'après les photos de tournage. Trois écarts majeurs avec le plan
+prévisionnel sont visibles : (1)~le mur n'est pas un volume enveloppant mais un panneau central
+flanqué de deux volets mobiles refermés vers l'intérieur, ce qui a réduit la latitude de cadre ;
+(2)~le sol est un drap noir et non une moquette, ce qui interdit tout cadre plongeant sur le sol
+physique ; (3)~le tracking étant hors service, le frustum n'était plus asservi à la caméra mais
+recalé manuellement depuis la régie 3D --- d'où la caméra sur pied et la contrainte de plans fixes
+à légèrement panoramiques. Les postes techniques sont massés en arc derrière la caméra, sur une
+profondeur d'à peine trois mètres : le plateau réel est nettement plus contraint que ne le laissait
+croire le plan initial.}\end{center}
 
 \subsection{Note explicative --- répartition construction / prolongement virtuel}
-La règle de répartition retenue est simple : \textbf{est construit physiquement tout ce que l'acteur touche ou ce qui projette une lumière/ombre directe sur lui} ; \textbf{est prolongé virtuellement tout ce qui relève de la profondeur, de la répétition et de l'infini}. Ainsi, le sol en moquette, le banc, le skateboard, le bureau et la chaise sont réels --- Ryan s'assoit, marche, manipule ces éléments, et leur contact doit être crédible. En revanche, les couloirs qui s'étendent au-delà de quelques mètres, la pièce hexagonale complète, et les salles répétées sont virtuels : les construire n'apporterait rien que le mur LED ne rende mieux, tout en coûtant un temps et un budget incompatibles avec le projet. Cette frontière (matérialisée sur le plan ci-dessus) garantit à la fois l'ancrage physique du jeu et l'illusion d'un espace sans limites.
+La règle de répartition retenue est simple : \textbf{est construit physiquement tout ce que l'acteur touche ou ce qui projette une lumière/ombre directe sur lui} ; \textbf{est prolongé virtuellement tout ce qui relève de la profondeur, de la répétition et de l'infini}. Ainsi, le banc, le skateboard, le bureau, la chaise et les tréteaux habillés sont réels --- Ryan s'assoit, marche, manipule ces éléments, et leur contact doit être crédible. Le \textbf{sol}, lui, fait exception à la règle : bien que l'acteur le foule en permanence, il n'est pas habillé en décor mais couvert d'un \textbf{drap noir mat}, choisi contre la moquette pour ne pas réfléchir le jaune du mur LED (voir chapitre~2). Le sol visible à l'image est donc entièrement virtuel, ce qui impose de tenir la limite basse du cadre au-dessus de la ligne de raccord. En revanche, les couloirs qui s'étendent au-delà de quelques mètres, la pièce hexagonale complète, et les salles répétées sont virtuels : les construire n'apporterait rien que le mur LED ne rende mieux, tout en coûtant un temps et un budget incompatibles avec le projet. Cette frontière (matérialisée sur le plan ci-dessus) garantit à la fois l'ancrage physique du jeu et l'illusion d'un espace sans limites.
 
 \section{Argumentaire du choix de la solution de tracking}
 Le tracking caméra est le maillon critique d'un plateau LED : c'est lui qui asservit le \emph{frustum} (la portion de décor rendue en perspective correcte) aux mouvements de la caméra. Trois familles existaient : tracking optique « outside-in » (capteurs externes), tracking optique « inside-out » sur marqueurs, et tracking mécanique sur encodeurs (têtes/grues encodées).
@@ -638,8 +686,8 @@ Le choix s'est porté sur le \textbf{ZEISS CinCraft Scenario}, système \textbf{
   \node[dev,right=2.6cm of ue] (led) {Processeur\\mur LED};
   \node[dev,below=of led] (mon) {Retours / Moniteurs\\\& enregistreur};
   \node[dev,below=of ue] (gen) {Genlock /\\Timecode};
-  \node[dev,below=of track] (dmx) {Pont DMX /\\Art-Net};
-  \node[dev,right=2.6cm of dmx] (lights) {Projecteurs\\(néons flicker)};
+  \node[dev,below=of track] (elec) {Alimentation\\électrique plateau};
+  \node[dev,right=2.6cm of elec] (lights) {Sources LED \textbf{fixes}\\(clé / débouché / plafonnier)};
   % flux camera / donnees (vers le moteur, cote droit)
   \draw[sdi] (cam.east) -- node[above,font=\tiny,brbleu]{SDI} (ue.west);
   \draw[sdi] (track.east) -- node[below,font=\tiny,brbleu]{données pos.} (ue.south west);
@@ -649,17 +697,18 @@ Le choix s'est porté sur le \textbf{ZEISS CinCraft Scenario}, système \textbf{
   \draw[gen] (gen.north) -- node[right,font=\tiny,braccent]{sync} (ue.south);
   \draw[gen] (cam.west) -- ++(-0.9,0) |- node[pos=0.25,left,font=\tiny,braccent]{genlock} (gen.west);
   \draw[gen] (gen.east) to[bend left=18] node[below,font=\tiny,braccent]{} (led.south);
-  \draw[dmx] (ue.south) to[bend right=10] node[above,font=\tiny,brvert]{} (dmx.north east);
-  \draw[dmx] (dmx.east) -- node[above,font=\tiny,brvert]{DMX/Art-Net} (lights.west);
+  \draw[dmx] (elec.east) -- node[above,font=\tiny,brvert]{secteur} (lights.west);
+  \node[brvert!60!black,font=\tiny,align=center,below=0.5cm of lights]
+    {\textbf{aucune liaison de commande vers le moteur}\\(plan de feu figé au pré-light)};
   % legende
   \begin{scope}[shift={(-0.3,-5.2)}]
     \draw[sdi] (0,0)--(0.8,0); \node[anchor=west,font=\tiny] at (0.9,0){Vidéo SDI / données};
     \draw[gen] (4,0)--(4.8,0); \node[anchor=west,font=\tiny] at (4.9,0){Genlock / Timecode};
-    \draw[dmx] (8,0)--(8.8,0); \node[anchor=west,font=\tiny] at (8.9,0){DMX / Art-Net (lumière)};
+    \draw[dmx] (8,0)--(8.8,0); \node[anchor=west,font=\tiny] at (8.9,0){Alimentation lumière (aucune commande)};
   \end{scope}
 \end{tikzpicture}
 \end{center}
-\begin{center}\footnotesize\textit{Synoptique des signaux : la position de la caméra (tracking) et son image (SDI) alimentent le moteur, qui renvoie la vidéo rendue au mur LED et pilote la lumière en DMX. Le genlock synchronise l'ensemble.}\end{center}
+\begin{center}\footnotesize\textit{Synoptique des signaux tel que retenu : la position de la caméra (tracking) et son image (SDI) alimentent le moteur, qui renvoie la vidéo rendue au mur LED. Le genlock synchronise caméra, rendu et affichage. \textbf{La lumière plateau est volontairement hors de la boucle de commande} : elle est seulement alimentée, et calée une fois pour toutes au pré-light (§\ref{sec:lumiere_fixe}). Le jour du tournage, la branche tracking a de surcroît été neutralisée, le frustum étant recalé à la main (chapitre~4).}\end{center}
 
 \section{Profils et missions de l'équipe en préproduction --- organigramme}
 \begin{center}
@@ -687,105 +736,62 @@ Le choix s'est porté sur le \textbf{ZEISS CinCraft Scenario}, système \textbf{
 \begin{center}\footnotesize\textit{Organigramme de l'équipe VP en préproduction. Le superviseur VP coordonne cinq pôles ; le compositeur et la scripte / accessoiriste sont rattachés respectivement à la 3D et à l'ingénierie LED.}\end{center}
 
 \section{Calendrier de préproduction et moyens d'évaluation}
+Le calendrier présenté ici est le calendrier \textbf{réel}, et non le rétroplanning idéal que j'avais
+esquissé en début de projet. Il est délibérément dépouillé : les jalons mensuels réguliers, les
+revues d'assets hebdomadaires et les indicateurs chiffrés d'avancement que j'avais annoncés
+\textbf{n'ont pas existé}. Les présenter sous forme de courbes et de barres de progression aurait
+donné du projet une image de pilotage méthodique qui ne correspond pas à ce qui s'est passé.
+Ce que ce tableau montre à la place, c'est une préproduction \textbf{tardive et compressée}, dont
+l'essentiel s'est joué dans les deux dernières semaines.
+
 \begin{center}
 \small
-\begin{longtable}{>{\bfseries}p{2.6cm} >{\RaggedRight\arraybackslash}p{5.4cm} >{\RaggedRight\arraybackslash}p{4.8cm}}
-\rowcolor{brjaune}\textbf{Période} & \textbf{Jalon} & \textbf{Moyen d'évaluation} \\
+\begin{longtable}{>{\bfseries}p{2.5cm} >{\RaggedRight\arraybackslash}p{5.2cm} >{\RaggedRight\arraybackslash}p{5.1cm}}
+\rowcolor{brjaune}\textbf{Période} & \textbf{Ce qui était prévu / ce qui a réellement eu lieu} & \textbf{Moyen d'évaluation réellement mobilisé} \\
+\midrule
+\endfirsthead
+\rowcolor{brjaune}\textbf{Période} & \textbf{Ce qui était prévu / ce qui a réellement eu lieu} & \textbf{Moyen d'évaluation réellement mobilisé} \\
 \midrule
 \endhead
-Janvier 2026 & Lecture scénario, découpage VP, moodboards & Validation du découpage technique avec la réalisation. \\
-Février 2026 & Blockout 3D, plan d'implantation, choix dispositifs & Revue de blockout ; raccord d'échelle validé. \\
-Mars 2026 & Modélisation \& texturing du décor & Revue d'asset hebdomadaire (checklist matériaux). \\
-Avril 2026 & Optimisation temps réel, éclairage virtuel & Profilage GPU : objectif $\geq$ 24\,fps stable. \\
-Mai 2026 & Intégration nDisplay, tests plateau, inserts & Répétition technique ; PV de test plateau. \\
-23 juin 2026 & Tournage VP (journée plateau) & Visionnage des rushes / raccords le soir même. \\
+Janvier -- février 2026 & \textit{Prévu :} lecture du scénario, découpage VP, moodboards, blockout. \newline \textit{Réel :} lecture et discussions informelles avec la réalisation. Pas de découpage VP formalisé, pas de blockout. & Aucun. Échanges oraux non consignés. \\
+Mars -- avril 2026 & \textit{Prévu :} modélisation, texturing, revues d'assets hebdomadaires. \newline \textit{Réel :} fabrication du décor menée par l'équipe 3D, que j'ai suivie de loin. Aucune revue d'asset formelle n'a été tenue. & Consultation ponctuelle des captures envoyées par l'équipe 3D. \\
+Mai 2026 & \textit{Prévu :} optimisation temps réel, intégration \texttt{nDisplay}, tests plateau, répétition technique. \newline \textit{Réel :} rien de significatif. Aucune session de test sur le plateau n'a été réservée. & Aucun. \\
+1\textsuperscript{re} quinzaine de juin & \textit{Prévu :} pré-light, validation « go / no-go ». \newline \textit{Réel :} prise de conscience du retard ; récupération de la scène, premiers essais d'affichage. & Constat visuel sur le \emph{render node}. \\
+Semaine du 17 juin & \textit{Réel :} rattrapage --- calage de la scène, choix du traitement de sol (drap noir), arbitrages de plan de feu, préparation des accessoires. \textbf{L'essentiel de la préproduction utile s'est concentré ici.} & Essais d'affichage sur le mur ; validation à l'\oe il avec la réalisation. \\
+23 juin (veille) & \textit{Prévu :} répétition technique complète avec l'équipe au complet. \newline \textit{Réel :} \textbf{n'a pas eu lieu.} Le dispositif n'a été éprouvé qu'au matin du tournage. & --- \\
+\textbf{24 juin 2026} & \textbf{Tournage VP} --- une journée plateau. Découverte le matin même du dysfonctionnement du tracking. & Visionnage des rushes le soir même. \\
 \end{longtable}
 \end{center}
 
-% --- Graphique 1 : retroplanning (Gantt) ---
-\begin{center}
-{\small\textbf{\color{brdark}Rétroplanning --- jalons de préproduction}}\\[4pt]
-\resizebox{\textwidth}{!}{%
-\begin{tikzpicture}[x=0.95cm,y=0.95cm,font=\scriptsize]
-  % grille mois
-  \foreach \x/\m in {0/Janvier,2/Février,4/Mars,6/Avril,8/Mai,10/Juin} {
-    \draw[brgrispale] (\x,-0.1) -- (\x,5.4);
-    \node[brgris] at (\x+1,5.65) {\m};
-  }
-  \draw[brgrispale] (12,-0.1)--(12,5.4);
-  % barres : x_debut / x_fin / y / label
-  \foreach \a/\b/\y/\lab in {%
-    0/2/4.8/Découpage \& moodboards,
-    2/4/3.9/Blockout \& plan d'implantation,
-    4/7/3.0/Modélisation \& texturing,
-    6/8/2.1/Optimisation \& éclairage virtuel,
-    8/10/1.2/Intégration nDisplay \& tests plateau,
-    10/11/0.3/Tournage VP} {
-    \node[anchor=east,brdark] at (-0.25,\y+0.27) {\lab};
-    \fill[braccent!75,rounded corners=2pt] (\a,\y) rectangle (\b,\y+0.55);
-  }
-  % jalon tournage 23 juin
-  \draw[brvert,very thick] (10.97,-0.1)--(10.97,5.2);
-  \node[brvert,anchor=south west,font=\tiny] at (10.4,5.2) {\textbf{23 juin}};
-\end{tikzpicture}}
-\end{center}
-
-\vspace{4pt}
-\noindent
-\begin{minipage}[t]{0.5\textwidth}
-\centering
-{\small\textbf{\color{brdark}Revue d'asset --- \% validé}}\\[4pt]
-\begin{tikzpicture}[x=0.045cm,y=0.6cm,font=\scriptsize]
-  \draw[brgrispale] (0,-0.3) -- (0,4.7);
-  \foreach \p in {0,25,50,75,100} {\draw[brgrispale] (\p,-0.3)--(\p,4.7); \node[brgris,font=\tiny] at (\p,-0.55){\p};}
-  \foreach \v/\y/\lab in {100/4/Murs \& couloirs, 90/3/Moquette \& sol, 85/2/Néons (emissive), 80/1/Mobilier, 70/0/Inserts (noms / corps)} {
-    \node[anchor=east,brdark,font=\tiny] at (-3,\y+0.2) {\lab};
-    \fill[brjaune] (0,\y) rectangle (\v,\y+0.4);
-    \node[brdark,font=\tiny,anchor=west] at (\v+2,\y+0.2){\v\,\%};
-  }
-\end{tikzpicture}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.46\textwidth}
-\centering
-{\small\textbf{\color{brdark}Indicateur de performance (fps)}}\\[4pt]
-\begin{tikzpicture}[x=0.85cm,y=0.13cm,font=\scriptsize]
-  % axe
-  \draw[brgris] (-0.3,0) -- (5.6,0);
-  \draw[brgris] (-0.3,0) -- (-0.3,30);
-  \foreach \f in {0,12,24} {\node[brgris,font=\tiny,anchor=east] at (-0.4,\f){\f}; \draw[brgrispale] (-0.3,\f)--(5.4,\f);}
-  % cible 24 fps
-  \draw[brvert,thick,dashed] (-0.3,24) -- (5.4,24);
-  \node[brvert,font=\tiny,anchor=west] at (4.0,26.3){cible 24};
-  % barres fps : x / val / mois
-  \foreach \x/\v/\m in {0/14/Fév, 1/18/Mars, 2/22/Avr, 3/25/Mai, 4/26/Juin} {
-    \fill[braccent!75] (\x,0) rectangle (\x+0.55,\v);
-    \node[brdark,font=\tiny] at (\x+0.27,\v+2.4){\v};
-    \node[brgris,font=\tiny,anchor=north] at (\x+0.27,-0.6){\m};
-  }
-\end{tikzpicture}
-\end{minipage}
-
-\vspace{4pt}
-\begin{center}\footnotesize\textit{Trois outils de suivi de l'avancement remplacent l'ancien tableau de répartition : le rétroplanning (jalons mensuels et date de tournage), la revue d'asset (taux de validation par catégorie de décor) et l'indicateur de performance (montée en cadence du rendu jusqu'à la cible de 24\,fps).}\end{center}
-
-\begin{notebox}[title={Moyens d'évaluation de l'avancée}]
-Le suivi s'appuie sur trois outils : un \textbf{rétroplanning} partagé avec jalons hebdomadaires, des \textbf{revues d'assets} (checklists de validation matériaux / optimisation), et un \textbf{indicateur de performance} chiffré (images par seconde sur le render node) servant de critère « go / no-go » avant le tournage.
+\begin{notebox}[title={Ce que ce calendrier dit du pilotage --- et ce qu'il faut en retenir}]
+Le seul « moyen d'évaluation » réellement à l'\oe uvre sur ce projet a été le \textbf{constat visuel},
+tardif et non consigné. C'est insuffisant, et c'est la principale leçon méthodologique que je tire
+de \textit{NoClip}. Un dispositif de suivi n'a d'intérêt que s'il produit une \textbf{décision} : un
+seuil de performance qui déclenche une optimisation, une date de gel de la scène qui interdit
+les modifications tardives, un test plateau dont l'échec repousse le tournage. Faute de ces
+mécanismes, la préproduction s'est réduite à une accumulation d'intentions, et le tournage a
+absorbé seul la charge de tous les arbitrages qui auraient dû être tranchés en amont. Les trois
+outils de suivi que je m'étais fixés --- rétroplanning à jalons, revue d'assets, indicateur de
+cadence --- restent les bons outils ; je ne les ai simplement pas tenus. Sur un projet suivant, je
+les rendrais \textbf{opposables} : datés, partagés avec la production, et assortis d'un critère
+d'arrêt explicite.
 \end{notebox}
 
 \section{Corrections des plans au sol, plans de feu et découpage technique}
 En tant que SPV, j'ai proposé des corrections aux documents de l'équipe afin de les rendre compatibles avec les contraintes de la production virtuelle. Les modifications, consignées dans le découpage technique partagé, sont justifiées ci-dessous.
 
 \begin{itemize}
-\item \textbf{Découpage technique :} ajout d'une colonne « SPV » précisant pour chaque plan le dispositif (LED / fond vert), les besoins de décor et les opérations virtuelles (ex. \emph{« Rotation nDisplay $-90$\textdegree, prévoir bureau en accessoire »} ; \emph{« changement de décor : moquette au sol, dispositif lumière flickering, couloir Set02 »}).
-\item \textbf{Plans au sol :} repositionnement de l'acteur et des accessoires pour respecter la distance minimale au mur LED ($\geq$ 2--3\,m) et garder le frustum dans les limites du mur.
-\item \textbf{Plans de feu :} intégration des sources DMX pilotées par le moteur, et ajout des sources dédiées à l'éclairage du fond vert pour les plans en dispositif B.
+\item \textbf{Découpage technique :} ajout d'une colonne « SPV » précisant pour chaque plan le dispositif (LED / fond vert), les besoins de décor et les opérations virtuelles (ex. \emph{« Rotation nDisplay $-90$\textdegree, prévoir bureau en accessoire »} ; \emph{« drap noir au sol, limite basse de cadre au-dessus de la ligne de raccord, couloir Set02 »}).
+\item \textbf{Plans au sol :} repositionnement de l'acteur et des accessoires pour respecter la distance minimale au mur LED ($\geq$ 2--3\,m) et garder le frustum dans les limites du mur. Surtout, ajout au plan de la \textbf{position des personnes} --- caméra, régie 3D, perche, scripte, réalisation --- que le plan initial ignorait complètement : avec deux volets latéraux refermés vers l'intérieur, la profondeur exploitable derrière la caméra tombe sous les trois mètres, et cette contrainte détermine autant le cadre que la géométrie du mur.
+\item \textbf{Traitement du sol :} remplacement de la moquette envisagée par un \textbf{grand drap noir mat}, pour supprimer les retours de jaune du mur LED sur le bas de cadre (voir chapitre~2). Conséquence reportée dans le découpage : aucun plan ne cadre le sol physique en amorce.
+\item \textbf{Plans de feu :} \textbf{suppression de tout pilotage dynamique de la lumière}. Le plan de feu initial prévoyait des sources asservies au moteur pour reproduire le clignotement des néons ; il a été ramené à un \textbf{dispositif entièrement fixe}, calé au pré-light (voir §\ref{sec:lumiere_fixe}). Ajout des sources dédiées à l'éclairage du fond vert pour les plans en dispositif B.
 \item \textbf{Découpage / symétrie :} pour la salle des 6 couloirs, recadrage en contre-plongée centrée et axe symétrique, exploitant la rotation du décor virtuel pour décliner les couloirs identiques.
 \end{itemize}
 
 \begin{notebox}[title={Extrait du découpage technique (plans fixes)}]
 \footnotesize
 Plan d'ouverture --- \textbf{Plan Américain}, axe 3/4 par rapport au banc : Ryan assis, genou tremblant, joue avec sa bague ; il se lève, laisse les fleurs, jette son skate et sort. \emph{Note SPV : décor 1 SkatePark, plan vidéo 360, banc et accessoires sur plateau.} \\[4pt]
-Réveil Backrooms --- \textbf{Gros Plan}, plongée directe sur la moquette : le visage entre par le bas du cadre. \emph{Note SPV : moquette au sol, dispositif lumière flickering, couloir Set02.} \\[4pt]
+Réveil Backrooms --- \textbf{Gros Plan}, plongée sur le sol : le visage entre par le bas du cadre. \emph{Note SPV : drap noir au sol, lumière fixe, couloir Set02 --- tenir la limite basse de cadre sur la ligne de raccord virtuel.} \\[4pt]
 Couloir --- \textbf{Plan master}, légère contre-plongée fixe, axe centré, symétrie parfaite. \emph{Note SPV : scène Set01, rotation nDisplay.}
 \end{notebox}
 
@@ -804,7 +810,7 @@ Le tableau ci-dessous reprend le découpage technique partagé avec l'équipe (1
 1 & Plan américain & Fixe, axe 3/4 banc & Sc.1 : Ryan assis, joue avec sa bague, se lève, laisse les fleurs, jette son skate et sort cadre droite. & \textit{Réel} extérieur ; décor skatepark (plate 360), banc + accessoires. \\
 2 & Plan d'insert & Fixe & Ryan prend son skate. & --- \\
 3 & Plan poitrine & Suivi de profil & Sc.1 : entre à grande vitesse, regarde derrière lui, heurte un obstacle invisible, projeté violemment. & Plan B : vue première personne ; début de la chute. \\
-4 & Gros plan & Fixe, plongée sur moquette & Sc.2 : le visage entre par le bas, éclairage jaune, vérifie nez/mains, remarque l'absence de bague, panique, pas de réseau. & \textbf{VP} : moquette au sol, dispositif lumière \emph{flickering}, couloir Set02. \\
+4 & Gros plan & Fixe, plongée sur le sol & Sc.2 : le visage entre par le bas, éclairage jaune, vérifie nez/mains, remarque l'absence de bague, panique, pas de réseau. & \textbf{VP} : drap noir au sol, lumière fixe, couloir Set02. \\
 5 & Plan master & Contre-plongée fixe, axe centré, symétrie & Sc.2 : petite silhouette au fond du couloir, crie « y'a quelqu'un ?! », avance, disparaît. & \textbf{VP} : scène Set01. \\
 6 & Plan amorce & Vue par-dessus l'épaule, fixe & Sc.2 (suite). & \textbf{VP} : rotation \texttt{nDisplay} $-90$\textdegree ; bureau en accessoire. \\
 7 & Plan d'ensemble & Fixe, face à la chaise isolée & Sc.3 : salle des 6 couloirs, bureau moisi, écran encore allumé. & \textbf{VP} : ajouter inserts + créer décor bureau au début. \\
@@ -814,7 +820,7 @@ Le tableau ci-dessous reprend le découpage technique partagé avec l'équipe (1
 11 & Plan large & Champ / contre-champ & Sc.5 : cadavre desséché au fond, Ryan s'arrête, se cache le nez, gourde vide jetée au sol, fuit. & \textbf{VP} : Set03. \\
 12 & --- & Plan de dos, face au mur & Sc.6 : mur raturé et moisissures, il tousse, se fige sur un bruit hors-champ. & \textbf{VP} : revoir les matériaux de moisissures avec l'équipe 3D. \\
 13 & --- & Face caméra & Sc.6 : court vers la caméra, s'arrête, se retourne dos caméra, lève son skate et hurle son défi. & --- \\
-14 & --- & Plongée sol & Sc.6 : ses jambes s'élancent, le pied glisse, il s'effondre, le visage percute la moquette. Noir. & --- \\
+14 & --- & Plongée sol & Sc.6 : ses jambes s'élancent, le pied glisse, il s'effondre, le visage percute le sol. Noir. & --- \\
 15 & Plan poitrine & Plan séquence & Sc.7 : teinte grise du soir, visage au sol, une main se pose sur l'épaule, il pivote et abat son skate sur la silhouette. & \textit{Réel} ; raccord de chute dans le bon sens. \\
 16 & Gros plan & Fixe, contre-plongée visage & Sc.7 : elle s'effondre au premier plan, Ryan lâche son skate. & \textit{Réel}. \\
 17 & Plan d'ensemble & Fixe, large et neutre & Sc.7 : il voit les fleurs et la bague dans la main inanimée, s'effondre, mains ensanglantées. & \textit{Réel}. \\
@@ -832,272 +838,708 @@ Atteindre un rendu temps réel stable ($\geq$ 24\,fps) sur les Backrooms a néce
 \item \textbf{Profilage :} usage de \texttt{stat unit} / \texttt{stat GPU} pour traquer les pics ; suppression des effets superflus hors champ du frustum.
 \end{itemize}
 
-\section{Plan de feu --- projecteurs pilotés en DMX par le moteur}
-Réalisé avec le chef électricien, ce plan de feu distingue les sources « classiques » (clé, contre, ambiance) des sources \textbf{pilotées en DMX par le moteur temps réel} (en orange), notamment pour reproduire le \emph{flicker} des néons synchronisé à l'image.
+\section{Plan de feu --- dispositif fixe}
+\label{sec:lumiere_fixe}
+Réalisé avec le chef électricien, ce plan de feu est celui d'un \textbf{dispositif entièrement fixe} :
+toutes les sources sont posées, orientées et calées au pré-light, puis ne bougent plus de la
+journée. Aucune source n'est asservie au moteur temps réel, et \textbf{aucun effet de
+\emph{flicker} n'est préconisé}. Ce choix n'est pas un renoncement technique par défaut de
+moyens : il découle de trois constats.
+
+\begin{itemize}
+\item \textbf{Le clignotement appartient au décor, pas au plateau.} Les néons vus à l'image sont
+des \emph{emissive materials} du décor virtuel, affichés par le mur LED. Leurs variations
+d'intensité sont déjà dans l'image ; les rejouer une seconde fois sur des projecteurs physiques
+ajoute une source de désynchronisation sans rien gagner en photoréalisme.
+\item \textbf{Un raccord stable prime sur un effet.} Sur des plans courts et majoritairement fixes,
+une lumière physique qui varie complique le raccord d'un plan à l'autre et la vie de l'étalonnage.
+Un pré-light figé garantit qu'une prise 1 et une prise 8 sont superposables.
+\item \textbf{Le coût de mise en \oe uvre est disproportionné.} Un pilotage \emph{in-engine} de la
+lumière suppose une chaîne supplémentaire (pont réseau, adressage, programmation, tests) à
+faire tenir dans un projet dont la préproduction était déjà en retard. Le rapport bénéfice~/~risque
+n'était pas défendable.
+\end{itemize}
 
 \begin{center}
 \begin{tikzpicture}[scale=1.0, every node/.style={font=\scriptsize}]
-  \fill[brgrispale] (0,0) rectangle (12,7);
-  \draw[brdark] (0,0) rectangle (12,7);
-  % mur LED en haut
-  \fill[brdark] (1,6.3) rectangle (11,6.7); \node[white] at (6,6.5){MUR LED};
+  \fill[brgrispale] (0,0) rectangle (12,7.4);
+  \draw[brdark] (0,0) rectangle (12,7.4);
+  % mur LED en haut + volets
+  \fill[brdark] (2.6,6.7) rectangle (9.4,7.05); \node[white] at (6,6.87){MUR LED (centre)};
+  \fill[brdark!75] (1.35,5.55) -- (2.6,6.7) -- (2.6,7.05) -- (1.1,5.8) -- cycle;
+  \fill[brdark!75] (10.65,5.55) -- (9.4,6.7) -- (9.4,7.05) -- (10.9,5.8) -- cycle;
+  \node[brgris,font=\tiny,rotate=42] at (1.7,6.55){volet G};
+  \node[brgris,font=\tiny,rotate=-42] at (10.3,6.55){volet D};
+  % drap noir
+  \fill[brdark!92] (1.5,3.55) -- (10.5,3.55) -- (10.6,5.6) -- (9.4,6.68) -- (2.6,6.68) -- (1.4,5.6) -- cycle;
+  \node[white,font=\tiny] at (6,3.85){drap noir au sol};
   % acteur
-  \filldraw[brbleu] (6,3.2) circle (0.22); \node[brbleu] at (6,2.75){Ryan};
+  \filldraw[brjaune,draw=brdark,thick] (6,5.25) circle (0.22); \node[brjaune] at (6,4.82){Ryan};
   % camera
-  \draw[brdark,thick] (6,0.6)--(5.7,1.2)--(6.3,1.2)--cycle; \node at (6,0.35){Caméra};
-  % sources classiques
-  \foreach \x/\lab in {2/Clé, 10/Contre} {
-    \filldraw[brjaune!80!black] (\x,4.4) rectangle (\x+0.5,4.7);
-    \draw[braccent,->] (\x+0.25,4.4)--(6,3.4);
-    \node at (\x+0.25,4.95){\lab};
-  }
-  % ambiance
-  \filldraw[brjaune!80!black] (1.8,1.6) rectangle (2.3,1.9); \node at (2.05,1.35){Ambiance};
-  \draw[braccent,->] (2.05,1.9)--(5.6,3.0);
-  % sources DMX (flicker neons) en orange
-  \foreach \x in {3.5,6,8.5} {
-    \filldraw[orange] (\x,5.5) rectangle (\x+0.6,5.85);
-    \draw[orange,dashed,->] (\x+0.3,5.5)--(\x+0.3,4.0);
-  }
-  \node[orange] at (6,5.2){néons pilotés DMX (flicker)};
+  \draw[brdark,thick,fill=white] (6,0.6)--(5.7,1.25)--(6.3,1.25)--cycle; \node at (6,0.33){Caméra (sur pied)};
+  % sources fixes
+  \filldraw[brjaune!80!black,draw=brdark] (1.55,2.55) rectangle (2.35,2.9);
+  \node at (1.95,2.25){Barre LED --- clé (fixe)};
+  \draw[braccent,->,thick] (2.35,2.9)--(5.72,5.05);
+  \filldraw[brjaune!80!black,draw=brdark] (9.65,2.55) rectangle (10.45,2.9);
+  \node at (10.05,2.25){Panneau LED --- débouché (fixe)};
+  \draw[braccent,->,thick] (9.65,2.9)--(6.28,5.05);
+  \filldraw[brjaune!80!black,draw=brdark] (5.55,1.95) rectangle (6.45,2.3);
+  \node at (6,1.68){Plafonnier softbox (fixe, en hauteur)};
+  \draw[braccent,->,thick] (6,2.3)--(6,4.95);
+  % annotation
+  \node[brvert!60!black,font=\scriptsize\bfseries,align=center] at (6,3.15)
+    {Aucune source pilotée --- aucun \emph{flicker} --- calage figé au pré-light};
   % legende
-  \begin{scope}[shift={(0.5,-1.1)}]
-    \filldraw[brjaune!80!black] (0,0) rectangle (0.4,0.28); \node[anchor=west] at (0.5,0.14){Sources classiques (clé / contre / ambiance)};
-    \filldraw[orange] (6,0) rectangle (6.4,0.28); \node[anchor=west] at (6.5,0.14){Sources pilotées DMX par le moteur};
+  \begin{scope}[shift={(0.5,-1.15)}]
+    \filldraw[brjaune!80!black,draw=brdark] (0,0) rectangle (0.4,0.28);
+    \node[anchor=west] at (0.5,0.14){Source LED fixe (clé / débouché / plafonnier)};
+    \filldraw[brdark!92] (6.6,0) rectangle (7.0,0.28);
+    \node[anchor=west] at (7.1,0.14){Drap noir (sol, anti-reflet)};
   \end{scope}
 \end{tikzpicture}
 \end{center}
+\begin{center}\footnotesize\textit{Plan de feu retenu et effectivement monté : trois sources fixes (clé latérale, débouché
+opposé, plafonnier diffus), calées une fois au pré-light. Le mur LED fournit l'ambiance jaune et
+les retours colorés sur l'acteur ; le drap noir empêche la reprise de ce jaune par le sol.}\end{center}
 
-\subsection{Protocole DMX/Art-Net --- pilotage de l'éclairage par le moteur temps réel}
+\subsection{Piste étudiée puis écartée --- pilotage de la lumière par le moteur (DMX / Art-Net)}
 \label{sec:dmx_artnet}
-Plutôt que de détailler à nouveau la norme, je m'en tiens à l'essentiel et confirme les chiffres-clés d'après le mémoire de référence d'Anton Belyakov \autocite{belyakov2023} : le \textbf{DMX512} (depuis 1986) transporte 512 canaux 8\,bits (0--255) sur RS-485 / XLR5 à $\approx$\,44\,trames/s, chaque projecteur lisant ses canaux à partir de son adresse de départ ; \textbf{Art-Net} encapsule ces trames sur Ethernet (UDP, port 6454) pour franchir la limite des univers et câbler en étoile. Sur \textit{NoClip}, la chaîne est donc : Unreal Engine~$\rightarrow$ Art-Net $\rightarrow$ \texttt{nodle} USB-DMX $\rightarrow$ DMX512 filaire $\rightarrow$ projecteurs.
+Le pilotage de l'éclairage physique \emph{depuis} le moteur temps réel a été instruit sérieusement
+en préproduction, puis \textbf{écarté}. J'en conserve ici la synthèse, parce que le raisonnement qui
+mène à l'abandon fait autant partie du travail de supervision que la solution retenue --- et parce
+que le dispositif reste pertinent sur d'autres formes de projets.
 
-\subsection{Pixel-mapping --- du contenu vidéo vers la lumière}
-Le \textbf{pixel-mapping} consiste à piloter un ensemble de sources lumineuses (barres LED, panneaux, pixels adressables) comme s'ils formaient un écran : chaque source devient un « pixel » dont la couleur et l'intensité sont pilotées par un flux vidéo ou une texture, transmis en DMX/Art-Net \autocite{belyakov2023}. Là où l'adressage DMX classique règle des projecteurs un à un, le pixel-mapping projette une \emph{image} sur la nappe de sources et autorise des motifs animés (vagues, balayages, dégradés) calculés par le moteur. Sur \textit{NoClip}, ce principe a guidé le traitement des néons des Backrooms : plutôt que d'animer chaque tube isolément, une courbe de \emph{flicker} commune a été « mappée » sur la rangée de barres LED depuis Unreal Engine, de sorte que les extinctions et sursauts lumineux se propagent le long du couloir de manière cohérente avec l'image affichée sur le mur LED. Le pixel-mapping fait ainsi le pont entre le décor virtuel (mur LED) et la lumière physique du plateau, tous deux nourris par la même source temps réel.
-
-\begin{notebox}[title={Implémentation du flicker sur \textit{NoClip}}]
-Le plugin DMX natif d'Unreal Engine~5 permet de piloter des canaux DMX directement depuis le Sequencer ou les Blueprints. Sur \textit{NoClip}, les courbes de \emph{flicker} (oscillations d'intensité des néons synchronisées à l'image) ont été programmées dans UE5 et envoyées via le \texttt{nodle} USB-DMX. Le signal sortait en DMX512 filaire vers les barres LED pilotables du plateau. Ce flux étant synchronisé au rendu sur la même horloge machine, le flicker à l'image et la lumière physique sur le visage de Ryan restaient parfaitement cohérents --- avantage décisif du pilotage \emph{in-engine} par rapport à une console lumière autonome.
+\begin{notebox}[title={Ce qu'il aurait fallu mettre en place}]
+\footnotesize
+D'après le mémoire de référence d'Anton Belyakov \autocite{belyakov2023} : le \textbf{DMX512}
+(depuis 1986) transporte 512 canaux 8\,bits (0--255) sur RS-485 / XLR5 à $\approx$\,44\,trames/s,
+chaque projecteur lisant ses canaux à partir de son adresse de départ ; \textbf{Art-Net} encapsule
+ces trames sur Ethernet (UDP, port 6454) pour franchir la limite des univers et câbler en étoile.
+La chaîne envisagée sur \textit{NoClip} était : Unreal Engine (plugin DMX natif, courbes
+programmées au \emph{Sequencer}) $\rightarrow$ Art-Net $\rightarrow$ convertisseur USB-DMX
+$\rightarrow$ DMX512 filaire $\rightarrow$ barres LED du plateau. Le \textbf{pixel-mapping} ---
+piloter une nappe de sources comme les pixels d'un écran, de sorte qu'une extinction se
+\emph{propage} le long du couloir en cohérence avec l'image affichée --- en était l'application
+visée pour les néons des Backrooms.
 \end{notebox}
 
+\begin{infobox}[title={Pourquoi cette piste a été abandonnée}]
+Trois raisons, par ordre de poids. \textbf{(1)~Dramaturgie :} la séquence Backrooms repose sur
+une menace \emph{lente} ; un clignotement appuyé tire le film vers un registre d'épouvante
+tape-à-l'\oe il qui contredit la note d'intention, et le calage « confort visuel » de l'effet aurait
+mangé du temps de plateau. \textbf{(2)~Robustesse :} une chaîne supplémentaire, c'est un point
+de panne supplémentaire un jour de tournage unique --- arbitrage qui s'est révélé prophétique,
+puisque c'est le tracking qui a lâché. \textbf{(3)~Maturité de la préproduction :} programmer et
+tester des courbes DMX suppose une scène gelée et une session plateau dédiée, deux conditions
+qui n'étaient pas réunies (voir le calendrier réel, §~3.7). Retenir cette piste aurait été un
+engagement que je n'étais pas en mesure de tenir.
+
+\medskip
+\textbf{Dans quel cas la reprendre :} un décor où la lumière physique doit \emph{jouer} (concert,
+véhicule en \emph{rouling}, orage, gyrophare), c'est-à-dire lorsque l'effet lumineux porte lui-même
+une part de la narration et ne peut pas être délégué au mur LED.
+\end{infobox}
 
 %====================================================================
 \chapter{Analyses critiques après fabrication}
 %====================================================================
-Ce chapitre dresse le bilan de la fabrication. Il s'ouvre sur quelques indicateurs chiffrés, puis livre une analyse qualitative des images, une auto-analyse de la gestion d'équipe et une comparaison du calendrier prévu et réalisé.
+Ce chapitre est celui que j'ai réécrit en dernier, et c'est le seul du dossier dont je puisse dire
+qu'il est entièrement de première main. Les chapitres~2 et~3 restituent des documents de
+préproduction ; celui-ci confronte ces documents à ce qui s'est réellement passé le 24~juin~2026.
+L'écart est important, et il ne joue pas en ma faveur. J'ai fait le choix de ne pas le lisser :
+un dossier professionnel qui se contenterait de valider ses propres prévisions n'apprendrait
+rien à personne, et surtout pas à moi.
 
 \begin{center}
 \small
-\begin{tabularx}{\textwidth}{Y >{\RaggedLeft\arraybackslash}p{4.0cm}}
+\begin{tabularx}{\textwidth}{Y >{\RaggedLeft\arraybackslash}p{4.6cm}}
 \toprule
 \rowcolor{brjaune}\textbf{Indicateur} & \textbf{Valeur} \\
 \midrule
-Durée tournée en production virtuelle & $\approx$ 3\,min\,17\,s (sur 5\,min) \\
-Nombre de plans supervisés en VP & 13 plans (sur 17) \\
-Dispositifs employés & Plateau LED + fond vert \\
+Séquence tournée en production virtuelle & \textbf{Backrooms uniquement} \\
+Durée concernée & $\approx$ 3\,min\,17\,s (sur 5\,min) \\
+Séquences hors VP & Skatepark --- tournées \textbf{en parallèle}, en décor réel, par une autre équipe \\
 Journée(s) de tournage VP & 1 journée plateau \\
-Objectif de performance rendu & $\geq$ 24\,fps --- \textbf{atteint} \\
-Plans nécessitant une reprise compositing lourde & 2 plans (moiré / sous-exposition) \\
+Dispositifs employés & Plateau LED + fond vert (inserts) \\
+Tracking caméra & \textbf{Hors service} --- désactivé toute la journée \\
+Gestion du frustum & \textbf{Manuelle}, par l'opératrice 3D \\
+Amplitude de mouvement caméra possible & Fixe à légèrement panoramique \\
+Éclairage plateau & Fixe --- aucun effet dynamique \\
+Point nodal mesuré & \textbf{Non systématiquement} \\
+Fin de journée & Plans du jour bouclés, \textbf{légèrement en avance} \\
 \bottomrule
 \end{tabularx}
 \end{center}
 
-
 \section{Analyse globale des images tournées en production virtuelle}
-Au visionnage du montage, les séquences Backrooms tiennent leur promesse de \textbf{photoréalisme} sur la majorité des plans. Les plans tournés en plateau LED (réveil, salle des 6 couloirs) bénéficient d'un \textbf{raccord lumière irréprochable} : le jaune des néons baigne réellement le visage de Ryan, les reflets dans ses yeux et sur la moquette sont captés in-camera, et l'illusion de profondeur du couloir fonctionne. Le respect des \textbf{ambitions artistiques initiales} est globalement atteint : l'atmosphère pesante, monochrome et claustrophobe décrite dans la note d'intention est bien présente, et la troisième personne permet, comme voulu, de lire la peur sur le visage de l'acteur.
+Au visionnage, les séquences Backrooms tiennent une partie de leur promesse. Le
+\textbf{raccord lumière} est la réussite la moins discutable du dispositif : le jaune du décor
+virtuel baigne réellement le visage de l'acteur, les retours colorés sur la peau et les reflets dans
+les yeux sont captés \emph{in-camera}, et le \textbf{drap noir} au sol fait exactement le travail
+qu'on attendait de lui --- il maintient le bas de cadre dans des noirs tenus au lieu de renvoyer le
+mur. Le pari du plan de feu fixe est également validé : les prises sont superposables, l'étalonnage
+n'a pas eu à rattraper de dérive, et l'absence de \emph{flicker} ne manque à aucun plan. Sur ce
+point précis, la simplification décidée en amont était la bonne décision.
 
-Les limites constatées sont honnêtes : sur deux ou trois plans larges, un léger \textbf{moiré} est apparu là où la distance au mur LED n'a pas pu être respectée, corrigé partiellement à l'étalonnage. Le \emph{flicker} des néons, très réussi dramaturgiquement, a demandé un calage fin pour ne pas devenir épileptique. Dans l'ensemble, le rendu sert le récit sans jamais trahir l'effet « décor » --- objectif premier de la supervision.
+Le reste de l'analyse est moins flatteur, et tient à une seule cause : la \textbf{défaillance du
+tracking}. Privé de l'asservissement du frustum à la caméra, le dispositif LED perd ce qui fait
+sa valeur propre --- la parallaxe. Ce qui restait était, techniquement, un très grand fond
+lumineux. Les plans sont donc \textbf{fixes à légèrement panoramiques}, l'opératrice 3D
+recalant le frustum à la main entre les prises. Le résultat est cohérent et exploitable, mais il
+faut nommer ce qui a été perdu : aucun mouvement d'appareil ne vient « creuser » le décor, et
+la mise en scène s'en trouve mécaniquement figée. Le film y gagne une forme de fixité
+oppressante qui, par chance, ne dessert pas les Backrooms ; c'est un heureux hasard, pas un
+parti pris.
+
+\section{Analyse qualitative des images de l'environnement virtuel}
+Sur le plan strictement qualitatif de l'environnement 3D, les \textbf{matériaux} restent la
+meilleure part du décor : moquette usée, papier peint jauni, moisissures --- c'est le détail des
+surfaces qui « vend » le réalisme des Backrooms, et l'éclairage virtuel (GI Lumen) produit un
+grain de lumière crédible. Le parti pris d'un jaune monochrome a été tenu sans virer au cliché,
+avec des variations subtiles de saturation d'une salle à l'autre.
+
+Les points perfectibles sont ceux d'un décor fabriqué sans allers-retours de validation : quelques
+répétitions de texture visibles sur les longs couloirs (\emph{tiling}), et une pauvreté de
+l'animation des éléments censés « vivre » (les moisissures ne palpitent pas). Ces défauts
+auraient été relevés et corrigés par les revues d'asset que je n'ai pas tenues (§~3.7). Ils ne
+relèvent pas d'un manque de compétence de l'équipe 3D, mais d'un manque de \emph{regard
+extérieur régulier} --- c'est-à-dire de mon absence.
+
+\section{Analyse de la profondeur de champ --- le point nodal non mesuré}
+C'est le reproche technique le plus précis que je m'adresse. Sur un plateau LED, la profondeur
+de champ n'est pas un paramètre d'ambiance : c'est l'outil qui empêche le mur de se lire comme
+un mur. Or l'exigence n'a pas été tenue, parce que le \textbf{point nodal} de l'optique n'a
+\textbf{pas été mesuré systématiquement}.
+
+\begin{techbox}[title={Pourquoi cela compte}]
+Le \emph{point nodal} (plus exactement le centre d'entrée de la pupille) est le point de l'optique
+autour duquel la caméra doit pivoter pour que la perspective du fond reste juste. Deux
+conséquences en découlent sur un plateau LED :
+\begin{itemize}
+\item \textbf{Justesse du frustum.} Le rendu \texttt{nDisplay} calcule la perspective depuis ce
+point. S'il est mal renseigné, la géométrie affichée est légèrement fausse : les lignes de fuite du
+couloir ne tombent pas où elles devraient, et l'\oe il le perçoit comme un décalage diffus, même
+sans savoir le nommer.
+\item \textbf{Cohérence de la profondeur de champ.} La distance réelle caméra~$\rightarrow$~mur
+sert de référence pour décider où placer le plan de netteté et quelle ouverture retenir. Sans
+mesure fiable de l'origine, on travaille au jugé --- et j'ai travaillé au jugé.
+\end{itemize}
+\end{techbox}
+
+Concrètement, faute d'un relevé rigoureux, l'ouverture a été choisie « à vue » plutôt que
+calculée : sur plusieurs plans, l'arrière-plan est trop net pour un décor censé fuir vers l'infini, et
+la texture du mur LED remonte davantage qu'elle ne le devrait. Ce n'est pas une fatalité du
+dispositif, c'est un défaut de méthode. La correction est simple et je la formule ici comme une
+règle pour la suite : \textbf{aucun plan LED ne se tourne sans un relevé écrit du point nodal de
+l'optique montée, de la distance au mur et de l'ouverture retenue}. Trois valeurs, une ligne dans
+le rapport image, dix secondes par changement d'optique.
+
+\section{Auto-analyse de la gestion des ressources humaines et techniques}
+Je dois commencer par le point qui conditionne tout le reste : \textbf{je me suis peu investi dans
+ce projet}, pour des raisons personnelles qui n'ont pas leur place dans ce dossier, mais dont je
+ne peux pas prétendre qu'elles n'ont pas eu de conséquences professionnelles. Elles en ont eu,
+et il serait malhonnête de les habiller en contretemps techniques.
+
+\begin{notebox}[title={Ce que je n'ai pas fait}]
+\begin{itemize}
+\item \textbf{Je n'ai pas coordonné.} Il n'y a pas eu de réunion de préparation dédiée à la VP,
+pas de compte rendu écrit, pas de circulation organisée de l'information entre la 3D,
+l'image et la réalisation. Chacun a travaillé avec ce qu'il avait.
+\item \textbf{Je n'ai émis aucune préconisation préventive.} Le r\^ole d'un superviseur de
+production virtuelle est d'\emph{anticiper} --- signaler ce qui va coincer avant que cela coince.
+Je n'ai transmis aucune recommandation en amont sur le dispositif de tournage : ni sur la
+calibration, ni sur les marges à prévoir, ni sur le plan de repli en cas de défaillance.
+\item \textbf{J'ai tout fait au dernier moment.} L'essentiel de la préparation utile s'est concentré
+sur la dernière semaine (§~3.7). Le reste du calendrier est un calendrier d'intentions.
+\item \textbf{Je suis arrivé sur le plateau sans préparation.} Je découvrais le matin même l'état
+réel du dispositif. Un superviseur qui découvre son plateau en même temps que son équipe n'a
+plus rien à superviser : il constate.
+\end{itemize}
+\end{notebox}
+
+\subsection{L'incident du tracking et l'arbitrage curatif}
+Le matin du tournage, le \textbf{tracking caméra ZEISS CinCraft Scenario} présentait des
+dysfonctionnements. Le plateau était soumis à des \textbf{conditions climatiques extrêmes}
+(épisode de forte chaleur), et par précaution --- et faute de temps pour un diagnostic sérieux ---
+la décision a été prise de \textbf{laisser le tracker désactivé toute la journée}, en renvoyant le
+diagnostic à plus tard. \emph{À ce jour, aucune cause n'a été formellement établie.}
+
+La conduite tenue ensuite est, elle, défendable. Plutôt que de tenter une réparation à l'aveugle
+en immobilisant l'équipe, j'ai proposé de basculer sur un dispositif dégradé mais maîtrisé :
+\textbf{frustum recalé manuellement} par l'opératrice 3D entre les prises, \textbf{caméra sur
+pied}, découpage ramené à des \textbf{plans fixes à légèrement panoramiques}. Le tournage
+s'est déroulé sans temps mort et les plans de la journée ont été bouclés \textbf{légèrement en
+avance}.
+
+\begin{infobox}[title={Ce que je retiens de cet épisode --- sans me féliciter}]
+Le choix curatif était le bon, et il n'a coûté aucun retard. Mais je refuse de le compter comme
+une réussite de supervision, pour une raison simple : \textbf{il n'a rien coûté parce que le
+découpage se prêtait déjà à des plans fixes}. Si la réalisation avait prévu des travellings ou des
+mouvements d'appareil appuyés, la même défaillance aurait fait sauter la journée, et je
+n'aurais eu aucun plan de repli à proposer. J'ai été \textbf{chanceux}, pas prévoyant. La leçon
+n'est donc pas « savoir improviser », c'est : \emph{un dispositif dont la défaillance d'un seul
+maillon annule la valeur ajoutée doit avoir un mode dégradé écrit, testé et chiffré avant le jour
+J}. Sur \textit{NoClip}, ce document n'existait pas ; je l'aurais rédigé en une page.
+\end{infobox}
+
+\subsection{Adéquation du dispositif au projet --- une question mal posée en amont}
+L'analyse la plus utile que je tire de \textit{NoClip} ne porte ni sur le tracking ni sur le calendrier,
+mais sur le \textbf{choix même du dispositif}. Avec le recul, je considère que \textit{NoClip} ne
+se prêtait pas à un tournage sur plateau avec régie et gros moyens.
 
 \begin{center}
 \small
-\begin{longtable}{>{\RaggedRight\arraybackslash}p{3.6cm} >{\RaggedRight\arraybackslash}p{5.0cm} >{\RaggedRight\arraybackslash}p{5.0cm}}
-\rowcolor{brjaune}\textbf{Séquence VP} & \textbf{Réussite} & \textbf{Point perfectible} \\
+\begin{tabularx}{\textwidth}{>{\bfseries}p{3.5cm} Y Y}
+\toprule
+\rowcolor{brjaune}\textbf{Critère} & \textbf{Ce que suppose un plateau VP avec régie} & \textbf{Ce dont \textit{NoClip} avait réellement besoin} \\
 \midrule
-\endhead
-Réveil (couloir Set02) & Reflets jaunes captés in-camera sur le visage ; immersion immédiate. & Léger moiré sur un plan large (distance au mur réduite). \\
-Labyrinthe (montage) & Sentiment de boucle réussi grâce aux déclinaisons d'un même module. & Tiling de moquette visible sur deux plans longs. \\
-Salle des noms (insert) & Détourage propre, intégration des inscriptions crédible. & Recoloration des bords à affiner sur un plan. \\
-Salle du corps & Matière du cadavre et moisissures convaincantes. & Animation « palpitante » des moisissures trop discrète. \\
-Salle des 6 couloirs & Symétrie parfaite, flicker DMX très dramatique. & Calage du flicker à doser (confort visuel). \\
-\end{longtable}
+Nature des plans & Mouvements d'appareil, parallaxe, interaction acteur/décor & Plans fixes, cadres symétriques, durée courte des séquences truquées \\
+Taille d'équipe & Équipe étoffée, postes spécialisés (LED, tracking, régie) & Petite équipe polyvalente \\
+Répartition de l'effort & Charge concentrée sur le plateau & Charge concentrée en post-production \\
+Coût dominant & Masse salariale d'une journée plateau & Temps de fabrication et de compositing \\
+\bottomrule
+\end{tabularx}
 \end{center}
 
-\section{Analyse qualitative des images de l'environnement virtuel}
-Sur le plan strictement qualitatif de l'environnement 3D : les \textbf{matériaux} (moquette usée, papier peint jauni, moisissures) sont la grande réussite du décor --- c'est le détail des surfaces qui « vend » le réalisme des Backrooms. L'\textbf{éclairage} virtuel (Lumen) produit une GI cohérente et un grain de lumière crédible. Les \textbf{points perfectibles} concernent quelques répétitions de texture visibles sur les longs couloirs (tiling) et une légère pauvreté de l'animation des éléments « vivants » (moisissures censées « palpiter »), qui aurait gagné à plus de mouvement subtil. La symétrie de la salle hexagonale, en revanche, est exactement conforme à l'intention. Sur le plan colorimétrique, le parti pris d'un jaune monochrome a été tenu sans virer au cliché : l'ajout de variations subtiles de saturation entre les salles (plus délavé près du cadavre, plus saturé dans la salle des 6 couloirs) évite la lassitude de l'\oe il tout en préservant l'unité d'ambiance. Le travail sur les \textbf{néons} --- légèrement désynchronisés les uns des autres --- est l'un des détails qui contribuent le plus à l'inquiétude diffuse recherchée.
+Le projet appelait une \textbf{économie de moyens} --- petite équipe, composante post-production
+plus importante --- et non l'inverse. La production a payé ce choix technique : le devis du
+chapitre~2 le montre en creux, l'essentiel du budget part en \textbf{masse salariale de plateau}
+pour un dispositif dont on n'a finalement exploité ni la parallaxe, ni le pilotage lumière, ni la
+liberté de mouvement. C'est un \textbf{surcoût inutile en termes d'équipe}, et il m'incombe :
+c'est précisément le genre d'arbitrage qu'un superviseur doit rendre \emph{avant} qu'il ne coûte,
+et que je n'ai pas rendu.
 
-\section{Auto-analyse de la gestion des ressources humaines}
-Sur le volet humain, je tire un bilan globalement positif assorti d'axes de progrès lucides. \textbf{Points forts :} j'ai su instaurer un dialogue régulier avec la réalisation et la déco, traduire des contraintes techniques (distance au mur, frustum) en consignes simples et actionnables, et tenir des revues d'assets qui ont évité les dérives. La mutualisation de postes (DOP, machiniste) avec l'équipe film a bien fonctionné.
-
-\textbf{Axes de progrès :} j'ai parfois sous-estimé le temps de \emph{calibration} le jour J, ce qui a mis l'équipe sous tension en début de journée ; j'aurais dû prévoir un créneau de calibration plus généreux et un référent tracking dédié dès l'arrivée. J'ai également constaté que certaines consignes 3D auraient gagné à être documentées par écrit plus tôt (fiches de validation), plutôt que transmises à l'oral. Ces apprentissages nourrissent directement mon projet professionnel.
-
-
-En relisant cette expérience avec la grille \emph{situation / tâche / action / résultat}, je retiens un cas révélateur : confronté le matin du tournage à un retard de calibration du tracking (situation), ma tâche était de tenir le planning sans sacrifier la qualité ; j'ai choisi de réorganiser l'ordre des plans pour tourner d'abord les inserts en fond vert pendant que l'ingénierie LED finalisait la calibration (action), ce qui a permis de rattraper le retard sans temps mort (résultat). Cet épisode m'a appris la valeur d'un \textbf{plan B séquencé} et d'une communication calme sous pression. Plus largement, j'ai mesuré combien mon rôle relève autant de la \textbf{traduction} (rendre une contrainte technique intelligible pour chaque corps de métier) que de la \textbf{décision} technique pure.
+\begin{infobox}[title={Corollaire : la double casquette réalisation / supervision VFX}]
+Sur un projet de cette taille, où le plateau virtuel s'avère presque superflu, la fonction de
+superviseur de production virtuelle telle que je l'ai occupée n'a pas de contenu suffisant pour
+justifier un poste dédié. Ce dont \textit{NoClip} avait besoin, c'est d'une personne portant une
+\textbf{double casquette metteur en scène / superviseur VFX} : quelqu'un qui décide du
+découpage \emph{en connaissant} le coût de fabrication de chaque plan, et qui arbitre en continu
+entre ce qui se tourne et ce qui se fabrique. Le cloisonnement entre une réalisation qui écrit et
+une supervision qui exécute est ce qui a permis à un dispositif surdimensionné d'être retenu
+sans que personne ne le remette en cause. C'est aussi, très concrètement, la direction dans
+laquelle je souhaite faire évoluer mon propre profil (chapitre~5).
+\end{infobox}
 
 \section{Comparaison calendrier initial / délais réellement tenus}
 \begin{center}
 \small
-\begin{tabularx}{\textwidth}{>{\bfseries}p{2.6cm} >{\RaggedRight\arraybackslash}p{4.4cm} >{\RaggedRight\arraybackslash}p{5.6cm}}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{2.6cm} >{\RaggedRight\arraybackslash}p{4.2cm} >{\RaggedRight\arraybackslash}p{5.8cm}}
 \toprule
-\rowcolor{brjaune}\textbf{Phase} & \textbf{Prévu / Réel} & \textbf{Écart \& justification} \\
+\rowcolor{brjaune}\textbf{Phase} & \textbf{Prévu / Réel} & \textbf{Écart \& cause} \\
 \midrule
-Blockout & Fév. / Fév. & Conforme. \\
-Modélisation & Mars / Mars--début avril & \textbf{+1 sem.} : ajout d'inserts (mur des noms) non prévus initialement. \\
-Optimisation & Avril / Avril & Conforme, objectif fps atteint. \\
-Intégration nDisplay & Mai / Mi-mai & \textbf{Léger retard} : dépendant de la disponibilité du studio pour un test. \\
-Tournage & 23 juin / 23 juin & Conforme à la date plateau (23 juin 2026). \\
+Découpage VP & Janv. / \textbf{jamais formalisé} & Aucun document de découpage VP n'a été produit en propre. Les notes SPV ont été portées tardivement sur le découpage de l'équipe. \\
+Blockout & Fév. / \textbf{non réalisé} & Étape sautée. Le raccord d'échelle n'a donc jamais été validé avant le plateau. \\
+Modélisation \& texturing & Mars--avril / Mars--juin & Mené par l'équipe 3D, sans revue d'asset de ma part. \\
+Optimisation & Avril / \textbf{juin} & Repoussée faute de session de test. La cadence n'a été vérifiée qu'en fin de parcours. \\
+Tests plateau & Mai / \textbf{aucun} & Aucune session de test n'a été réservée. Première mise en \oe uvre réelle = le matin du tournage. \\
+Répétition technique (veille) & 23 juin / \textbf{n'a pas eu lieu} & C'est l'écart le plus lourd : il explique que le dysfonctionnement du tracking ait été découvert le jour J. \\
+Tournage & 24 juin / 24 juin & \textbf{Tenu}, et bouclé légèrement en avance --- avec un dispositif dégradé. \\
 \bottomrule
 \end{tabularx}
 \end{center}
-Les écarts, modestes, s'expliquent essentiellement par l'\textbf{ajout d'inserts} en cours de route et par la \textbf{dépendance au planning du studio}. Ils ont été absorbés grâce à la marge ménagée en optimisation, sans repousser la date de tournage --- preuve de la robustesse du rétroplanning et de l'intérêt des jalons hebdomadaires.
 
-%====================================================================
-\chapter{Synthèse des bonnes pratiques de tournage en fond vert}
-%====================================================================
+La date de tournage a été tenue, mais il faut dire pourquoi : non pas parce que le rétroplanning
+était robuste, mais parce qu'elle était \textbf{imposée} par la réservation du plateau. Un jalon
+qu'on ne peut pas déplacer n'est pas un jalon tenu, c'est un mur. Toutes les phases amont ont
+absorbé le retard jusqu'à disparaître, et c'est le tournage qui a hérité de la totalité des
+arbitrages non rendus. La leçon est structurelle : \emph{le seul jalon qui protège réellement une
+journée de plateau est la répétition technique de la veille} --- c'est le seul dont l'échec laisse
+encore le temps de réagir, et c'est exactement celui que j'ai sacrifié.
 
-\section{Réglages caméra adaptés au fond vert / bleu}
-\begin{techbox}[title={Réglages recommandés}]
-\begin{itemize}
-\item \textbf{Codec / échantillonnage :} privilégier le \textbf{4:2:2 10\,bits} minimum (idéalement RAW), pour un détourage propre des contours et des cheveux.
-\item \textbf{Obturation :} 1/50\,s à 25\,fps pour éviter le flou de mouvement qui complique le keying.
-\item \textbf{Sensibilité :} ISO natif pour minimiser le bruit, ennemi numéro un du keyer.
-\item \textbf{Diaphragme :} ne pas trop fermer pour garder le sujet net, mais conserver de la marge pour séparer sujet et fond.
-\item \textbf{Balance des blancs :} neutre et fixe, calée sur charte, pour ne pas teinter le vert.
-\item \textbf{Choix vert ou bleu :} \textbf{vert} pour un sujet en vêtements sombres (cas de Ryan, veste noire) car plus lumineux et moins bruité ; bleu si le costume comporte du vert.
-\end{itemize}
-\end{techbox}
+\section{Proposition --- Dispositif D : tournage hybride assisté par IA générative}
+Le chapitre~2 présentait trois dispositifs (A~: plateau LED, B~: fond vert + extension, C~: décor
+réel). L'expérience de \textit{NoClip} m'amène à en formuler un quatrième, que je n'aurais pas su
+proposer en début d'année et qui répond directement au diagnostic ci-dessus : un projet à
+\textbf{séquences truquées courtes} et à \textbf{mise en scène peu dynamique} n'a pas besoin
+d'un plateau, il a besoin d'un pipeline.
 
-\begin{techbox}[title={Checklist plateau fond vert --- jour J}]
-\begin{enumerate}
-\item Tendre et défroisser le fond ; éliminer plis et ombres portées.
-\item Éclairer le fond de façon uniforme ($\pm$1/3 de diaph maxi), contrôle au false color.
-\item Éclairer le sujet séparément (key / fill / contre) ; placer le contre pour détacher les contours.
-\item Éloigner le sujet du fond ($\geq$ 1,5--2\,m) pour limiter le spill.
-\item Régler exposition fond $\approx$ exposition sujet (ajuster selon sujet sombre/clair).
-\item Vérifier waveform / vectorscope ; poser une charte couleur en début de plan.
-\item Bannir le flou de mouvement excessif (obturation 1/50\,s) et privilégier 10\,bits 4:2:2.
-\item Tourner un plan « clean plate » (fond seul) pour faciliter le détourage.
-\end{enumerate}
-\end{techbox}
-
-\section{Mesure de l'exposition et uniformité d'éclairage du fond}
-Pour garantir un fond exploitable, on contrôle deux choses : son \textbf{exposition} et son \textbf{uniformité}.
-
-\begin{itemize}
-\item \textbf{Outils de mesure :} le \textbf{waveform} (luminance) pour viser une valeur homogène du fond (typiquement autour de 50\,\% IRE), le \textbf{vectorscope} pour vérifier la pureté/saturation du vert, le \textbf{false color} pour repérer d'un coup d'\oe il les zones sur/sous-exposées, et un \textbf{spotmètre} pour mesurer point par point.
-\item \textbf{Uniformité :} balayer le fond au spotmètre et viser un écart inférieur à \textbf{$\pm$1/3 de diaph} sur toute la surface. Le false color doit afficher une teinte unique sur le fond.
-\item \textbf{Choix de l'intensité lumineuse selon les cas :} en règle générale, on éclaire le fond pour qu'il soit \textbf{à la même exposition que le sujet}, ou très légèrement en dessous. Si le sujet est sombre (Ryan), on baisse légèrement le fond pour limiter le \emph{spill} ; si le sujet est clair ou translucide (cheveux fins), on remonte le fond pour préserver les détails. Plus le sujet est proche du fond, plus on baisse le fond pour réduire la contamination verte.
-\end{itemize}
-
-\section{Plan de feu --- éclairage du fond vert ET du sujet}
-\begin{center}
-\begin{tikzpicture}[scale=1.0, every node/.style={font=\scriptsize}]
-  \fill[brvert!25] (0,0) rectangle (12,7);
-  \draw[brvert,thick] (0,0) rectangle (12,7);
-  % fond vert
-  \fill[brvert] (1,6.0) rectangle (11,6.6); \node[white] at (6,6.3){FOND VERT};
-  % sources fond (douches uniformes)
-  \foreach \x in {2.5,6,9.5} {
-    \filldraw[brvert!60!black] (\x-0.3,5.3) rectangle (\x+0.3,5.6);
-    \draw[brvert!60!black,->] (\x,5.3)--(\x,6.0);
-  }
-  \node[brvert!50!black] at (6,5.0){Sources fond vert (éclairage uniforme, séparé du sujet)};
-  % sujet
-  \filldraw[brbleu] (6,3.0) circle (0.22); \node[brbleu] at (6,2.55){Sujet (Ryan)};
-  % key
-  \filldraw[brjaune!80!black] (2,3.8) rectangle (2.6,4.1); \node at (2.3,4.35){Key};
-  \draw[braccent,->] (2.6,3.95)--(5.7,3.1);
-  % fill
-  \filldraw[brjaune!80!black] (9.4,3.8) rectangle (10,4.1); \node at (9.7,4.35){Fill};
-  \draw[braccent,->] (9.4,3.95)--(6.3,3.1);
-  % backlight / contre
-  \filldraw[brjaune!80!black] (5.7,4.6) rectangle (6.3,4.9); \node at (6,5.15){};
-  \draw[braccent,->] (6,4.6)--(6,3.25);
-  \node at (7.2,4.5){Contre (séparation)};
-  % camera
-  \draw[brdark,thick] (6,0.6)--(5.7,1.2)--(6.3,1.2)--cycle; \node at (6,0.35){Caméra};
-  \begin{scope}[shift={(0.5,-1.1)}]
-    \filldraw[brvert!60!black] (0,0) rectangle (0.4,0.28); \node[anchor=west] at (0.5,0.14){Sources dédiées au fond};
-    \filldraw[brjaune!80!black] (5.5,0) rectangle (5.9,0.28); \node[anchor=west] at (6.0,0.14){Sources dédiées au sujet (key / fill / contre)};
-  \end{scope}
-\end{tikzpicture}
-\end{center}
-\begin{center}\footnotesize\textit{Principe clé : séparer physiquement l'éclairage du fond (uniforme) de l'éclairage du sujet (modelé), pour maîtriser indépendamment exposition du vert et modelé de l'acteur, et limiter le spill.}\end{center}
-
-\section{Synthèse du détourage sur Nuke}
-Le détourage des rushes fond vert a été réalisé sous Nuke. La synthèse ci-dessous décrit la chaîne de keying et l'impact des choix faits au tournage.
-
-\begin{techbox}[title={Chaîne de keying Nuke}]
-\begin{enumerate}
-\item \textbf{Pré-traitement :} dégrain léger (\texttt{Denoise}) et neutralisation des dominantes avant le keyer pour stabiliser le vert.
-\item \textbf{Keyer :} \texttt{Keylight} (ou \texttt{Primatte}) --- \emph{screen colour} pipettée sur le vert, ajustement du \emph{screen gain} et du \emph{clip black / clip white} pour un \emph{core matte} net sans manger les contours.
-\item \textbf{Despill :} suppression de la frange verte (\texttt{Despill} / \texttt{HueCorrect}), puis recoloration des bords pour intégrer le sujet à l'ambiance jaune.
-\item \textbf{Edge \& matte :} \texttt{Erode}/\texttt{Blur} maîtrisés sur le matte, traitement séparé des cheveux / contours fins.
-\item \textbf{Intégration :} \texttt{Merge} sur l'extension de décor, raccord colorimétrique (\texttt{Grade}), grain et flou de raccord pour fondre l'incrustation.
-\end{enumerate}
+\begin{techbox}[title={Dispositif D --- tournage en décor neutre + fabrication du décor par génération assistée}]
+\textbf{Principe.} Tourner l'acteur en décor neutre maîtrisé (fond vert, ou simple mur sombre
+avec un sol traité), en petite équipe, avec un relevé rigoureux de la caméra et de l'optique.
+Fabriquer ensuite l'environnement en post-production selon un pipeline \textbf{hybride} :
+génération assistée pour les \emph{matte paintings}, textures et variations d'un même couloir ;
+outils classiques (Nuke, moteur temps réel) pour l'assemblage, le raccord et le contrôle final.
+Le décor n'est jamais « généré » d'un bloc : il est \emph{fabriqué}, avec des étapes génératives
+placées là où elles font gagner du temps sans faire perdre le contrôle \autocite{ktt_supervfx2026}.
 \end{techbox}
 
 \begin{center}
 \small
-\begin{tabularx}{\textwidth}{>{\bfseries}p{3.4cm} >{\RaggedRight\arraybackslash}p{3.0cm} Y}
+\begin{tabularx}{\textwidth}{Y Y}
 \toprule
-\rowcolor{brjaune}\textbf{Paramètre (Keylight)} & \textbf{Réglage type} & \textbf{Effet recherché} \\
+\rowcolor{brjaune}\textbf{Avantages} & \textbf{Inconvénients et limites} \\
 \midrule
-Screen Colour & vert pipetté & Définit la couleur clé à supprimer. \\
-Screen Gain & 1.0 -- 1.2 & Force du key ; remonté si le vert résiduel persiste. \\
-Screen Balance & \textasciitilde0.5 & Équilibre la suppression entre canaux pour des bords propres. \\
-Clip Black / Clip White & 0.0--0.05 / 0.85--1.0 & Resserre le \emph{core matte} sans manger les contours. \\
-Screen Despot & faible & Nettoie le bruit résiduel dans le matte. \\
-Despill Bias & teinte sujet & Recolore la frange verte vers la peau / l'ambiance jaune. \\
+\textbf{Adapté aux séquences truquées courtes.} Sur 3\,minutes d'effets, le coût d'immobilisation d'un plateau LED ne s'amortit pas ; le coût de fabrication, si. & \textbf{Dépendance à la durée.} Le modèle s'effondre dès que la durée truquée augmente : le volume de plans à fabriquer croît linéairement, là où un plateau LED absorbe des plans supplémentaires à coût marginal quasi nul. \\
+\textbf{Adapté à une mise en scène peu dynamique.} Des plans fixes ou faiblement mobiles sont précisément ceux que ce pipeline traite le mieux --- le suivi de mouvement complexe reste le point faible. & \textbf{Interdit de fait la mise en scène ample.} Travellings, caméra portée, longues focales en mouvement rendent la fabrication disproportionnée. Le dispositif contraint l'écriture, ce qu'il faut assumer dès le scénario. \\
+\textbf{Économie de moyens réelle.} Petite équipe de tournage, pas de régie, pas d'ingénierie plateau. Le budget se déplace vers des postes de fabrication, plus étalés et plus pilotables. & \textbf{Perte du retour \emph{in-camera}.} Le comédien joue devant du vide, le chef opérateur ne voit pas son image finale, et le raccord lumière devient une reconstruction plutôt qu'une captation. C'est la perte la plus lourde. \\
+\textbf{Itérable.} Une version du décor qui ne convient pas se refabrique, sans rappeler l'équipe. & \textbf{Cohérence et traçabilité.} Le « \emph{black box problem} » est réel \autocite{lucidlink2026} : la stabilité d'un rendu d'un plan à l'autre n'est pas garantie et demande un travail de contrôle spécifique. \\
+\textbf{Cohérent avec les usages qui montent.} L'exposition des tâches de fabrication répétitives (rotoscopie, \emph{tracking}, nettoyage, extension de décor) est celle qui progresse le plus vite \autocite{ktt_techniciens2026}. & \textbf{Cadre juridique et déontologique.} Traçabilité des sources, statut des contenus générés, information du spectateur : autant d'obligations à intégrer au contrat, pas à découvrir en post (AI Act, \autocite{aiact2024}). \\
 \bottomrule
 \end{tabularx}
 \end{center}
 
-\begin{infobox}[title={Impact des choix de tournage sur la post-production}]
-La qualité du key dépend directement du plateau. Un fond \textbf{bien exposé et uniforme} a permis un \emph{core matte} obtenu en quelques réglages ; à l'inverse, les rares plans où le fond présentait une zone sous-exposée ont demandé un travail de \emph{garbage matte} et de retouche manuelle. Le \textbf{contre} bien placé au tournage a facilité le détourage des contours, et la \textbf{distance sujet/fond} respectée a limité le spill à corriger. Conclusion opérationnelle : \emph{chaque minute gagnée sur la rigueur du plateau (exposition, uniformité, spill) fait économiser des heures de post-production}.
+\begin{infobox}[title={Verdict pour un projet comme \textit{NoClip}}]
+Le dispositif~D aurait été le bon choix : 3\,minutes d'effets, un découpage en plans fixes et
+symétriques, une équipe étudiante, un budget contraint et une exigence de photoréalisme portant
+sur des \emph{surfaces} plutôt que sur des mouvements. Il aurait supprimé le surcoût d'équipe
+identifié plus haut et concentré l'effort là où il produisait la valeur --- la fabrication du décor.
+Il aurait en revanche exigé la double casquette réalisation~/~supervision VFX évoquée plus haut,
+puisque c'est au moment du découpage que se décide la faisabilité de chaque plan. Le fait que
+je formule ce dispositif \emph{après} le tournage plutôt qu'avant est, en soi, le résumé de ce
+chapitre.
 \end{infobox}
 
 %====================================================================
 \chapter{Note de synthèse : alternance et projet professionnel}
 %====================================================================
 
-\section{Bilan du travail réalisé pendant l'alternance}
-Cette année de formation, et en particulier l'atelier transversal autour de \textit{NoClip}, m'a permis de mettre en \oe uvre concrètement l'ensemble des compétences du métier de superviseur de production virtuelle : analyse de scénario et arbitrage du recours à la VP, conception de dispositifs (LED et fond vert), chiffrage et dialogue avec la production, fabrication d'un environnement 3D temps réel optimisé, ingénierie des signaux sur le plateau, supervision de tournage, et pilotage d'une équipe pluridisciplinaire. J'ai appris autant sur la \textbf{technique} (pipeline UE5, nDisplay, tracking, DMX, keying Nuke) que sur la \textbf{coordination humaine} et la \textbf{pédagogie} nécessaire pour faire dialoguer des métiers (réalisation, déco, lumière, 3D) autour d'un objet nouveau.
+\section{Bilan de la période d'alternance}
+Je dois ouvrir ce bilan par une précision qui en conditionne la lecture : \textbf{je n'ai pas
+effectué cette période en entreprise}. Là où mes camarades ont pu confronter la formation à un
+studio, une régie ou une société de post-production, j'ai construit une période autonome,
+articulée autour d'une \textbf{veille soutenue sur l'intelligence artificielle} appliquée aux
+industries créatives et d'un travail de mise en réseau. C'est une différence de nature, pas
+seulement de degré, et elle explique une partie des faiblesses relevées au chapitre~4 : je n'ai
+pas eu de cadre professionnel pour m'imposer une discipline de production, de compte rendu et
+de délai. Cela dit, ce que cette période a effectivement produit mérite d'être exposé pour ce
+qu'il est.
 
-Le projet a confirmé une conviction : la production virtuelle n'est pas qu'une prouesse technique, c'est un \textbf{outil narratif}. Sur \textit{NoClip}, elle a rendu possible un récit qui, autrement, serait resté hors de portée d'un film étudiant.
+\subsection{Une veille structurée plutôt qu'une expérience de studio}
+La veille n'a pas été une consommation passive d'actualité. Elle s'est organisée autour d'un
+travail suivi de lecture, de recoupement de sources et de tenue de notes, dont le chapitre~6
+constitue la restitution argumentée. Elle a porté sur trois fronts : l'\textbf{état réel des outils}
+(génération vidéo, \emph{gaussian splatting}, pipelines à n\oe uds, agents), l'\textbf{économie des
+métiers} (quelles tâches sont exposées, lesquelles ne le sont pas), et le \textbf{cadre normatif}
+(AI Act, traçabilité, souveraineté des données). Ce dernier point est devenu, chemin faisant, le
+plus structurant de ma réflexion professionnelle.
+
+\subsection{La rencontre avec le collectif Creative Machines}
+Le point d'ancrage de cette période a été la rencontre avec le \textbf{collectif Creative
+Machines}, communauté de réflexion sur l'impact des IA génératives dans les industries
+culturelles et créatives. Le collectif anime un espace d'échange continu entre chercheurs,
+artistes, développeurs et professionnels de l'animation, du VFX et du jeu vidéo, dont il publie
+des synthèses périodiques \autocite{creativemachines2026}. J'y ai trouvé ce que la veille
+individuelle ne donne pas : le \textbf{désaccord documenté}. On y lit aussi bien des retours
+d'expérience d'intégration réussie que des positions de refus argumenté, et cette tension m'a
+été plus utile qu'un consensus.
+
+\subsection{Point d'orgue : la jam créative de Creative Seeds (Rennes)}
+Le moment le plus formateur de cette période a été la participation à la
+\textbf{3\textsuperscript{e} édition des Rencontres Creative Machines}, accueillie par l'école
+\textbf{Creative Seeds à Rennes} dans le cadre du Festival national du film d'animation
+\autocite{creativemachines_rencontres2026}. L'événement combine deux formats :
+
+\begin{itemize}
+\item une \textbf{jam créative de deux jours et demi} (du 4 au 6~avril 2026), au cours de laquelle
+des équipes constituées sur place produisent un court-métrage d'animation en combinant
+\textbf{techniques traditionnelles et outils d'IA générative}, sur un thème imposé ;
+\item une \textbf{journée de tables rondes} (6~avril 2026) réunissant chercheurs, artistes et
+professionnels autour des transformations en cours.
+\end{itemize}
+
+\begin{infobox}[title={Ce que la jam m'a appris --- et que la théorie ne m'apprenait pas}]
+La contrainte de temps d'une jam produit un enseignement que les démonstrations d'éditeurs
+masquent soigneusement : \textbf{le goulot d'étranglement n'est presque jamais la génération}.
+Il est dans la \emph{direction} (savoir ce qu'on veut avant de demander), dans la \emph{cohérence}
+d'un plan à l'autre, et dans l'\emph{assemblage}. Les équipes qui ont livré ne sont pas celles qui
+maîtrisaient le mieux les outils, mais celles qui avaient tranché leur intention le plus tôt. C'est
+exactement le diagnostic que je porte sur ma propre supervision de \textit{NoClip} (chapitre~4),
+et le rapprochement n'est pas un hasard : \textbf{dans les deux cas, ce qui manquait n'était pas
+de la technique, mais de la décision rendue en temps utile}. Cette jam a été, paradoxalement,
+le meilleur retour critique que j'ai reçu sur mon travail de supervision.
+\end{infobox}
+
+\subsection{Ce que cette période n'a pas apporté}
+Par honnêteté envers le jury, je nomme aussi le manque. Une année sans entreprise, c'est une
+année sans plateau professionnel, sans pipeline de production éprouvé, sans hiérarchie
+technique pour corriger un geste, et sans la contrainte de livrer à un client. Les compétences
+d'ingénierie plateau (calibration, gestion des signaux, exploitation \texttt{nDisplay} en
+conditions réelles et répétées) restent chez moi \textbf{théoriques et peu pratiquées}, et
+\textit{NoClip} l'a montré. C'est le premier écart que je dois combler, et il ne se comble
+qu'en studio.
 
 \section{Projet professionnel à la sortie de formation}
-À l'issue de la formation, mon objectif est d'exercer comme \textbf{superviseur / opérateur de production virtuelle} au sein d'un studio de plateau LED ou d'une société de prestation VFX temps réel. À court terme, je souhaite consolider mon expertise opérationnelle (calibration tracking, ingénierie nDisplay, pipeline Unreal) sur des productions professionnelles, en commençant éventuellement par des postes d'opérateur 3D temps réel ou d'assistant superviseur. À moyen terme, je vise un rôle de superviseur à part entière, capable d'accompagner des productions de la phase de conseil jusqu'à la livraison. Les enseignements de \textit{NoClip} --- notamment sur l'anticipation de la calibration et la documentation des consignes --- constituent ma feuille de route personnelle pour progresser.
+Le chapitre~4 m'a conduit à reformuler mon projet professionnel plutôt qu'à le confirmer.
+
+\textbf{À court terme}, l'objectif est de rejoindre une structure de plateau LED ou de prestation
+VFX temps réel à un poste d'\textbf{opérateur} --- opérateur 3D temps réel, assistant superviseur,
+ingénierie plateau. Ce n'est pas une ambition revue à la baisse : c'est le constat que l'expérience
+de plateau répétée est précisément ce qui me manque, et qu'on ne l'acquiert pas en supervisant.
+
+\textbf{À moyen terme}, je vise un profil de \textbf{superviseur VFX à double casquette}, capable
+d'intervenir en amont du découpage plutôt qu'en aval. L'analyse d'adéquation du chapitre~4 est
+ma boussole ici : la valeur d'un superviseur ne se mesure pas à sa capacité à faire fonctionner
+un dispositif, mais à sa capacité à \textbf{dire quel dispositif ne pas utiliser}. C'est un métier
+d'arbitrage économique et narratif autant que technique, et c'est cette bascule que je veux
+opérer.
+
+\textbf{En parallèle}, je poursuis un travail personnel d'outillage : concevoir un \textbf{framework
+de production de documents de travail} pour le suivi audiovisuel --- notes de supervision,
+rapports image, découpages annotés, comptes rendus de test --- adossé à un harnais agentique
+documenté. Ce dossier en est le premier prototype fonctionnel, et sa motivation vient
+directement de mes propres manquements : les documents que je n'ai pas produits sur
+\textit{NoClip} sont exactement ceux dont la rédaction doit devenir peu coûteuse pour être
+tenue. Les choix techniques de ce framework, y compris ses arbitrages de souveraineté, sont
+discutés au chapitre~6.
 
 \begin{infobox}[title={En une phrase}]
-\textit{NoClip} m'a donné la preuve, sur un projet réel et exigeant, que je peux porter la responsabilité technique et humaine d'une supervision de production virtuelle de bout en bout --- c'est exactement le métier que je veux exercer.
+\textit{NoClip} ne m'a pas prouvé que je savais superviser ; il m'a montré, de manière peu
+confortable mais utile, à quelle condition je pourrai le faire --- décider tôt, écrire ce que je
+décide, et savoir refuser un dispositif que le projet ne justifie pas.
 \end{infobox}
 
 \vspace{1cm}
 \begin{flushright}
-\textit{Etienne Baron --- 2\textsuperscript{ème} année SPV --- Juin 2026}
+\textit{Etienne Baron --- 2\textsuperscript{ème} année SPV}
 \end{flushright}
 
 %====================================================================
-\chapter{Veille technologique : intelligence, outils locaux et Open Source, environnement, écoproduction}
+\chapter{Veille technologique : intelligence artificielle, outils locaux et Open Source, environnement, écoproduction}
 %====================================================================
-Superviser un plateau virtuel, c'est exercer une \emph{conscience aiguë de la technique} : non pas subir les outils, mais choisir lesquels font corps avec la forme que l'on cherche. La veille n'est donc pas pour moi une liste de nouveautés à cocher ; c'est une manière de situer ma pratique dans une trajectoire, de comprendre vers quoi bifurque le métier, et de décider en connaissance de cause. Quatre lignes de force me semblent structurer aujourd'hui l'avenir de la production virtuelle : l'intelligence artificielle, les outils locaux et libres, l'environnement, et l'écoproduction.
+Superviser un plateau virtuel, c'est exercer une \emph{conscience aiguë de la technique} : non pas
+subir les outils, mais choisir lesquels font corps avec la forme que l'on cherche. La veille n'est
+donc pas pour moi une liste de nouveautés à cocher ; c'est une manière de situer ma pratique
+dans une trajectoire, de comprendre vers quoi bifurque le métier, et de décider en connaissance
+de cause. Ce chapitre restitue le travail de veille conduit pendant l'année (chapitre~5) et prend
+position.
 
-\section{Intelligence artificielle : générative et agentique}
-L'irruption des modèles génératifs déplace le centre de gravité de plusieurs étapes du \emph{pipeline} : génération de textures et de \emph{matte paintings}, \emph{upscaling}, débruitage temps réel, \emph{retopology} assistée, prévisualisation, voire assistance à la rédaction et à l'organisation du travail (IA dite \textbf{agentique}, capable d'enchaîner des actions outillées). Je distingue deux régimes. L'IA \textbf{générative} produit du contenu (une texture de moquette usée, une variation de néon) ; l'IA \textbf{agentique} orchestre des tâches (préparer une scène, trier des \emph{assets}, documenter un \emph{commit}). Les deux sont des accélérateurs, non des substituts au jugement : sur un décor comme les Backrooms, c'est la cohérence d'ambiance et le raccord à l'image captée qui priment, et ceux-là restent des décisions humaines.
+\section{Intelligence artificielle : où en est-on réellement en 2026 ?}
+L'irruption des modèles génératifs déplace le centre de gravité de plusieurs étapes du
+\emph{pipeline} : génération de textures et de \emph{matte paintings}, \emph{upscaling},
+débruitage, \emph{retopology} assistée, prévisualisation, jusqu'à l'assistance à la rédaction et à
+l'organisation du travail. Je distingue deux régimes. L'IA \textbf{générative} produit du contenu
+(une texture de moquette usée, une variation de néon) ; l'IA \textbf{agentique} orchestre des
+tâches outillées (préparer une scène, trier des \emph{assets}, tenir un dépôt de versions).
 
-Cette puissance impose un cadre. Le \textbf{règlement européen sur l'IA} \autocite{aiact2024} introduit une logique de classification par les risques et des obligations de \emph{transparence} : informer quand un contenu est généré, tracer les sources, éviter le traitement de données personnelles à des fins de profilage. J'applique ce principe à ce dossier même (voir l'avertissement liminaire). La bonne posture du superviseur n'est pas l'enthousiasme aveugle ni le refus de principe, mais une \textbf{intégration documentée} : savoir ce que l'outil a produit, pouvoir le justifier, en garder la maîtrise.
+La synthèse des échanges du collectif Creative Machines sur le premier semestre 2026
+\autocite{creativemachines2026} donne une photographie utile parce qu'elle est \emph{contra\-dictoire}.
+Côté outils, quatre mouvements ressortent : la \textbf{génération vidéo} s'est imposée comme le
+front le plus actif ; le \textbf{gaussian splatting} recompose le rapport entre captation et 3D ;
+les \textbf{workflows à n\oe uds} (ComfyUI) deviennent le format de référence des chaînes
+professionnelles, parce qu'ils rendent un traitement \emph{reproductible} et \emph{inspectable} ;
+enfin les modèles atteignent les formats de production (4K, HDR, EXR), ce qui les fait passer du
+statut de curiosité à celui de maillon de \emph{pipeline}.
+
+Côté tensions, la même synthèse recense ce qu'il serait malhonnête de passer sous silence :
+prolifération de contenus de faible valeur qui saturent les canaux de diffusion, usages
+propagandistes des \emph{deepfakes}, conditions de travail des annotateurs, exposition de données
+d'entraînement, et inquiétudes sur la soutenabilité économique du secteur. Sur le plan industriel,
+elle relève l'apparition de productions menées par de très petites équipes en quelques semaines
+pour une fraction des budgets usuels --- signal faible qu'il faut prendre au sérieux sans le
+confondre avec une généralité.
+
+\begin{notebox}[title={Ma position de superviseur}]
+Ni enthousiasme aveugle, ni refus de principe : une \textbf{intégration documentée}. Savoir ce
+que l'outil a produit, pouvoir le justifier, en garder la maîtrise. Le \textbf{règlement européen
+sur l'IA} \autocite{aiact2024} en donne le cadre --- classification par les risques, obligations de
+transparence, information sur les contenus générés, refus du profilage. J'applique ce principe à
+ce dossier même (voir l'avertissement liminaire).
+\end{notebox}
+
+\section{Mesurer l'exposition des métiers plutôt que la fantasmer}
+Le débat sur « l'IA va-t-elle remplacer tel métier » gagne à être remplacé par une question
+mesurable : \emph{quelles tâches, à l'intérieur d'un métier, sont exposées, et selon quel régime ?}
+C'est l'apport de l'\textbf{indice économique d'Anthropic} (\emph{AI Exposure Index}), qui
+décompose le travail en micro-tâches observées dans des usages réels, et distingue
+l'\textbf{automatisation} (l'outil fait à la place) de l'\textbf{augmentation} (l'outil assiste).
+
+Appliquée aux métiers de l'écriture et de la réalisation \autocite{ktt_scenaristes2026}, l'analyse
+donne un résultat contre-intuitif : l'usage est déjà massif pour la génération d'idées et la
+reformulation, mais la performance chute nettement sur les tâches longues et sur la cohérence
+narrative d'ensemble --- c'est-à-dire sur le c\oe ur du métier. Le risque identifié n'est donc pas la
+disparition du poste mais sa \textbf{dégradation économique} : la relégation de l'auteur à un rôle
+de relecteur mal rémunéré de contenus produits en amont.
+
+Appliquée aux métiers techniques de l'audiovisuel \autocite{ktt_techniciens2026} --- chef
+opérateur, ingénieur du son, monteur, étalonneur, technicien, archiviste --- la même méthode
+désigne une exposition forte sur la \textbf{documentation technique, les rapports, les
+\emph{checklists}, le \emph{tagging}, la journalisation, le contrôle qualité et la préparation de
+\emph{presets}}, et faible sur le geste lui-même.
+
+\begin{infobox}[title={Ce que cela signifie très concrètement pour un superviseur de production virtuelle}]
+La lecture est directe, et elle est inconfortable au vu du chapitre~4. Les tâches les plus exposées
+d'un SPV sont \textbf{exactement celles que je n'ai pas tenues} : rapport image, relevé de point
+nodal, journal de calibration, checklist de pré-light, compte rendu de test plateau, découpage
+annoté. Autrement dit, l'IA vient d'abord réduire le coût de ce que le métier néglige quand il est
+sous pression. J'en tire une conclusion qui oriente mon projet professionnel : \emph{ce n'est pas
+une menace sur mon poste, c'est une suppression de mon excuse}. La rigueur documentaire ne
+peut plus être sacrifiée au motif qu'elle coûte du temps --- et c'est précisément le pari du
+framework de documents de travail décrit au chapitre~5.
+\end{infobox}
+
+\section{Le pipeline hybride, sans la gueule de bois}
+La promesse marketing d'une IA « clé en main » qui transformerait des rushes en plans finis par
+quelques paramètres se heurte à une réalité de production. Un superviseur VFX résume la
+situation d'une formule que je retiens : \emph{« On nous vend des miracles, mais quand je
+demande comment on versionne les plans, tout le monde regarde ses chaussures »}
+\autocite{ktt_supervfx2026}. Le constat de terrain est mesuré : les gains réels se concentrent sur
+les \textbf{tâches répétitives} --- rotoscopie, \emph{tracking}, nettoyage de plaque, extension de
+décor --- et non sur une refonte du pipeline. Les approches locales à n\oe uds séduisent les studios
+qui veulent garder le contrôle, mais elles \textbf{ajoutent} de la complexité plutôt qu'elles n'en
+retirent, et le rôle du superviseur --- garant de la cohérence, de la continuité, du versionnement
+et du budget --- en sort augmenté, pas allégé.
+
+Ce diagnostic recoupe la littérature sur les pipelines VFX distribués \autocite{lucidlink2026},
+qui identifie quatre obstacles structurels (complexité technique de chaque étape, dispersion
+géographique des artistes, instabilité du périmètre, collaboration à distance) et situe l'IA comme
+un \textbf{« sidekick, not a replacement »}, utile sur les tâches fastidieuses tout en laissant
+ouvert le « \emph{black box problem} » : rien ne garantit qu'un même traitement produise un
+résultat cohérent d'un plan à l'autre. Or la cohérence \emph{est} le travail.
+
+\begin{notebox}[title={La question qui tranche}]
+Face à n'importe quelle proposition d'outil génératif dans un pipeline, je m'en tiens désormais à
+une seule question de recette : \textbf{comment versionne-t-on le résultat, et peut-on le
+reproduire à l'identique dans six mois ?} Un outil qui ne répond pas à cette question n'entre pas
+dans une chaîne de production ; il reste un outil de recherche. C'est aussi ce qui explique la
+faveur des workflows à n\oe uds : un graphe se relit, se diffe, s'archive.
+\end{notebox}
+
+\section{Ouverture : agents, IA physique et \emph{world models}}
+Trois lignes prospectives me semblent devoir être suivies par quiconque exerce sur un plateau
+dans les cinq prochaines années.
+
+\begin{description}[leftmargin=2.6cm,style=nextline,font=\bfseries\color{braccent}]
+\item[Agents IA] Le passage du modèle qui \emph{répond} au modèle qui \emph{agit} --- exécute
+des outils, enchaîne des étapes, tient un état. Sur un pipeline VFX, l'application évidente est la
+tâche d'intendance : conformer des nomenclatures, préparer des versions, produire les documents
+de suivi, surveiller un rendu. Ce dossier a lui-même été produit dans un harnais de ce type.
+\item[IA physique] Des modèles entraînés à agir dans le monde matériel plutôt que dans le seul
+espace des pixels. Pour le plateau, la perspective concrète est la \textbf{machinerie assistée} :
+têtes motorisées, chariots et grues capables de rejouer un mouvement à l'identique, de suivre une
+trajectoire décidée en prévisualisation, ou de compenser un défaut de tracking. Un dispositif de
+ce type aurait, sur \textit{NoClip}, changé la nature de l'incident du 24~juin.
+\item[\emph{World models}] Des modèles qui apprennent une représentation cohérente et
+persistante d'un espace, et savent le simuler dans le temps. C'est la brique qui manque encore
+entre la génération d'image et le décor virtuel : un environnement qui reste \emph{le même} sous
+tous les angles et à travers le temps est précisément ce qu'un moteur temps réel garantit
+aujourd'hui et qu'un générateur ne garantit pas. Leur maturation conditionne la crédibilité de
+tout dispositif de type~D (chapitre~4).
+\end{description}
+
+La convergence de ces trois lignes ouvre la voie à une \textbf{robotique de plateau} : non pas
+des robots qui font le film, mais des dispositifs qui exécutent de façon répétable des mouvements
+décidés en amont --- ce qui déplacerait le métier de superviseur vers la \emph{préparation} et la
+\emph{validation} plutôt que l'exécution. C'est une hypothèse, pas une prédiction ; je la mets sous
+surveillance.
+
+\section{Du GUI au CLI : ce que le virage d'Unreal Engine~6 nous dit}
+Un mouvement de fond, moins spectaculaire mais plus immédiatement conséquent, traverse
+l'outillage : les logiciels de création cessent d'être exclusivement \textbf{pilotés par interface
+graphique} pour redevenir \textbf{pilotables en ligne de commande et par script}. Ce n'est pas
+une régression ergonomique : c'est ce qui rend un logiciel adressable par un agent.
+
+Le cas d'Unreal Engine est exemplaire. \textbf{Unreal Engine~6} unifie UE5 et UEFN et fonde son
+framework de \emph{gameplay} (\emph{Scene Graph}) sur \textbf{Verse}, langage
+\textbf{interprété} conçu par Tim Sweeney et Simon Peyton Jones, appelé à se substituer au
+modèle Actor et au tout-C++ précompilé \autocite{epic_ue6verse2026}. Un langage interprété se
+recharge à chaud, se génère et se corrige par fragments --- il est \emph{écrivable par un agent},
+là où une chaîne de compilation binaire ne l'est que difficilement. Parallèlement, l'ouverture
+d'un pont de type \emph{Model Context Protocol} vers l'éditeur permet déjà de piloter scènes et
+entités depuis un terminal, avec un harnais agentique quelconque. La conséquence pour nos
+métiers est directe : la frontière entre « utiliser un logiciel » et « programmer un pipeline »
+s'estompe, et la compétence de \textbf{scripting} redevient discriminante pour un superviseur.
+
+\begin{infobox}[title={Piste : un serveur d'inférence local dans le pipeline VFX}]
+La conjonction de ces éléments --- outils pilotables en ligne de commande, workflows à n\oe uds
+reproductibles \autocite{ktt_supervfx2026}, exigence de souveraineté sur les rushes --- dessine une
+architecture cohérente : héberger un \textbf{serveur d'inférence sur le réseau du studio}, au
+même titre qu'un \emph{render node} ou un serveur de licences, et l'exposer aux stations comme
+un service interne. Les traitements assistés (débruitage, extraction de profondeur, propositions
+de \emph{roto}, variations de texture) s'exécutent alors sur l'infrastructure du studio ; aucun
+rush ne sort du réseau ; le versionnement reste sous contrôle. Techniquement, rien n'y fait
+obstacle aujourd'hui ; les obstacles sont d'organisation et de compétence. Je considère cette
+brique comme le prolongement naturel des \emph{render nodes} déjà présents sur un plateau VP,
+et c'est la direction de R\&D que je souhaite suivre.
+\end{infobox}
+
+\section{Mon propre harnais : pourquoi un modèle frontière plutôt qu'un modèle \emph{open weight}}
+\label{sec:harnais}
+Ce dossier a été rédigé dans un harnais agentique opéré depuis un terminal, adossé à un
+\textbf{modèle frontière propriétaire} (Claude, Anthropic) plutôt qu'à un modèle
+\textbf{\emph{open weight}} exécuté localement. Ce choix contredit en apparence ma préférence
+affichée pour les outils locaux et libres ; il est délibéré, et je l'assume avec ses limites.
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{>{\bfseries}p{3.1cm} Y Y}
+\toprule
+\rowcolor{brjaune}\textbf{Critère} & \textbf{Modèle frontière (retenu)} & \textbf{Modèle \emph{open weight} local} \\
+\midrule
+Efficacité & Tient un document long sans perdre la cohérence d'ensemble ; peu de reprises. & Exige un découpage fin et beaucoup de reprises à taille de contexte comparable. \\
+Simplicité & Un harnais, une clé, aucune infrastructure à maintenir. & Quantification, gestion VRAM, mises à jour, arbitrages qualité/vitesse. \\
+Coût réel & Coût d'usage, nul en immobilisation. & Coût matériel et surtout coût de \emph{temps d'ingénierie}. \\
+Souveraineté & \textbf{Point faible} : les données transitent par un tiers. & \textbf{Point fort} : rien ne sort de la machine. \\
+Pérennité & Dépendance à un fournisseur et à ses versions. & Poids archivables, rejouables dans cinq ans. \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\textbf{L'arbitrage.} L'objectif à terme est un \emph{framework} de production de documents de
+travail pour le suivi audiovisuel (chapitre~5). Pour \emph{concevoir} ce framework, la priorité est
+la vitesse d'itération sur la méthode, pas l'optimisation de l'exécution : un modèle frontière
+supprime toute la couche d'ingénierie d'inférence et laisse l'attention sur ce qui compte, la
+structure des documents. \textbf{L'architecture, en revanche, a été conçue pour être portable} :
+la connaissance du projet vit dans une arborescence de fichiers texte, versionnée en Git, lisible
+par n'importe quel modèle. Rien n'est enfermé dans un service ; changer de moteur ne coûte que
+de changer de moteur.
+
+\textbf{La ligne de partage.} Elle porte sur la \emph{nature} des données, pas sur la commodité.
+Un dossier professionnel destiné à être publiquement soutenu ne présente pas d'enjeu de
+confidentialité. Des rushes, un scénario non déposé, des données de production ou des éléments
+identifiants d'équipe en présentent un, et ceux-là relèvent d'une exécution locale --- ce qui
+ramène directement au serveur d'inférence interne évoqué plus haut. La règle que je me fixe est
+donc explicite : \textbf{modèle frontière pour la méthode et les documents publiables ; inférence
+locale dès que la donnée est critique}. C'est la lecture opérationnelle que je fais de l'exigence
+de non-profilage portée par l'AI Act \autocite{aiact2024}, et la raison pour laquelle je considère
+le \emph{choix du lieu d'exécution} comme une décision de supervision à part entière, au même
+titre que le choix d'un dispositif de tournage.
 
 \section{Outils locaux et Open Source}
-Une part de ma veille consiste à privilégier, lorsque c'est possible, des \textbf{outils locaux} (qui tournent sur la machine, sans dépendance à un service distant) et \textbf{libres / Open Source}. Trois raisons. D'abord la \textbf{souveraineté des données} : un décor, un scénario, des rushes n'ont pas à transiter par un service tiers ; faire tourner un modèle en local (sur le GPU de la station de rendu) maintient la confidentialité. Ensuite la \textbf{pérennité} : un format ouvert et un logiciel libre survivent à l'éditeur, condition essentielle pour archiver un projet et le rejouer dans cinq ans. Enfin le \textbf{coût} et la \textbf{liberté d'adaptation}, déterminants pour une production étudiante.
+Au-delà du seul cas des modèles, une part de ma veille consiste à privilégier, lorsque c'est
+possible, des \textbf{outils locaux} et \textbf{libres}. Trois raisons. La \textbf{souveraineté des
+données} : un décor, un scénario, des rushes n'ont pas à transiter par un service tiers. La
+\textbf{pérennité} : un format ouvert et un logiciel libre survivent à l'éditeur, condition
+essentielle pour archiver un projet et le rejouer dans cinq ans. Enfin le \textbf{coût} et la
+\textbf{liberté d'adaptation}, déterminants pour une production étudiante.
 
-L'écosystème de la production virtuelle s'y prête : \textbf{Blender} pour la modélisation et le \emph{texturing}, \textbf{OpenColorIO} pour la gestion colorimétrique de bout en bout, les formats ouverts \textbf{USD} et \textbf{glTF} pour l'échange d'\emph{assets}, et des modèles de langage exécutables localement pour l'assistance hors-ligne. Même autour d'un moteur propriétaire comme Unreal Engine \autocite{epic_ue56}, on peut bâtir une chaîne dont les maillons d'échange et d'archivage restent ouverts. Choisir l'ouverture, c'est refuser que la singularité d'une pratique soit captée par un outil unique.
+L'écosystème de la production virtuelle s'y prête : \textbf{Blender} pour la modélisation et le
+\emph{texturing}, \textbf{OpenColorIO} pour la gestion colorimétrique de bout en bout, les formats
+ouverts \textbf{USD} et \textbf{glTF} pour l'échange d'\emph{assets}. Même autour d'un moteur
+propriétaire comme Unreal Engine \autocite{epic_ue56}, on peut bâtir une chaîne dont les maillons
+d'échange et d'archivage restent ouverts. Choisir l'ouverture, c'est refuser que la singularité
+d'une pratique soit captée par un outil unique.
 
 \section{Environnement et écoproduction}
-La production virtuelle est souvent présentée comme « verte ». Elle l'est en partie --- elle supprime la construction et la destruction de décors, réduit les transports et les repérages (voir chapitre~2) --- mais elle déplace l'empreinte vers la \textbf{consommation électrique} du mur LED et des stations de rendu. Faire de la veille environnementale, c'est mesurer ce déplacement plutôt que le masquer.
+La production virtuelle est souvent présentée comme « verte ». Elle l'est en partie --- elle
+supprime la construction et la destruction de décors, réduit les transports et les repérages (voir
+chapitre~2) --- mais elle déplace l'empreinte vers la \textbf{consommation électrique} du mur LED
+et des stations de rendu. Faire de la veille environnementale, c'est mesurer ce déplacement
+plutôt que le masquer. Le chapitre~4 en donne d'ailleurs un cas d'école : mobiliser un plateau
+LED complet pour une journée dont on n'exploite ni la parallaxe ni le pilotage lumière, c'est
+consommer sans contrepartie --- l'inefficience écologique et l'inefficience budgétaire ont ici la
+même cause.
 
-Concrètement, plusieurs leviers de \textbf{sobriété} relèvent directement du superviseur : optimiser la scène pour tenir la cadence sans surconsommer le GPU, mutualiser une seule journée de plateau, dimensionner le mur LED au strict nécessaire, et éteindre ce qui ne tourne pas. À l'échelle de la filière, des démarches comme celles du collectif \textbf{Ecoprod} \autocite{ecoprod} fournissent des méthodes de calcul d'empreinte carbone applicables à l'audiovisuel. L'\textbf{écoproduction} n'est pas un supplément d'âme : c'est une contrainte de conception qui rejoint, fait notable, les bonnes pratiques d'optimisation technique --- une scène économe est à la fois plus fluide et moins énergivore.
+Concrètement, plusieurs leviers de \textbf{sobriété} relèvent directement du superviseur :
+optimiser la scène pour tenir la cadence sans surconsommer le GPU, mutualiser une seule journée
+de plateau, dimensionner le mur LED au strict nécessaire, éteindre ce qui ne tourne pas --- et,
+en amont de tout cela, \emph{ne pas retenir un dispositif que le projet ne justifie pas}. À
+l'échelle de la filière, des démarches comme celles du collectif \textbf{Ecoprod}
+\autocite{ecoprod} fournissent des méthodes de calcul d'empreinte carbone applicables à
+l'audiovisuel. L'\textbf{écoproduction} n'est pas un supplément d'âme : c'est une contrainte de
+conception qui rejoint les bonnes pratiques d'optimisation technique --- une scène économe est
+à la fois plus fluide et moins énergivore.
 
 \begin{infobox}[title={Ce que je retiens pour ma pratique}]
-La bifurcation que je veux suivre est claire : utiliser l'IA comme \emph{aide} transparente et non comme boîte noire ; préférer, quand je le peux, des outils \emph{locaux et ouverts} pour la souveraineté et la pérennité ; et traiter l'\emph{écoproduction} comme un critère de conception au même titre que la performance. Trois exigences qui, ensemble, dessinent un métier de superviseur lucide sur ses outils.
+Quatre exigences, désormais formulées comme des règles plutôt que comme des intentions.
+\textbf{(1)}~Utiliser l'IA comme \emph{aide documentée} et non comme boîte noire : tout outil qui
+ne sait pas répondre à « comment versionne-t-on ce résultat ? » reste hors pipeline.
+\textbf{(2)}~Faire du \emph{lieu d'exécution} une décision de supervision : modèle frontière pour la
+méthode, inférence locale dès que la donnée est critique. \textbf{(3)}~Investir la compétence de
+\emph{scripting}, parce que le virage CLI d'outils comme Unreal Engine~6 en fait la clé d'entrée
+des pipelines à venir. \textbf{(4)}~Traiter l'\emph{écoproduction} et le \emph{dimensionnement du
+dispositif} comme une seule et même question --- celle du juste nécessaire.
 \end{infobox}
 
 %====================================================================
@@ -1118,7 +1560,9 @@ Ce lexique définit les principaux termes techniques employés dans le dossier, 
 \item[Nanite] Technologie d'Unreal Engine 5 de virtualisation de géométrie, gérant des maillages très denses. \emph{Non retenue sur \textit{NoClip}} : jugée trop instable pour un \emph{framerate} constant sur plateau LED.
 \item[LOD (Level of Detail)] Versions simplifiées d'un modèle 3D utilisées à distance pour économiser les ressources.
 \item[Draw call] Instruction d'affichage envoyée au GPU ; en réduire le nombre améliore les performances temps réel.
-\item[DMX / Art-Net] Protocoles de pilotage des projecteurs ; ici, la lumière est commandée par le moteur temps réel (ex. flicker des néons).
+\item[DMX / Art-Net] Protocoles de pilotage des projecteurs. \emph{Piste étudiée puis écartée sur \textit{NoClip}} : le plan de feu retenu est entièrement fixe (voir §\ref{sec:dmx_artnet}).
+\item[Point nodal] Point de l'optique (plus exactement centre d'entrée de la pupille) autour duquel la caméra doit pivoter pour que la perspective de l'arrière-plan reste juste. Sur plateau LED, sa mesure conditionne à la fois la justesse du frustum \texttt{nDisplay} et le calcul de la profondeur de champ. \emph{Non mesuré systématiquement sur \textit{NoClip}} --- défaut analysé au chapitre~4.
+\item[Pré-light] Session de calage de l'éclairage antérieure au tournage, au cours de laquelle les sources sont posées, orientées et figées. Sur un plan de feu fixe, c'est le seul moment où la lumière se décide.
 \item[Fond vert / bleu] Surface de couleur unie permettant l'incrustation (chroma key) du sujet sur un autre décor.
 \item[Spill] Contamination colorée (verte) renvoyée par le fond sur le sujet, à corriger au détourage.
 \item[Keying / despill] Opérations de détourage : extraction du sujet (keying) et suppression de la frange colorée (despill).
@@ -1132,12 +1576,19 @@ Ce lexique définit les principaux termes techniques employés dans le dossier, 
 \item[Univers DMX] Ensemble de 512 canaux DMX transportés sur un seul câble ou circuit réseau. Lorsqu'une installation requiert plus de 512 canaux, on multiplie les univers.
 \item[Adressage DMX] Attribution d'un canal de départ à un projecteur ; il répond aux $n$ canaux suivants selon sa \emph{charte DMX} (document constructeur listant les paramètres contrôlables et leurs canaux).
 \item[Art-Net] Protocole encapsulant les trames DMX dans des paquets UDP/IP sur réseau Ethernet (port 6454, depuis 1998). Permet un câblage en étoile via switch et supporte des milliers d'univers, contre 32 appareils maximum en cascade pour le DMX filaire.
-\item[nodle USB-DMX] Petit convertisseur USB vers DMX512, permettant à un ordinateur (ici le PC Unreal) d'émettre directement un univers DMX sur câble XLR sans carte d'acquisition dédiée.
+\item[nodle USB-DMX] Petit convertisseur USB vers DMX512, permettant à un ordinateur d'émettre directement un univers DMX sur câble XLR sans carte d'acquisition dédiée. \emph{Envisagé puis non retenu sur \textit{NoClip}.}
 \item[Viewport \texttt{nDisplay} (VP)] Portion du rendu Unreal Engine assignée à une zone physique du mur LED. Sur \textit{NoClip} : VP0 (Gauche, 1536\,px), VP1 (Centre, 3072\,px), VP2 (Droite, 1536\,px), VP3 (Plafond, 1536\,px).
-\item[Sequencer (UE5)] Timeline d'animation et d'automatisation d'Unreal Engine : permet de programmer des variations de lumière, de caméra et d'effets dans le temps. Utilisé pour piloter le \emph{flicker} des néons via le plugin DMX intégré.
+\item[Sequencer (UE5)] Timeline d'animation et d'automatisation d'Unreal Engine : permet de programmer des variations de lumière, de caméra et d'effets dans le temps. C'est là qu'auraient été programmées les courbes DMX si cette piste avait été retenue (voir §\ref{sec:dmx_artnet}).
 \item[S-Log3] Courbe gamma propriétaire Sony comprimant la dynamique du capteur dans un fichier vidéo exploitable. Associée à la gestion du \emph{gamut} (espace colorimétrique : sRGB pour les écrans PC, Rec.709 pour la TV, DCI-P3 pour le cinéma), elle préserve les détails dans les hautes et basses lumières pour l'étalonnage.
 \item[ND (Neutral Density)] Filtre atténuant uniformément la lumière sans modifier la couleur. Indispensable sur plateau LED pour maintenir l'ouverture (f/4--f/5.6) et la vitesse d'obturation (1/50\,s) recommandées, quelle que soit la luminosité du mur.
 \item[ISO natif / Exposure Index (EI)] L'ISO natif (ou ISO de base) est le paramètre physique optimal du capteur (la Sony VENICE~2 dispose de deux ISO de base, 800 et 3200) ; l'EI est la valeur d'amplification affichée dans les menus. Tourner à un ISO de base et ajuster l'exposition via le diaphragme ou les ND garantit le meilleur rapport signal/bruit.
+\item[IA générative / IA agentique] La première \emph{produit} un contenu (image, texture, texte) ; la seconde \emph{agit} : elle enchaîne des appels d'outils, tient un état et exécute une tâche en plusieurs étapes. Un \textbf{harnais agentique} est l'environnement qui donne au modèle l'accès à ces outils (fichiers, terminal, logiciels) et encadre ce qu'il a le droit de faire.
+\item[Modèle frontière / modèle \emph{open weight}] Un modèle \emph{frontière} est un modèle propriétaire de premier plan, accessible via un service distant. Un modèle \emph{open weight} a des poids publiés, exécutables sur sa propre machine. L'arbitrage entre les deux porte sur l'efficacité et la simplicité d'un côté, la souveraineté des données et la pérennité de l'autre (voir §\ref{sec:harnais}).
+\item[\emph{AI Exposure Index}] Indice mesurant, tâche par tâche plutôt que métier par métier, le degré d'exposition d'un travail à l'IA, en distinguant l'\textbf{automatisation} (l'outil fait à la place) de l'\textbf{augmentation} (l'outil assiste). Utile parce qu'il déplace la question de « quel métier disparaît » vers « quelles tâches se déplacent ».
+\item[\emph{World model}] Modèle apprenant une représentation cohérente et \emph{persistante} d'un espace et de son évolution dans le temps, par opposition à un générateur d'images qui produit chaque vue indépendamment. C'est la propriété qui manque encore aux générateurs pour concurrencer un moteur temps réel sur un décor de tournage.
+\item[Serveur d'inférence local] Machine du réseau interne exécutant les modèles pour les stations de travail, au même titre qu'un \emph{render node}. Permet des traitements assistés sans que les rushes ne quittent le studio.
+\item[Verse] Langage de programmation \textbf{interprété} conçu par Epic Games, fondation du \emph{Scene Graph} d'Unreal Engine~6 en remplacement du modèle Actor et du tout-C++ précompilé. Un langage interprété se recharge à chaud et se corrige par fragments, ce qui le rend accessible à un pilotage par agent.
+\item[Frustum manuel] Mode dégradé dans lequel, le tracking caméra étant indisponible, la portion de décor rendue en perspective n'est plus asservie à la caméra mais recalée à la main depuis la régie 3D entre les prises. Impose des plans fixes à légèrement panoramiques --- configuration effectivement subie sur \textit{NoClip}.
 \end{description}
 
 %====================================================================
