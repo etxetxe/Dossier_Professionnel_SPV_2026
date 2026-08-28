@@ -29,9 +29,26 @@ Compilateur : **`pdflatex`** (déclaré dans la magic comment ligne 1 : `% !TEX 
 
 La bibliographie vit dans **`sources_latex/references.bib`** (11 entrées, APA).
 
-Toutes les images sont dans **`sources_latex/img/`** (JPG, sensibles à la casse).
+Toutes les images sont dans **`sources_latex/img/`** (JPG et PNG, sensibles à la casse).
 Si un `\includegraphics` échoue, vérifier que le nom de fichier correspond exactement.
 `img/planning_board.jpg` n'est **plus utilisé** (remplacé par trois graphiques TikZ inline au Ch. 3).
+
+| Fichier | Ch. | Contenu |
+|---------|-----|---------|
+| `mood_backrooms.jpg` / `mood_outside.jpg` | 2 | Moodboards des deux mondes |
+| `mood_ryan.jpg` / `clothes_ryan.jpg` | 2 | Moodboard personnage + planche costume |
+| `backrooms_key.jpg` | 3 | Environnement-clé visé pour le décor virtuel |
+| `noclip_bureau_large.png` | 4 | Photogramme --- plan d'ensemble bureau (montage final) |
+| `noclip_ryan_gp.png` | 4 | Photogramme --- gros plan Ryan (raccord lumière) |
+| `noclip_bureau_assis.png` | 4 | Photogramme --- plan d'ensemble, Ryan assis |
+| `noclip_ecran_insert.png` | 4 | Photogramme --- insert écran |
+| `planning_board.jpg` | --- | **Non utilisé** |
+
+Les quatre **photogrammes du montage final** (`noclip_*.png`, ajoutés le 28 août 2026) sont des
+exports 1280×720 **pillarboxés** : 160 px de bandes noires à gauche et à droite (image utile
+960×720). Le `\includegraphics` les recadre à la volée via `trim=160 0 160 0,clip` (unités `bp`,
+équivalentes aux pixels à 72 dpi) : **ne pas retirer ces options**, les fichiers sources ne sont
+pas modifiés. Les originaux non renommés (`NoClip_*.png` à la racine) sont git-ignorés.
 
 ---
 
@@ -193,7 +210,9 @@ Citer inline avec `\autocite{key}`. Types d'entrées et clés :
   commit `RTK_Dossier_SPV_<aaaa-mm-jj_hhmm>`, pull (merge `-X ours` en faveur du local),
   push (repli `--force-with-lease`).
 - **`.gitignore`** — ignore les auxiliaires LaTeX dans `sources_latex/`
-  (`*.aux *.log *.out *.toc *.bbl *.bcf *.blg *.run.xml *.synctex.gz *.fls *.fdb_latexmk`)
-  et les logs temporaires (`pass*.log`, `biber.log`).
+  (`*.aux *.log *.out *.toc *.bbl *.bcf *.blg *.run.xml *.synctex.gz *.fls *.fdb_latexmk`),
+  les logs temporaires (`pass*.log`, `biber.log`), les documents de tiers (`SPV1_EP1_*.pdf`)
+  et le matériel brut de la racine (`IMG_*.JPG`, `WhatsApp Image*.jpeg`, `NoClip_*.png`).
+  Seules les copies intégrées dans `sources_latex/img/` sont versionnées.
 - **`README.md`** — titre du dépôt.
 - **`LICENSE`** — licence du dépôt.

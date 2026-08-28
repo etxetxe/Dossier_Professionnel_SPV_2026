@@ -44,6 +44,11 @@ Le document couvre sa supervision des séquences en production virtuelle du cour
 étudiant ***NoClip*** (scénario original de **Charlotte Strauch**, promotion 2ᵉ année SPV, 2026).
 Univers visuel : *Backrooms* (jaune, couloirs liminaux, néons, moquette humide).
 
+**Lien de visionnage du montage final** (Ch. 1, encadré « Accès au film ») :
+<https://youtu.be/Q172b-InvOE> — lien YouTube non répertorié, **sans mot de passe**
+(remplace le lien Vimeo de réserve `vimeo.com/noclip-spv-baron`, retiré le 28 août 2026).
+Le contact de repli affiché sous le lien (`etienne.baron@spv.fr`) reste à confirmer.
+
 ---
 
 ## 2. Inventaire des documents sources
@@ -455,6 +460,8 @@ RNCP niveau 7), plateau VP inauguré mars 2025 avec Sony. Sur la page **Remercie
   diagrammes de flux (§ 3.10) ; organigramme ; calendrier (3 graphiques TikZ) ; découpage technique annoté
   (§ 3.7) ; optimisation scène 3D temps réel ; plan de feu DMX + pixel-mapping (§ 3.11).
 - **Ch. 4** — Analyses critiques après fabrication (images VP, environnement virtuel, RH, calendrier).
+  Contient la **planche de quatre photogrammes du montage final** (`img/noclip_*.png`) en tête de
+  la section « Analyse qualitative des images de l'environnement virtuel ».
 - **Ch. 5** — Bonnes pratiques fond vert (réglages caméra § 3.2, exposition/uniformité, plan de feu,
   détourage Nuke).
 - **Ch. 6** — Bilan alternance & projet professionnel.
