@@ -47,7 +47,8 @@ Univers visuel : *Backrooms* (jaune, couloirs liminaux, néons, moquette humide)
 **Lien de visionnage du montage final** (Ch. 1, encadré « Accès au film ») :
 <https://youtu.be/Q172b-InvOE> — lien YouTube non répertorié, **sans mot de passe**
 (remplace le lien Vimeo de réserve `vimeo.com/noclip-spv-baron`, retiré le 28 août 2026).
-Le contact de repli affiché sous le lien (`etienne.baron@spv.fr`) reste à confirmer.
+Contact de repli affiché sous le lien : **`contact.pro@etiennebaron.fr`**
+(confirmé le 28 août 2026, remplace le placeholder `etienne.baron@spv.fr`).
 
 ---
 
