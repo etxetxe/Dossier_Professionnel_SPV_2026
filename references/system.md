@@ -24,10 +24,10 @@
 
 ## 1. Source unique
 
-Tout le document tient dans un seul fichier : **`sources_latex/dossier.tex`** (~1 150 lignes).
+Tout le document tient dans un seul fichier : **`sources_latex/dossier.tex`** (~1 620 lignes).
 Compilateur : **`pdflatex`** (déclaré dans la magic comment ligne 1 : `% !TEX program = pdflatex`).
 
-La bibliographie vit dans **`sources_latex/references.bib`** (11 entrées, APA).
+La bibliographie vit dans **`sources_latex/references.bib`** (18 entrées, APA).
 
 Toutes les images sont dans **`sources_latex/img/`** (JPG et PNG, sensibles à la casse).
 Si un `\includegraphics` échoue, vérifier que le nom de fichier correspond exactement.
@@ -70,7 +70,7 @@ pdflatex -interaction=nonstopmode dossier.tex
   laisse MiKTeX installer à la volée les paquets manquants.
 - `\nocite{*}` force l'impression de **toutes** les entrées du `.bib` (même non citées inline).
 - Le PDF compilé `sources_latex/dossier.pdf` est copié à la racine sous le nom livrable
-  **`Dossier_Professionnel_SPV_NoClip_BARON.pdf`**. Longueur actuelle : ~37 pages.
+  **`Dossier_Professionnel_SPV_NoClip_BARON.pdf`**. Longueur actuelle : ~45 pages.
 
 Le script **`push.ps1 -Build`** (racine) enchaîne automatiquement les 4 passes, copie le
 livrable, puis commit/pull/push (voir `CLAUDE.md` § pipeline et `setup.md`).

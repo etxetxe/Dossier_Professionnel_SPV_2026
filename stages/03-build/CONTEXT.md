@@ -22,7 +22,7 @@
 |--------------|----------------------|
 | PDF produit | `sources_latex/dossier.pdf` existe et s'ouvre |
 | Citations résolues | Pas de `?` dans les renvois ni la bibliographie |
-| Pagination | ≈ 37 pages |
+| Pagination | ≈ 45 pages |
 
 ## Outputs
 

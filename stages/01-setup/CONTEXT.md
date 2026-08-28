@@ -13,7 +13,7 @@
 
 1. Vérifier les pré-requis (`pdflatex`, `biber`, `git`, PowerShell, `openpyxl`).
 2. Installer MiKTeX + `biber` + `biblatex-apa` (auto-install activé).
-3. Premier build : `.\push.ps1 -Build` depuis la racine (≈ 37 pages).
+3. Premier build : `.\push.ps1 -Build` depuis la racine (≈ 45 pages).
 4. (Utilisateur) configurer le remote git (cf. `references/setup.md` § 3).
 
 ## Outputs
