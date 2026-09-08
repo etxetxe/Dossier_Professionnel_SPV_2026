@@ -4,8 +4,12 @@ Portfolio professionnel d'**Etienne Baron**, 2ᵉ année **Superviseur de Produc
 à l'**École Georges Méliès** (Orly, Grand Paris). Le dossier documente sa **supervision des séquences
 en production virtuelle** du court-métrage de fin d'études ***NoClip***.
 
-> **Livrable :** [`Dossier_Professionnel_SPV_NoClip_BARON.pdf`](Dossier_Professionnel_SPV_NoClip_BARON.pdf)
+> **Livrable 1 — le dossier :** [`Dossier_Professionnel_SPV_NoClip_BARON.pdf`](Dossier_Professionnel_SPV_NoClip_BARON.pdf)
 > (≈ 37 pages), compilé depuis la source LaTeX unique `sources_latex/dossier.tex`.
+>
+> **Livrable 2 — la soutenance :** [`Soutenance_SPV_NoClip_BARON.html`](Soutenance_SPV_NoClip_BARON.html),
+> support de soutenance orale au format web (37 diapos, 16:9), construit par **Marp CLI**
+> depuis `sources_slides/soutenance.md`.
 
 ---
 
@@ -54,6 +58,24 @@ Le script enchaîne les 4 passes `pdflatex → biber → pdflatex → pdflatex`,
 sous son nom livrable, puis commit (`RTK_Dossier_SPV_<date_heure>`) et synchronise git.
 Pré-requis et premier build : voir `stages/01-setup/`.
 
+## Le support de soutenance
+
+Le deck se lit dans n'importe quel navigateur, hors ligne. Build en une commande :
+
+```powershell
+.\push.ps1 -Slides
+```
+
+Navigation : flèches, `F` pour le plein écran, `P` pour le mode présentateur (notes d'orateur
+et minutage de chaque diapo). Contrat d'étape et audit : `stages/05-slides/`.
+
+> **Note sur les médias.** La partie V du deck s'appuie sur le corpus ***NATION*** — trois
+> montages de démonstration produits pendant l'année de veille (alternance non réalisée),
+> ajoutés au dossier de travail le 8 septembre 2026. Ces fichiers sont **délibérément hors
+> dépôt** (`.gitignore`) et restent sur la machine de l'auteur : le deck est donc complet en
+> local et partiel après un `git clone`. Ce que le corpus contient et ce qu'il démontre est
+> documenté dans `references/input.md` § 8.
+
 ## Organisation du dépôt (méthodologie ICM)
 
 Ce dépôt est structuré selon l'**Interpreted Context Methodology** (ICM, Jake Van Clief) : *la structure
@@ -66,10 +88,12 @@ couche 0 (`CLAUDE.md`), puis le routage (`CONTEXT.md`), puis **un seul** contrat
 | Élément | Rôle |
 |---------|------|
 | `CLAUDE.md` · `CONTEXT.md` | Identité (couche 0) et routage des tâches (couche 1) |
-| `stages/01→04` | Contrats d'étape : setup, edit, build, deliver (couche 2) |
+| `stages/01→05` | Contrats d'étape : setup, edit, build, deliver, slides (couche 2) |
 | `references/input.md` · `system.md` | Fond (données, voix) et forme (LaTeX) — couche 3 |
+| `stages/05-slides/references/` | Forme du deck (`deck.md`) et toolchain Marp (`marp-setup.md`) — couche 3 |
 | `_core/` | Canon de la méthodologie (méta) |
 | `sources_latex/` | La source LaTeX et les images |
+| `sources_slides/` | La source du deck (`soutenance.md`, `theme.css`) |
 
 ## Transparence IA (AI Act)
 

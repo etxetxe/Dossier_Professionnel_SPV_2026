@@ -6,8 +6,13 @@
 
 ## Pipeline
 
-Build mono-source : `sources_latex/dossier.tex` → `Dossier_Professionnel_SPV_NoClip_BARON.pdf`.
-Cycle courant par défaut : régénérer le PDF puis versionner (aucune édition de contenu sauf demande).
+Deux chaînes indépendantes, deux livrables à la racine :
+
+- **PDF** (LaTeX) : `sources_latex/dossier.tex` → `Dossier_Professionnel_SPV_NoClip_BARON.pdf`.
+- **Deck web** (Marp) : `sources_slides/soutenance.md` → `Soutenance_SPV_NoClip_BARON.html`.
+
+Cycle courant par défaut : régénérer le PDF puis versionner (aucune édition de contenu sauf
+demande). L'étape `05-slides` ne se déclenche que sur demande et ne touche jamais `sources_latex/`.
 
 | Intention | Étape | Contrat |
 |-----------|-------|---------|
@@ -15,6 +20,7 @@ Cycle courant par défaut : régénérer le PDF puis versionner (aucune édition
 | Modifier le dossier (`.tex` / `.bib`) | `stages/02-edit/` | `stages/02-edit/CONTEXT.md` |
 | Compiler le PDF (4 passes) | `stages/03-build/` | `stages/03-build/CONTEXT.md` |
 | Livrer puis versionner (git) | `stages/04-deliver/` | `stages/04-deliver/CONTEXT.md` |
+| Générer le support de soutenance web | `stages/05-slides/` | `stages/05-slides/CONTEXT.md` |
 
 ## Couches de contexte (rappel ICM)
 

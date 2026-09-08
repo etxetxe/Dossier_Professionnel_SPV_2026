@@ -9,8 +9,9 @@ couche 3 (`references/`, fond/forme/init). Canon complet : `_core/CONVENTIONS.md
 
 Source LaTeX du portfolio professionnel d'**Etienne Baron**, 2ᵉ année Superviseur de
 Production Virtuelle (École Georges Méliès). Le document couvre sa supervision des séquences
-en production virtuelle du court-métrage étudiant ***NoClip***. Source unique :
-`sources_latex/dossier.tex` ; livrable : `Dossier_Professionnel_SPV_NoClip_BARON.pdf` (racine).
+en production virtuelle du court-métrage étudiant ***NoClip***. Deux sources, deux livrables (racine) :
+`sources_latex/dossier.tex` → `Dossier_Professionnel_SPV_NoClip_BARON.pdf` (dossier remis au jury)
+et `sources_slides/soutenance.md` → `Soutenance_SPV_NoClip_BARON.html` (support de soutenance orale).
 
 ## Arborescence
 
@@ -19,7 +20,8 @@ Dossier-Professionnel-SPV/
 ├── CLAUDE.md                 (couche 0 — vous êtes ici)
 ├── CONTEXT.md                (couche 1 — routage des tâches)
 ├── README.md · LICENSE · push.ps1 · .gitignore
-├── Dossier_Professionnel_SPV_NoClip_BARON.pdf   (livrable)
+├── Dossier_Professionnel_SPV_NoClip_BARON.pdf   (livrable 1 — dossier)
+├── Soutenance_SPV_NoClip_BARON.html             (livrable 2 — deck web)
 ├── _core/                    (méta : canon ICM — NON chargé à l'exécution)
 │   ├── CONVENTIONS.md        (ICM : 5 couches + 15 patterns)
 │   └── placeholder-syntax.md (syntaxe des variables {{…}})
@@ -30,10 +32,16 @@ Dossier-Professionnel-SPV/
 │   ├── 01-setup/             (init machine + 1er build + remote)
 │   ├── 02-edit/              (éditer .tex / .bib — sur demande)
 │   ├── 03-build/             (compiler le PDF, 4 passes)
-│   └── 04-deliver/           (copier le livrable + versionner)
+│   ├── 04-deliver/           (copier le livrable + versionner)
+│   └── 05-slides/            (deck de soutenance web — sur demande)
 ├── setup/questionnaire.md    (onboarding système — déclencheur `démarrer`)
-└── sources_latex/            (source LaTeX : dossier.tex, references.bib, img/)
+├── sources_latex/            (source LaTeX : dossier.tex, references.bib, img/)
+└── sources_slides/           (source du deck : soutenance.md, theme.css, media/*)
 ```
+
+> `sources_slides/media/` et les montages `NATION_*.mp4` (racine) sont **git-ignorés** :
+> le corpus de l'année de veille est référencé (`references/input.md` § 8) et exploité en
+> local, jamais poussé sur GitHub.
 
 ## Carte du contexte (couche 3)
 
@@ -41,18 +49,21 @@ Dossier-Professionnel-SPV/
 |---------|------|-----------------|
 | `stages/01-setup/references/setup.md` | Init | Toolchain MiKTeX/biber, 1er build, remote GitHub. |
 | `references/system.md` | Forme | Compilation, préambule, palette/boîtes, chapitres, TikZ, biblio. |
-| `references/input.md` | Fond | Sources, matériel plateau, crédits, devis, voix, garde-fous. |
+| `references/input.md` | Fond | Sources, matériel plateau, crédits, devis, voix, garde-fous, corpus *NATION* (§ 8). |
+| `stages/05-slides/references/deck.md` | Forme (deck) | Chaîne Marp, charte sombre, grammaire des diapos, étanchéité des médias. |
+| `stages/05-slides/references/marp-setup.md` | Init (deck) | Node / Marp CLI / ffmpeg, contrôle PNG. |
 
 > **Règle d'or :** avant toute action, lire le contrat d'étape (`stages/NN-*/CONTEXT.md`),
-> qui pointe vers la seule section utile de la couche 3. Forme → `system.md` ;
-> fond → `input.md` ; machine neuve → `setup.md`.
+> qui pointe vers la seule section utile de la couche 3. Forme du PDF → `system.md` ;
+> forme du deck → `deck.md` ; fond → `input.md` ; machine neuve → `setup.md`.
 
 ## Déclencheurs
 
 | Mot-clef | Action |
 |----------|--------|
 | `démarrer` | Onboarding (`setup/questionnaire.md`) puis étape `01-setup`. |
-| `status` | Afficher la complétion du pipeline (étapes 01→04). |
+| `status` | Afficher la complétion du pipeline (étapes 01→05). |
+| `soutenance` | Étape `05-slides` : régénérer le support de soutenance web. |
 
 ## Pipeline (cycle courant)
 
@@ -68,6 +79,14 @@ détaillé vit dans `CONTEXT.md` ; chaque étape porte son contrat. Enchaînemen
    ```
 
 4. **(`04-deliver`)** — copie du PDF à la racine + versionnement git.
+5. **(`05-slides`, sur demande)** — support de soutenance orale au format web, construit par
+   **Marp CLI** (outil externe, `npx`, aucune installation globale) :
+
+   ```powershell
+   .\push.ps1 -Slides
+   ```
+
+   Chaîne indépendante du LaTeX : elle ne touche jamais `sources_latex/`.
 
 ## Gestion du dépôt GitHub
 

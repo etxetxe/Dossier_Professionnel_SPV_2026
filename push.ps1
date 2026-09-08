@@ -19,12 +19,20 @@
 .PARAMETER Build
     Recompile le PDF avant de committer. Sans ce switch, on committe l'etat courant.
 
+.PARAMETER Slides
+    Reconstruit le support de soutenance web (Marp CLI) avant de committer.
+    Voir stages-slides\CONTEXT.md.
+
 .PARAMETER Message
     Message de commit personnalise. Par defaut : RTK_Dossier_SPV_<horodatage>.
 
 .EXAMPLE
     .\push.ps1 -Build
     Compile le PDF puis commit + pull + push.
+
+.EXAMPLE
+    .\push.ps1 -Slides
+    Reconstruit le deck de soutenance puis commit + pull + push.
 
 .EXAMPLE
     .\push.ps1
@@ -34,6 +42,7 @@
 [CmdletBinding()]
 param(
     [switch]$Build,
+    [switch]$Slides,
     [string]$Message
 )
 
@@ -46,6 +55,10 @@ Set-Location $Root
 $Sources    = Join-Path $Root 'sources_latex'
 $PdfSource  = Join-Path $Sources 'dossier.pdf'
 $PdfTarget  = Join-Path $Root 'Dossier_Professionnel_SPV_NoClip_BARON.pdf'
+
+$SlideSrc   = Join-Path $Root 'sources_slides\soutenance.md'
+$SlideTheme = Join-Path $Root 'sources_slides	heme.css'
+$SlideTarget= Join-Path $Root 'Soutenance_SPV_NoClip_BARON.html'
 
 function Write-Step($txt) { Write-Host "==> $txt" -ForegroundColor Cyan }
 
@@ -65,6 +78,17 @@ if ($Build) {
     }
     finally { Pop-Location }
     Write-Host '    PDF genere.' -ForegroundColor Green
+}
+
+# --- 1 bis. Construction optionnelle du deck de soutenance (Marp CLI) ---
+if ($Slides) {
+    Write-Step 'Construction du deck de soutenance (Marp CLI)'
+    if (-not (Test-Path $SlideSrc)) { throw "Source du deck introuvable : $SlideSrc" }
+    # npx telecharge Marp a la volee : aucune installation globale requise.
+    & npx --yes '@marp-team/marp-cli@4.5.1' $SlideSrc --theme $SlideTheme --html --output $SlideTarget
+    if ($LASTEXITCODE -ne 0) { throw 'Marp CLI a echoue.' }
+    Write-Host "    Deck genere -> $(Split-Path -Leaf $SlideTarget)" -ForegroundColor Green
+    Write-Host '    Rappel : les medias NATION (racine + sources_slides\media) restent hors depot.' -ForegroundColor DarkYellow
 }
 
 # --- 2. Copie du PDF livrable a la racine ---

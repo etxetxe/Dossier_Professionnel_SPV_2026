@@ -33,6 +33,7 @@
 | 5 | Crédits | Personnes à remercier |
 | 6 | Contenu par chapitre | Quoi va dans quel chapitre |
 | 7 | Garde-fous | Règles rédactionnelles |
+| 8 | Corpus *NATION* | Année de veille et de travail, matière de la soutenance |
 
 ---
 
@@ -483,3 +484,69 @@ RNCP niveau 7), plateau VP inauguré mars 2025 avec Sony. Sur la page **Remercie
 - Le matériel décrit (§ 4) est celui, réel, de l'école — ne pas le remplacer par du matériel générique.
 - Les documents sources ont été retirés du dépôt après archivage ici ; en cas de besoin du fichier
   original, le récupérer via l'**historique git**.
+
+---
+
+## 8. Corpus *NATION* — année de veille et de travail (alternance non réalisée)
+
+> **Documents ajoutés au dossier de travail le 8 septembre 2026.** Ils sont **référencés ici**
+> et exploités par l'étape `05-slides`, mais **jamais versionnés** (`.gitignore` :
+> `NATION_*.mp4`, `sources_slides/media/`). Ils restent sur la machine de l'auteur.
+> Ils **ne modifient pas le PDF** : le dossier remis au jury est inchangé.
+
+### 8.1 Ce que ce corpus vient documenter
+
+Le chapitre 5 du dossier annonce une période d'alternance **non effectuée en entreprise**,
+remplacée par une veille structurée et un travail personnel. Ce corpus en est la **pièce
+probante côté « travail »** : un projet de VFX mené hors cadre scolaire de mars à
+septembre 2026, où le décor est **entièrement fabriqué en post-production**.
+
+Il exécute, dans les faits, le **dispositif D** formulé en fin de chapitre 4 (tournage en
+décor neutre + fabrication hybride du décor). C'est ce qui autorise, en soutenance, la mise
+en regard *NoClip* / *NATION* : même leçon, dans les deux sens.
+
+### 8.2 Les trois montages (racine du dossier de travail)
+
+| Fichier | Durée | Contenu |
+|---------|-------|---------|
+| `NATION_Desert_Gardes_Chaine_Complete.mp4` | 5 min 00 | Six actes, du rush au composite. Cinq couches croisées : document, rush, base, rendu, retenu. |
+| `NATION_Desert_Chaine_Fabrication.mp4` | 3 min 00 | Lecture synchrone de quatre états d'un même plan (plate fond noir, fond gris de calage, décor froid, décor doré). |
+| `NATION_Desert_Evolution_Retakes.mp4` | 2 min 00 | Six versions d'un même plan au même timecode : densité atmosphérique poussée puis redescendue. |
+
+Format commun : 1920×1080, 25 fps, H.264, sans piste son (montage `ffmpeg` 8.1.1).
+
+### 8.3 Données du projet (telles qu'affichées dans les montages)
+
+- **Référence de montage** : `NATION V2_1.xml` — conduite Premiere Pro, **654 clips**,
+  timebase 25 ; `NATION V2_1.mp4` — montage de travail, 16 min 39 s.
+- **Corpus traité** : **10 plans**, **16 rendus VFX**, du **18 juillet au 4 septembre 2026**.
+- **Écarté** (sujet différent) : Porte Torii, Gardes & laboratoire, End_Crew, tests ComfyUI.
+- **Plateau réel** : la tour est une **maquette posée sur un tas de sable**, filmée en
+  intérieur ; les comédiens sont tournés **sur fond vert**, en studio et en extérieur.
+  **Aucun désert n'a été filmé.**
+- **Fabrication** : générations ComfyUI (modèle vidéo LTX, LoRA `ic_lora_*`), layouts,
+  composites ; alternance **proxy 720p** pour les itérations / **3840×2160** pour les
+  validations.
+- **Méthode de traçabilité** — *(c'est le point à retenir pour la soutenance)* :
+  1. **la conduite fait foi** — le XML donne le rush source, le TC et le point d'entrée ;
+  2. **appariement par durée** — un rendu sans métadonnée se rattache à son plan par
+     égalité exacte de durée ;
+  3. **synchronisation vérifiée** — chaque raccord est contrôlé au photogramme.
+
+### 8.4 Ce que ce corpus démontre (et ce qu'il ne démontre pas)
+
+- **Démontre** : la capacité à instruire un choix de dispositif, à documenter une chaîne de
+  fabrication et à **refuser huit options sur neuf** pour une raison de raccord — la décision
+  rendue en temps utile, exactement ce qui a manqué sur *NoClip*.
+- **Ne démontre pas** : l'ingénierie de plateau (calibration, signaux, `nDisplay` en
+  conditions répétées), qui reste théorique et ne se comble qu'en studio. Le corpus perd
+  aussi le **retour *in-camera***, limite assumée du dispositif D.
+
+### 8.5 Vignettes extraites (non versionnées)
+
+Sept photogrammes servent de support fixe au deck, dans `sources_slides/media/` :
+`nation_titre`, `nation_neuf_rushs`, `nation_rush_masque_base`, `nation_quatre_etats`,
+`nation_decor_neuf_essais`, `nation_choix_final`, `nation_lecture_synchrone`
+(les trois derniers servent aussi d'affiches aux balises `<video>`).
+Procédure d'extraction et piège `ffmpeg` :
+`../stages/05-slides/references/deck.md` § 4.

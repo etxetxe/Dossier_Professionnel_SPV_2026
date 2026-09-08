@@ -1,0 +1,375 @@
+/* @theme backrooms */
+
+/* ------------------------------------------------------------------
+   Theme Marp "backrooms" - soutenance orale SPV / NoClip
+   Palette reprise de sources_latex/dossier.tex (voir references/system.md § 4),
+   transposee sur fond sombre pour une projection en salle.
+   ------------------------------------------------------------------ */
+
+/* Theme autonome : pas d'@import 'default' - le theme par defaut de Marp
+   impose un fond clair aux tableaux, illisible sur cette charte sombre. */
+
+* { box-sizing: border-box; }
+
+:root {
+  --br-jaune: #E3CF4B;
+  --br-jaune-pale: #F4EDC0;
+  --br-accent: #B8860B;
+  --br-dark: #14140F;
+  --br-dark2: #1E1D16;
+  --br-gris: #8C8C7D;
+  --br-gris-pale: #ECEBE3;
+  --br-vert: #4E9E70;
+  --br-bleu: #5B8FC7;
+  --br-rouge: #C4643C;
+
+  --font-corps: "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "Cascadia Mono", "Consolas", "SF Mono", monospace;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 1280px;
+  height: 720px;
+  padding: 46px 68px 58px 68px;
+  background: var(--br-dark);
+  color: var(--br-gris-pale);
+  font-family: var(--font-corps);
+  font-size: 22px;
+  line-height: 1.42;
+  letter-spacing: 0.1px;
+  justify-content: flex-start;
+}
+
+/* ---------- Titres ---------- */
+
+section h1 {
+  font-size: 46px;
+  font-weight: 700;
+  color: var(--br-jaune-pale);
+  margin: 0 0 6px 0;
+  letter-spacing: -0.4px;
+}
+
+section h2 {
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--br-jaune);
+  margin: 0 0 4px 0;
+  letter-spacing: -0.2px;
+}
+
+section h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--br-accent);
+  margin: 18px 0 4px 0;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+section h4 {
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--br-gris-pale);
+  margin: 10px 0 2px 0;
+}
+
+/* Filet sous le titre de section */
+section h2::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 3px;
+  background: var(--br-accent);
+  margin-top: 10px;
+}
+
+/* ---------- Corps ---------- */
+
+section p { margin: 10px 0; }
+
+section strong { color: var(--br-jaune-pale); font-weight: 650; }
+section em { color: var(--br-gris); font-style: italic; }
+
+section ul, section ol { margin: 8px 0; padding-left: 26px; }
+section li { margin: 7px 0; }
+section li::marker { color: var(--br-accent); }
+
+section a { color: var(--br-bleu); text-decoration: none; border-bottom: 1px solid rgba(91,143,199,.4); }
+
+section code {
+  font-family: var(--font-mono);
+  font-size: 0.86em;
+  color: var(--br-jaune);
+  background: rgba(227, 207, 75, .09);
+  padding: 1px 6px;
+  border-radius: 3px;
+}
+
+section blockquote {
+  border: 0;
+  border-left: 3px solid var(--br-accent);
+  margin: 16px 0;
+  padding: 4px 0 4px 20px;
+  color: var(--br-gris-pale);
+  font-size: 0.95em;
+}
+section blockquote p { margin: 4px 0; }
+
+/* ---------- Tableaux ---------- */
+
+section table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 18px;
+  margin: 12px 0;
+  background: transparent;
+  color: var(--br-gris-pale);
+}
+section thead, section tbody, section tr { background: transparent; }
+section tbody tr:nth-child(even) { background: rgba(255, 255, 255, .035); }
+section th {
+  background: rgba(227, 207, 75, .13);
+  color: var(--br-jaune);
+  text-align: left;
+  font-weight: 650;
+  padding: 8px 12px;
+  border: 0;
+  border-bottom: 2px solid var(--br-accent);
+}
+section td {
+  color: var(--br-gris-pale);
+  padding: 7px 12px;
+  border: 0;
+  border-bottom: 1px solid rgba(140, 140, 125, .25);
+  vertical-align: top;
+}
+section tr:last-child td { border-bottom: 0; }
+
+/* ---------- Images ---------- */
+
+section img { border-radius: 3px; }
+section figure { margin: 0; }
+
+/* ---------- Pied de page / pagination ---------- */
+
+section::after {
+  position: absolute;
+  right: 26px;
+  bottom: 16px;
+  padding: 0;
+  color: var(--br-gris);
+  font-size: 15px;
+  font-family: var(--font-mono);
+}
+section footer {
+  position: absolute;
+  left: 68px;
+  bottom: 16px;
+  padding: 0;
+  color: var(--br-gris);
+  font-size: 15px;
+  letter-spacing: 0.3px;
+}
+section header {
+  color: var(--br-accent);
+  font-size: 15px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+/* ==================================================================
+   Classes utilitaires (invoquees par <!-- _class: ... -->)
+   ================================================================== */
+
+/* --- Page de titre --- */
+section.titre {
+  justify-content: center;
+  background:
+    radial-gradient(ellipse at 22% 30%, rgba(227, 207, 75, .10), transparent 62%),
+    var(--br-dark);
+}
+section.titre h1 {
+  font-size: 96px;
+  line-height: 1;
+  color: var(--br-jaune-pale);
+  margin-bottom: 14px;
+}
+section.titre h2 {
+  font-size: 25px;
+  color: var(--br-gris);
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+section.titre h2::after { display: none; }
+section.titre p { font-size: 20px; color: var(--br-gris); }
+
+/* --- Intertitre de partie --- */
+section.partie {
+  justify-content: center;
+  background:
+    linear-gradient(105deg, rgba(184, 134, 11, .16), transparent 55%),
+    var(--br-dark2);
+}
+section.partie h1 { font-size: 60px; }
+section.partie h2 { color: var(--br-gris); font-size: 23px; font-weight: 400; }
+section.partie h2::after { display: none; }
+section.partie .num {
+  font-family: var(--font-mono);
+  font-size: 130px;
+  font-weight: 700;
+  color: var(--br-accent);
+  opacity: .38;
+  line-height: .9;
+  margin-bottom: 4px;
+}
+
+/* --- Citation / phrase forte plein cadre --- */
+section.punch {
+  justify-content: center;
+  text-align: center;
+}
+section.punch h1 {
+  font-size: 44px;
+  line-height: 1.28;
+  max-width: 22em;
+  margin: 0 auto;
+  font-weight: 600;
+}
+section.punch p { color: var(--br-gris); font-size: 21px; margin-top: 22px; }
+
+/* --- Deux colonnes --- */
+section.deux .cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 34px;
+  margin-top: 14px;
+}
+section.trois .cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 26px;
+  margin-top: 14px;
+}
+section .cols > div { min-width: 0; }
+section .cols h4 { margin-top: 0; }
+
+/* --- Encadres (transposition des tcolorbox LaTeX) --- */
+.infobox, .notebox, .techbox {
+  border-radius: 4px;
+  padding: 13px 17px;
+  margin: 12px 0;
+  font-size: 19px;
+  line-height: 1.38;
+}
+.infobox {
+  background: rgba(227, 207, 75, .10);
+  border-left: 4px solid var(--br-jaune);
+}
+.notebox {
+  background: rgba(140, 140, 125, .12);
+  border-left: 4px solid var(--br-gris);
+}
+.techbox {
+  background: rgba(184, 134, 11, .08);
+  border-left: 4px solid var(--br-accent);
+  font-family: var(--font-mono);
+  font-size: 17px;
+}
+.infobox .t, .notebox .t, .techbox .t {
+  display: block;
+  font-weight: 700;
+  color: var(--br-jaune);
+  margin-bottom: 5px;
+  font-size: 19px;
+  letter-spacing: .3px;
+}
+.notebox .t { color: var(--br-gris-pale); }
+.techbox .t { color: var(--br-accent); }
+
+/* --- Etiquettes de statut --- */
+.tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 15px;
+  padding: 2px 9px;
+  border-radius: 3px;
+  margin-right: 8px;
+  letter-spacing: .5px;
+}
+.tag.ok   { background: rgba(78, 158, 112, .22); color: var(--br-vert); }
+.tag.ko   { background: rgba(196, 100, 60, .20); color: var(--br-rouge); }
+.tag.info { background: rgba(91, 143, 199, .18); color: var(--br-bleu); }
+.tag.warn { background: rgba(227, 207, 75, .16); color: var(--br-jaune); }
+
+/* --- Chiffres cles --- */
+.kpi {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 24px;
+  margin: 26px 0 8px 0;
+}
+.kpi .n {
+  font-size: 54px;
+  font-weight: 700;
+  color: var(--br-jaune);
+  line-height: 1;
+  font-family: var(--font-mono);
+}
+.kpi .l {
+  font-size: 17px;
+  color: var(--br-gris);
+  margin-top: 8px;
+  line-height: 1.3;
+}
+
+/* --- Grilles d'images --- */
+.grille2, .grille3 { display: grid; gap: 12px; margin-top: 10px; }
+.grille2 { grid-template-columns: 1fr 1fr; }
+.grille3 { grid-template-columns: 1fr 1fr 1fr; }
+.grille2 img, .grille3 img { width: 100%; display: block; }
+/* Les photogrammes NoClip sont pillarboxes (160 px de bandes noires de chaque cote,
+   cf. references/system.md § 1) : le cadrage 4/3 en `cover` retire ces bandes,
+   equivalent CSS du `trim=160 0 160 0,clip` du LaTeX. */
+.grille2 img { aspect-ratio: 4 / 3; object-fit: cover; }
+.legende {
+  font-size: 16px;
+  color: var(--br-gris);
+  margin-top: 10px;
+  line-height: 1.35;
+}
+
+/* --- Media plein cadre (image ou video) ---
+   Les montages NATION portent DEJA leur propre texte incruste : la legende ne se pose
+   donc pas en surimpression mais dans un bandeau sous l'image, et l'image est en
+   `contain` (jamais recadree). */
+section.media { padding: 0; justify-content: flex-start; overflow: hidden; }
+section.media .cadre { display: flex; flex-direction: column; width: 1280px; height: 720px; }
+section.media .cadre img,
+section.media .cadre video {
+  width: 1280px;
+  height: 528px;
+  object-fit: contain;
+  background: #000;
+  display: block;
+  border-radius: 0;
+}
+section.media .sur {
+  flex: 1;
+  padding: 20px 56px 22px 56px;
+  background: var(--br-dark2);
+  border-top: 2px solid var(--br-accent);
+}
+section.media .sur h2 { font-size: 27px; margin-bottom: 6px; }
+section.media .sur h2::after { display: none; }
+section.media .sur p { font-size: 18px; line-height: 1.4; color: var(--br-gris-pale); margin: 4px 0 0 0; }
+section.media::after { color: var(--br-gris); }
+
+/* --- Fin --- */
+section.fin { justify-content: center; text-align: center; }
+section.fin h1 { font-size: 58px; }
+section.fin::after { display: none; }

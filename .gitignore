@@ -26,3 +26,16 @@ IMG_*.JPG
 /NoClip_*.png
 WhatsApp Image*.jpeg
 Dossier de prod*.pdf
+
+# Corpus NATION (documents ajoutes le 08/09/2026) - references, jamais versionnes
+NATION_*.mp4
+sources_slides/media/
+
+# Rushes et rendus bruts hors corpus
+Groupe06_FLAT.mp4
+
+# Sorties de tests generatifs et planches de travail (racine) - materiel brut non integre
+img_*.webp
+image.webp
+image?.jpg
+storyboard.webp
