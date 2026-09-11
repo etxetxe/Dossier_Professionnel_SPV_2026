@@ -17,7 +17,7 @@ et `sources_slides/soutenance.md` → `Soutenance_SPV_NoClip_BARON.html` (suppor
 
 ```
 Dossier-Professionnel-SPV/
-├── CLAUDE.md                 (couche 0 — vous êtes ici)
+├── AGENTS.md                 (couche 0 — vous êtes ici)
 ├── CONTEXT.md                (couche 1 — routage des tâches)
 ├── README.md · LICENSE · push.ps1 · .gitignore
 ├── Dossier_Professionnel_SPV_NoClip_BARON.pdf   (livrable 1 — dossier)

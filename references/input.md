@@ -550,3 +550,9 @@ Sept photogrammes servent de support fixe au deck, dans `sources_slides/media/` 
 (les trois derniers servent aussi d'affiches aux balises `<video>`).
 Procédure d'extraction et piège `ffmpeg` :
 `../stages/05-slides/references/deck.md` § 4.
+
+
+## 9. Methodologie de veille et rapports de retakes
+
+Dossier autonome : voir veille.md pour les sources, limites et statut du rapport du 9.
+Le corpus historique du paragraphe 8 conserve son perimetre.

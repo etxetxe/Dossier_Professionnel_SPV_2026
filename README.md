@@ -11,6 +11,8 @@ en production virtuelle** du court-métrage de fin d'études ***NoClip***.
 > support de soutenance orale au format web (37 diapos, 16:9), construit par **Marp CLI**
 > depuis `sources_slides/soutenance.md`.
 
+> **Livrable 3 - veille :** [SPV_BARON_IA_Pipelines_VFX_Hybrides.pdf](SPV_BARON_IA_Pipelines_VFX_Hybrides.pdf), quatre pages ; source [veille.tex](sources_veille/veille.tex).
+
 ---
 
 ## Le film : *NoClip*
@@ -104,3 +106,10 @@ les choix techniques et la responsabilité du contenu** restent ceux de l'auteur
 ---
 
 *Auteur : Etienne Baron · École Georges Méliès · 2026. Licence : [MIT](LICENSE).*
+
+
+## Dossier de veille (ajout du 11 septembre 2026)
+
+Troisieme livrable autonome : sources_veille/veille.tex -> SPV_BARON_IA_Pipelines_VFX_Hybrides.pdf (4 pages).
+Routage : stages/06-veille/CONTEXT.md ; fond et provenance : references/veille.md.
+Compilation : ./build-veille.ps1. Statut des sources : references/veille.md, section 2.

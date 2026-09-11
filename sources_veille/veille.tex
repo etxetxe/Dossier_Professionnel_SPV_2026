@@ -1,0 +1,152 @@
+% !TEX program = pdflatex
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{lmodern,microtype}
+\usepackage[a4paper,margin=19mm,top=19mm,bottom=19mm,headheight=14pt]{geometry}
+\usepackage{xcolor,tabularx,booktabs,array,enumitem,fancyhdr,titlesec,tcolorbox}
+\usepackage[hidelinks]{hyperref}
+\definecolor{ink}{HTML}{2B2A22}
+\definecolor{gold}{HTML}{B8860B}
+\definecolor{pale}{HTML}{F4EDC0}
+\definecolor{muted}{HTML}{6B6B5E}
+\hypersetup{pdftitle={Veille : IA et supervision des pipelines VFX hybrides},pdfauthor={Etienne Baron},colorlinks=true,urlcolor=gold}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\footnotesize\textsc{Etienne Baron / SPV 2}}
+\fancyhead[R]{\footnotesize Veille technologique / 11 septembre 2026}
+\fancyfoot[L]{\footnotesize\color{muted}École Georges Méliès}
+\fancyfoot[R]{\footnotesize\thepage\ / 4}
+\renewcommand{\headrulewidth}{0.3pt}
+\titleformat{\section}{\Large\bfseries\color{ink}}{\color{gold}\thesection}{0.7em}{}
+\titleformat{\subsection}{\normalsize\bfseries\color{ink}}{}{0pt}{}
+\titlespacing*{\section}{0pt}{0pt}{10pt}
+\titlespacing*{\subsection}{0pt}{10pt}{4pt}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}
+\setlist[itemize]{leftmargin=15pt,itemsep=2pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=17pt,itemsep=3pt,topsep=3pt}
+\newtcolorbox{focus}{colback=pale,colframe=gold,boxrule=0.5pt,arc=0pt,left=8pt,right=8pt,top=5pt,bottom=5pt}
+\newcommand{\src}[1]{\textsuperscript{\textcolor{gold}{[#1]}}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\begin{document}
+{\small\bfseries\color{gold}MÉTHODOLOGIE DE VEILLE / DOSSIER ÉCRIT}\par
+\vspace{3pt}
+{\LARGE\bfseries\color{ink}IA et supervision des\\pipelines VFX hybrides}\par
+{\large De la promesse d'outil au plan vérifiable}\par
+\vspace{5pt}
+\section{Sujet et objectifs}
+Ma veille porte sur l'intégration de l'IA générative et de l'assistance agentique dans un pipeline VFX, en lien avec la production virtuelle. Ma question est concrète : \textbf{à quelles conditions un outil accélère-t-il la fabrication sans faire perdre la maîtrise du raccord, des versions et de la livraison ?} Je l'aborde depuis deux expériences complémentaires : la supervision VP de \emph{NoClip} et le travail personnel de post-production sur \emph{NATION}.\src{1,2}
+
+Sur \emph{NoClip}, l'absence de répétition technique a laissé découvrir le problème de tracking le jour du tournage. Le dossier professionnel en tire une exigence : choisir le dispositif selon le plan et valider sa chaîne avant le plateau. Sur \emph{NATION}, le décor fabriqué en post-production permet d'explorer l'autre versant : itérer, comparer et composer, mais sans retour final \emph{in-camera}. Ces expériences fondent ma veille ; elles ne constituent pas un échantillon représentatif de tous les studios.\src{1,2}
+
+\begin{focus}
+\textbf{Mon objectif de superviseur VP :} transformer une information technique en décision de production justifiée. Chaque fiche doit répondre à trois questions : quel problème résout-on, quelle preuve possède-t-on, et quelle limite impose-t-on ?
+\end{focus}
+
+\subsection{Quatre axes de recherche}
+\begin{itemize}
+\item \textbf{Qualité et continuité :} stabilité temporelle, conservation des acteurs, géométrie, occultations et cohérence des décors entre plans.
+\item \textbf{Traçabilité et exploitation :} correspondance plan/rush/timecode, graphe de traitement, versions des modèles et dépendances, reprise dans le montage.
+\item \textbf{Coût réel :} temps de préparation, calcul, tri, corrections et validation ; faisabilité sur la machine disponible, au-delà du temps de génération.
+\item \textbf{Maîtrise des usages :} conditions d'utilisation des modèles, provenance des éléments, circulation des données et mesure des ressources mobilisées.
+\end{itemize}
+
+\subsection{Périmètre et niveau de preuve}
+Le dossier professionnel atteste des lectures, recoupements et échanges avec Creative Machines. Le corpus désert, archivé le 8 septembre, décrit 10 plans et 16 rendus du 18 juillet au 4 septembre. Les rapports du 10 septembre étendent l'observation aux retakes et à leur livraison de revue.\src{1--4} Je distingue ces faits de la \textbf{routine proposée page 2}, formalisée ici sans prétendre qu'un calendrier identique a été tenu toute l'année.
+
+{\small\color{muted}\textbf{Limite documentaire.} Le rapport du 9 septembre demandé n'a pas été retrouvé à la date de rédaction ; aucun résultat ne lui est attribué. Le VP Gathering est étudié à partir de son programme public, sans attestation de présence. Rédaction et mise en forme assistées par IA ; les choix et la validation du contenu relèvent d'Etienne Baron.}
+\newpage
+\section{Méthode : collecter, éprouver, décider}
+\subsection{Sources et canaux}
+Je conserve trois niveaux de sources. Les \textbf{sources primaires} (documentation Epic, ComfyUI, fiches et dépôts des modèles) servent à vérifier une fonction et ses conditions d'exécution. Les \textbf{retours de terrain} (Creative Machines, rapports de supervision, démonstrations) révèlent les difficultés d'intégration. Les \textbf{annonces et réseaux professionnels} servent au repérage : une vidéo promotionnelle déclenche une vérification, elle ne prouve pas un gain de production.
+
+Le programme du VP Gathering sert de repère sectoriel. Une affirmation commerciale est recoupée avec une documentation technique et, si elle affecte un choix de fabrication, avec un test local. Je relève auteur, date de publication, date de consultation et version concernée ; une page évolutive n'est pas assimilée à un état historique figé.\src{5--7}
+
+\subsection{Routine à appliquer à partir de ce dossier}
+{\small\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\linewidth}{@{}p{29mm}p{36mm}Y@{}}
+\toprule
+\textbf{Fréquence} & \textbf{Action} & \textbf{Trace attendue}\\ \midrule
+Chaque semaine & 30 min de collecte, 30 min de tri & Trois signaux maximum ; un problème de production et une source primaire par signal retenu.\\
+Chaque semaine & 60 à 90 min d'essai ciblé & Un test comparatif borné ; noter aussi les échecs et le temps humain.\\
+Après une retake & 10 min de compte rendu & Plan, défaut, version comparée, décision, raison du refus ou suite à donner.\\
+Chaque mois & 45 min de synthèse & Actualiser le comparatif ; adopter, poursuivre le test ou écarter ; partager une synthèse courte.\\
+Événement métier & Préparation et débrief & Questions ciblées, notes sourcées, puis vérification des annonces et mise en relation avec un cas réel.\\
+\bottomrule
+\end{tabularx}}
+
+\subsection{Protocole d'essai et seuil de décision}
+\begin{enumerate}
+\item \textbf{Fixer l'entrée :} identifiant du plan, rush, timecode, durée en images, cadence, définition et espace couleur. Comparer sur la même plage et conserver un témoin.
+\item \textbf{Isoler l'hypothèse :} modifier une variable ou un traitement ; commencer par un extrait représentatif, puis vérifier le plan entier et ses raccords.
+\item \textbf{Archiver l'exécution :} graphe ouvrable et graphe API si utilisé, modèles, versions des nœuds, paramètres, seed, matériel et chemins des entrées. Un graphe seul ne garantit pas une reproduction identique.
+\item \textbf{Séparer les recettes :} contrôle technique (décodage, durée, format, couleur) puis validation artistique (raccord, identité, intention). Statuts : repéré, testé, retenu pour revue, validé pour livraison ou écarté.
+\end{enumerate}
+
+\subsection{Organisation des données}
+Une fiche Markdown par signal, nommée \texttt{V-AAAA-MM-JJ-sujet}, rassemble : question, source et fiabilité, version, protocole, observations, limites, décision et prochain contrôle. Le registre relie ces fiches aux plans et aux preuves. Git conserve textes et décisions ; les rushes, modèles et rendus restent sur les disques de production. Une durée identique est un indice d'appariement, jamais une preuve suffisante sans contrôle du contenu et du timecode.
+\newpage
+\section{Synthèse : ce que les retakes enseignent}
+\subsection{La conformation précède la génération}
+Le rapport initial du 10 septembre distingue le montage Resolve (25\,023 images), le montage de travail \texttt{NATION V2\_1.mp4} (24\,995 images) et la bobine VFX \texttt{NATION\_V2.MOV} (3\,141 images), tous à 25 i/s. Ces objets ne sont pas interchangeables. La numérotation est ensuite ancrée sur le plan 42 sélectionné dans Resolve ; l'état final décrit \textbf{11 interventions sur 10 passages}, les plans 42 et 44 se superposant.\src{3,4}
+
+\textbf{Leçon de veille :} avant de comparer des outils de génération, je dois vérifier leur insertion dans le montage. Un résultat réussi sur le mauvais plan ou la mauvaise plage ne résout pas le brief.
+
+\subsection{Trois observations qui deviennent des règles}
+{\small\renewcommand{\arraystretch}{1.17}
+\begin{tabularx}{\linewidth}{@{}p{26mm}Y Y@{}}
+\toprule
+\textbf{Cas} & \textbf{Constat des rapports} & \textbf{Décision méthodologique}\\ \midrule
+Torii et dunes & Porte commune aux 53/88/145 ; famille de dune partagée, décors raccordés aux acteurs du tournage. & Tester les éléments réutilisables au niveau de la séquence ; éviter une génération indépendante pour chaque plan.\\
+Plan 68 & 55 images conservées d'un point de vue reconstruit ; cadrage et costumes restent à valider. & Isoler la reconstruction générative comme cas à risque ; ne pas confondre vidéo calculée et intention respectée.\\
+Plan 44 & 213 EXR source, 4096 $\times$ 2304, livrés en flottant 16 bits ; la passe 32 bits interrompue est signalée incomplète. & Vérifier la complétude et la précision effectives ; le nom du format ne suffit pas à qualifier un master.\\
+\bottomrule
+\end{tabularx}}\par{\footnotesize Source : rapports du 10 septembre.\src{4}}
+
+\subsection{Ce qui est livré, ce qui reste ouvert}
+L'état final rapporte une bobine de \textbf{2\,012 images, soit 80,48 secondes}, en 1280 $\times$ 720 à 25 i/s, muette, avec des EXR de revue. Il mentionne le décodage complet, les comptes d'images, des contrôles début/milieu/fin et deux exports témoins Resolve. Ce sont des \textbf{contrôles rapportés}, pas un nouvel audit image par image réalisé pour ce dossier.\src{4}
+
+Les EXR \texttt{REVIEW\_SDR} dérivent des composites SDR : ils ne remplacent pas les masters HDR en résolution source. Restent notamment la validation du 68, le contact au sol du 53 et les franges ou ombres des Torii et de la tour. Le dédoublement final du personnage au 215 est signalé dans le composite source. Les modèles exécutés localement sont Boogu Image Edit, Wan 2.1 VACE 1.3B et BiRefNet ; aucun modèle API n'est déclaré utilisé.\src{4}
+
+\begin{focus}
+\textbf{Analyse critique.} Le bénéfice documenté est la production d'une proposition de revue traçable. Les rapports ne fournissent ni comparaison chronométrée avec une méthode classique, ni coût global, ni bilan énergétique. Je ne peux donc pas conclure à un gain chiffré, à une économie carbone ou à une validation de diffusion.
+\end{focus}
+
+La veille débouche ainsi sur une priorité : \textbf{mesurer le temps jusqu'au plan accepté}, en incluant installation, préparation, calcul, tri et finitions. Je suivrai le nombre de versions rejetées et leur motif ; ces données éclaireront le coût de la cohérence, souvent absent des démonstrations.
+\newpage
+\section{État du marché et orientations au rendu}
+\subsection{Trois familles à comparer au 11 septembre 2026}
+{\small\renewcommand{\arraystretch}{1.14}
+\begin{tabularx}{\linewidth}{@{}p{31mm}Y Y@{}}
+\toprule
+\textbf{Solution} & \textbf{Intérêt pour ma pratique} & \textbf{Limite / position}\\ \midrule
+Unreal / ICVFX & Rendu lié à la caméra, éclairage LED et retour au plateau.\src{5} & Synchronisation et préparation à éprouver ; pertinent si le plan exploite ce dispositif.\\
+ComfyUI + compositing & Traitements circonscrits, graphes archivables, réemploi des acteurs et décors.\src{4,6} & Dépendances et finitions à assumer ; retenir pour les retakes après recette.\\
+Chaos Arena / Vantage & Le programme VPG présente une chaîne depuis les outils 3D jusqu'au volume LED.\src{7} & Alternative à examiner ; aucune comparaison locale ni migration justifiée à ce stade.\\
+\bottomrule
+\end{tabularx}}
+
+Ce panorama ciblé suggère une coexistence de chaînes spécialisées plutôt qu'un remplacement démontré du moteur temps réel par la génération. Dans mon corpus, l'IA est utile lorsque sa tâche est délimitée et son résultat recomposé. Les agents peuvent soutenir l'inventaire et les rapports ; une exécution réussie ne leur confère pas la validation artistique.
+
+\subsection{VP Gathering 2026 : exploiter un moment fort de veille}
+L'événement s'est tenu du 14 au 16 avril à Breda.\src{8} Dans le programme du 15 avril, je retiens trois entrées : une session sur les risques de décision et de validation en VP ; une présentation de la chaîne Chaos Arena depuis les outils 3D ; une intervention sur les compromis environnementaux.\src{7} Elles prolongent respectivement les manques de \emph{NoClip}, le besoin de continuité de \emph{NATION} et l'absence de mesures énergétiques.
+
+\textbf{Exploitation documentaire :} pour chaque entrée, ma fiche associe le programme à une question de test : qui valide avant le plateau ? Comment conserve-t-on les mêmes éléments entre étapes ? Quel périmètre mesure-t-on ? Le programme prouve les thèmes annoncés, pas les résultats des démonstrations. Aucune rencontre ni présence personnelle au VPG n'est attestée ici.
+
+\subsection{Recommandations et perspectives}
+Je retiens dès maintenant la conformation, les éléments communs, l'archivage des exécutions et les deux recettes technique/artistique. Le prochain essai comparera un traitement IA à un compositing classique sur une même retake, avec temps humain, calcul et motifs de rejet. J'ajouterai les mesures de ressources avant toute conclusion environnementale. Les changements de point de vue génératifs restent soumis à une validation renforcée de l'identité. Les pistes prospectives du dossier pro restent des hypothèses tant qu'elles ne passent pas ce protocole.
+
+\vspace{3pt}
+{\footnotesize
+\textbf{Sources et traçabilité} \hfill Sources web consultées le 11/09/2026.\par
+{}[1] E. Baron, \emph{Dossier professionnel SPV -- NoClip}, chap. 4--6, état du dépôt.\\
+{}[2] \emph{references/input.md}, § 8, corpus NATION archivé le 08/09/2026.\\
+{}[3] NATION, \emph{État de conformation}, dossier RETAKES\_20260910, état intermédiaire.\\
+{}[4] NATION, \emph{Feuille de route VFX} et \emph{État production reprise}, même dossier, état final v001. Extraits et empreintes conservés dans le contexte de veille.\\
+{}[5] Epic Games, \href{https://dev.epicgames.com/documentation/en-us/unreal-engine/in-camera-vfx-overview-in-unreal-engine}{In-Camera VFX Overview} (documentation évolutive).\\
+{}[6] ComfyUI, \href{https://docs.comfy.org/api-reference/cloud/workflow/submit-a-workflow-for-execution}{Submit a workflow for execution} (graphe JSON ; source documentaire, pas usage du cloud).\\
+{}[7] VP Gathering, \href{https://vpgathering.com/industry-day/}{Programme Industry Day, 15 avril 2026}.\\
+{}[8] BUas / VPG, \href{https://www.b2match.com/e/vp-gathering-2026/components/65001}{Présentation officielle de l'édition 2026}.\\
+\textcolor{muted}{Le rapport du 9 septembre reste à intégrer dès identification de la source.}
+}
+\end{document}

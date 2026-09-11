@@ -39,3 +39,10 @@ img_*.webp
 image.webp
 image?.jpg
 storyboard.webp
+
+# Veille : auxiliaires et controles locaux
+sources_veille/*.aux
+sources_veille/*.log
+sources_veille/*.out
+sources_veille/*.pdf
+/tmp/

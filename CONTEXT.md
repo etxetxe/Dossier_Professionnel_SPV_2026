@@ -6,7 +6,7 @@
 
 ## Pipeline
 
-Deux chaînes indépendantes, deux livrables à la racine :
+Trois chaînes indépendantes, trois livrables à la racine :
 
 - **PDF** (LaTeX) : `sources_latex/dossier.tex` → `Dossier_Professionnel_SPV_NoClip_BARON.pdf`.
 - **Deck web** (Marp) : `sources_slides/soutenance.md` → `Soutenance_SPV_NoClip_BARON.html`.
@@ -21,6 +21,8 @@ demande). L'étape `05-slides` ne se déclenche que sur demande et ne touche jam
 | Compiler le PDF (4 passes) | `stages/03-build/` | `stages/03-build/CONTEXT.md` |
 | Livrer puis versionner (git) | `stages/04-deliver/` | `stages/04-deliver/CONTEXT.md` |
 | Générer le support de soutenance web | `stages/05-slides/` | `stages/05-slides/CONTEXT.md` |
+
+| Rediger/compiler le dossier de veille | stages/06-veille/ | stages/06-veille/CONTEXT.md |
 
 ## Couches de contexte (rappel ICM)
 
@@ -47,3 +49,10 @@ Ne jamais charger un fichier de référence en entier : utiliser l'`## Index` en
 | `status` | Afficher la complétion du pipeline (étapes 01→04). |
 
 Canon de la méthodologie : `_core/CONVENTIONS.md` (ICM, Jake Van Clief).
+
+
+## Dossier de veille (ajout du 11 septembre 2026)
+
+Troisieme livrable autonome : sources_veille/veille.tex -> SPV_BARON_IA_Pipelines_VFX_Hybrides.pdf (4 pages).
+Routage : stages/06-veille/CONTEXT.md ; fond et provenance : references/veille.md.
+Compilation : ./build-veille.ps1. Statut des sources : references/veille.md, section 2.

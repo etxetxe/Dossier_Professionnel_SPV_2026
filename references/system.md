@@ -216,3 +216,8 @@ Citer inline avec `\autocite{key}`. Types d'entrées et clés :
   Seules les copies intégrées dans `sources_latex/img/` sont versionnées.
 - **`README.md`** — titre du dépôt.
 - **`LICENSE`** — licence du dépôt.
+
+
+## 9. Livrable de veille autonome
+
+Voir veille.md section 5 et ../stages/06-veille/CONTEXT.md. Source sources_veille/veille.tex, deux passes pdflatex, references manuelles, 4 pages A4.

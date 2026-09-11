@@ -1,0 +1,15 @@
+# V-AAAA-MM-JJ-sujet
+- Question de production :
+- Source, auteur, URL/chemin :
+- Dates publication/consultation et version :
+- Fiabilité et affirmation à vérifier :
+- Plan/rush/TC/plage/cadence/définition/couleur :
+- Témoin et variable modifiée :
+- Graphe/modèles/nœuds/paramètres/seed/matériel :
+- Temps humain/calcul/versions/ressources mesurées :
+- Preuves et observations :
+- Limites, biais, conditions d'utilisation :
+- Recette technique :
+- Validation artistique, responsable/date :
+- Statut : repéré / testé / retenu pour revue / validé pour livraison / écarté
+- Décision, motif, prochain contrôle :
