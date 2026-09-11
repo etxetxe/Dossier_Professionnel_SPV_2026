@@ -22,3 +22,6 @@ Déclencheur : méthodologie ou dossier de veille. Routage : ../../CONTEXT.md.
 
 ## Illustrations
 Utiliser les planches QC selectionnees dans sources_veille/img avec legende et date de campagne ; provenance dans references/veille.md section 6. Ces seules copies editoriales sont versionnees. Ne pas retoucher les preuves visuelles.
+
+## Voix et bibliographie
+Appliquer references/veille.md section 7 : narration depuis les projets, Bifurcation comme reference de style, dossier pro exclu de la bibliographie, mention IA explicite.

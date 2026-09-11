@@ -48,3 +48,13 @@ Source sources_veille/veille.tex ; charte noir chaud/or/jaune pâle issue de sys
 - Trois planches QC existantes copiees sans retouche dans sources_veille/img : p047_v1_v2.jpg, p068_v1_v2.jpg, p215_diagnostic.jpg. Fig. 1 a 3 dans le PDF. Provenance et empreintes dans le manifeste du 11.
 - Ces trois illustrations editoriales sont versionnees a la demande de l'utilisateur ; les rushes, rendus complets, modeles et corpus media bruts restent hors depot.
 - Retirer les commentaires de fabrication hors sujet du PDF ; conserver dates exactes et statut de revue dans les legendes et sources.
+
+
+## 7. Voix narrative et transparence (retake utilisateur)
+- Dossier de veille lu par un humain : partir des situations de NoClip et NATION, puis faire emerger les questions, essais et changements de methode. Premiere personne, phrases concretes, rythme moins uniforme ; pas de faux souvenirs ni de fautes ajoutees artificiellement.
+- Bifurcation : reference de voix uniquement, digest input.md section 3.12 et extraits archives. Original retrouve au commit 2bd8850, extraction de texte vide ; rendu complementaire interrompu. Ne pas pretendre avoir relu tout le carnet.
+- Presenter NoClip comme court-metrage etudiant (Ryan/Backrooms), supervision VP LED/Unreal et probleme de preparation/tracking ; NATION comme fiction, travail personnel VFX hors ecole, desert fabrique a partir de comediens sur fond vert et maquette, problemes de continuite et integration.
+- Aucun renvoi bibliographique au dossier professionnel ni aux fichiers de contexte ; ils restent sources internes. Bifurcation reste aussi hors bibliographie. Les rapports NATION sont identifies a part comme materiau de terrain.
+- Mention IA explicite : aide a la redaction/structuration/LaTeX, images hybrides IA/prises de vues/compositing, validation et responsabilite editoriale de l auteur. Reference article 50 UE 2024/1689 ; ne pas presenter la mention comme une certification juridique de conformite.
+- Article 50 verifie sur https://ai-act-service-desk.ec.europa.eu/fr/ai-act/article-50 et https://eur-lex.europa.eu/eli/reg/2024/1689/oj?locale=fr le 11 septembre 2026.
+- Conserver trois illustrations et quatre pages, methodologie reguliere et sources professionnelles malgre la narration.
