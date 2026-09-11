@@ -15,10 +15,10 @@ Photo fournie le 11 septembre 2026 : méthodologie claire et régulière, object
 - input.md § 8 : source unique du corpus désert archivé le 8 septembre.
 - D:/NATION/RETAKES_20260910/00_SUPERVISION/ : ETAT_CONFORMATION.md (intermédiaire), FEUILLE_DE_ROUTE_VFX.md et ETAT_PRODUCTION_REPRISE.md (final v001).
 - Archives textuelles dans veille_sources/2026-09-10 ; empreintes et chemins dans manifeste.json.
-- Rapport du 9 septembre non retrouvé dans les emplacements inspectés ; chemin demandé à l'utilisateur. Ne rien lui attribuer avant lecture. Corpus incomplet explicitement signalé dans le PDF.
+- Racine confirmee par l'utilisateur : D:/NATION. Les campagnes disponibles sont datees des 10 et 11 septembre. Ne pas les redater au 9. Les remarques de recherche de fichiers restent dans le contexte, pas dans le livrable.
 - Ne pas confondre les 10 plans/16 rendus arrêtés au 4 septembre avec les 11 interventions/10 passages du 10.
 - L'état final ancre la numérotation sur le plan 42 ; les indices initiaux ne sont pas validés.
-- 2012 images à 25 i/s, revue 720p muette ; pas un master HDR. Plan 68 et finitions encore à valider.
+- V1 du 10 : 2012 images a 25 i/s, revue 720p muette ; pas un master HDR. Etat historique a distinguer de la V2.
 - Contrôles repris comme rapportés, sans prétendre à un nouvel audit des médias.
 - Aucune mesure comparative de coût, gain ou énergie : aucune économie chiffrée.
 
@@ -37,3 +37,14 @@ Même entrée/plage, une variable, recettes technique puis artistique, version e
 
 ## 5. Fabrication
 Source sources_veille/veille.tex ; charte noir chaud/or/jaune pâle issue de system.md. Deux passes pdflatex via ../build-veille.ps1 ; pas de biber (références manuelles). Quatre pages A4 ; contrôler les quatre rendus PNG. Auxiliaires et contrôles temporaires ignorés. PDF racine SPV_BARON_IA_Pipelines_VFX_Hybrides.pdf. Chaîne autonome du dossier pro et du deck.
+
+
+## 6. Revision illustree - campagnes des 10 et 11 septembre
+- Brief V2, feuille de route, etat de livraison et journal archives dans veille_sources/2026-09-11 avec empreintes.
+- Priorite au diagnostic final : au 215, l'enfant porte a ete pris pour un dedoublement dans la V1. Le journal corrige aussi son premier constat d'absence de plaque en retrouvant C1438.MP4 sur V6.
+- La restitution de contraste du 215 est demontree sur 310-331 seulement ; REVIEW_v006 reste livre sans cette correction, tracking manuel necessaire.
+- P068 : la V2 reprend les comediens du tournage ; le fond alimente 89/90.
+- Reference-to-video : retenu dans le rapport pour 47/88/145, ecarte sur 215 ; ne pas generaliser cette performance.
+- Trois planches QC existantes copiees sans retouche dans sources_veille/img : p047_v1_v2.jpg, p068_v1_v2.jpg, p215_diagnostic.jpg. Fig. 1 a 3 dans le PDF. Provenance et empreintes dans le manifeste du 11.
+- Ces trois illustrations editoriales sont versionnees a la demande de l'utilisateur ; les rushes, rendus complets, modeles et corpus media bruts restent hors depot.
+- Retirer les commentaires de fabrication hors sujet du PDF ; conserver dates exactes et statut de revue dans les legendes et sources.

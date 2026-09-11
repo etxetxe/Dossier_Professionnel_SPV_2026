@@ -3,7 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
-\usepackage{lmodern,microtype}
+\usepackage{lmodern,microtype,graphicx}
 \usepackage[a4paper,margin=19mm,top=19mm,bottom=19mm,headheight=14pt]{geometry}
 \usepackage{xcolor,tabularx,booktabs,array,enumitem,fancyhdr,titlesec,tcolorbox}
 \usepackage[hidelinks]{hyperref}
@@ -30,31 +30,30 @@
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 \begin{document}
 {\small\bfseries\color{gold}MÉTHODOLOGIE DE VEILLE / DOSSIER ÉCRIT}\par
-\vspace{3pt}
 {\LARGE\bfseries\color{ink}IA et supervision des\\pipelines VFX hybrides}\par
-{\large De la promesse d'outil au plan vérifiable}\par
+{\large De l'essai technique à la décision de production}\par
 \vspace{5pt}
 \section{Sujet et objectifs}
-Ma veille porte sur l'intégration de l'IA générative et de l'assistance agentique dans un pipeline VFX, en lien avec la production virtuelle. Ma question est concrète : \textbf{à quelles conditions un outil accélère-t-il la fabrication sans faire perdre la maîtrise du raccord, des versions et de la livraison ?} Je l'aborde depuis deux expériences complémentaires : la supervision VP de \emph{NoClip} et le travail personnel de post-production sur \emph{NATION}.\src{1,2}
+Ma veille porte sur l'IA appliquée aux VFX et à la production virtuelle : \textbf{comment choisir un traitement qui respecte le plan, ses acteurs et ses raccords ?} Elle relie la supervision VP de \emph{NoClip}, les échanges avec Creative Machines et les essais de post-production sur \emph{NATION}.\src{1,2}
 
-Sur \emph{NoClip}, l'absence de répétition technique a laissé découvrir le problème de tracking le jour du tournage. Le dossier professionnel en tire une exigence : choisir le dispositif selon le plan et valider sa chaîne avant le plateau. Sur \emph{NATION}, le décor fabriqué en post-production permet d'explorer l'autre versant : itérer, comparer et composer, mais sans retour final \emph{in-camera}. Ces expériences fondent ma veille ; elles ne constituent pas un échantillon représentatif de tous les studios.\src{1,2}
+Sur \emph{NoClip}, le problème de tracking découvert au tournage a montré l'importance d'une répétition technique. Sur \emph{NATION}, les retakes des 10 et 11 septembre montrent qu'un outil doit être évalué dans une séquence, face à un brief précis. Ma veille associe donc documentation, expérimentation et retour critique de production.\src{3,4,9}
 
-\begin{focus}
-\textbf{Mon objectif de superviseur VP :} transformer une information technique en décision de production justifiée. Chaque fiche doit répondre à trois questions : quel problème résout-on, quelle preuve possède-t-on, et quelle limite impose-t-on ?
-\end{focus}
+\subsection{Observer un résultat et préciser ce qui doit rester stable}
+\begin{center}
+\includegraphics[width=\linewidth]{img/p047_v1_v2.jpg}
+\end{center}
+{\small\textbf{Figure 1 -- Plan 47, ciel et Tour.} V1 du 10 septembre en haut, V2 du 11 en bas ; trois instants de chaque version. La Tour du 47 devient la référence de design pour les autres plans. La comparaison porte sur sa silhouette, le ciel et leur continuité pendant le mouvement.\src{9}}
 
-\subsection{Quatre axes de recherche}
+\subsection{Mes objectifs de veille}
 \begin{itemize}
-\item \textbf{Qualité et continuité :} stabilité temporelle, conservation des acteurs, géométrie, occultations et cohérence des décors entre plans.
-\item \textbf{Traçabilité et exploitation :} correspondance plan/rush/timecode, graphe de traitement, versions des modèles et dépendances, reprise dans le montage.
-\item \textbf{Coût réel :} temps de préparation, calcul, tri, corrections et validation ; faisabilité sur la machine disponible, au-delà du temps de génération.
-\item \textbf{Maîtrise des usages :} conditions d'utilisation des modèles, provenance des éléments, circulation des données et mesure des ressources mobilisées.
+\item \textbf{Qualité :} conserver les acteurs, la géométrie, les occultations et les raccords.
+\item \textbf{Traçabilité :} retrouver le rush, le timecode, le traitement et la version retenue.
+\item \textbf{Efficacité :} mesurer le temps jusqu'au plan accepté, y compris tri et finitions.
+\item \textbf{Maîtrise :} vérifier les conditions d'utilisation, la circulation des données et les ressources mobilisées.
 \end{itemize}
-
-\subsection{Périmètre et niveau de preuve}
-Le dossier professionnel atteste des lectures, recoupements et échanges avec Creative Machines. Le corpus désert, archivé le 8 septembre, décrit 10 plans et 16 rendus du 18 juillet au 4 septembre. Les rapports du 10 septembre étendent l'observation aux retakes et à leur livraison de revue.\src{1--4} Je distingue ces faits de la \textbf{routine proposée page 2}, formalisée ici sans prétendre qu'un calendrier identique a été tenu toute l'année.
-
-{\small\color{muted}\textbf{Limite documentaire.} Le rapport du 9 septembre demandé n'a pas été retrouvé à la date de rédaction ; aucun résultat ne lui est attribué. Le VP Gathering est étudié à partir de son programme public, sans attestation de présence. Rédaction et mise en forme assistées par IA ; les choix et la validation du contenu relèvent d'Etienne Baron.}
+\begin{focus}
+\textbf{Une information utile débouche sur une décision :} conserver un procédé, le tester sur une plage précise, le modifier ou l'écarter. Les images comparées et le motif de décision constituent la trace de veille.
+\end{focus}
 \newpage
 \section{Méthode : collecter, éprouver, décider}
 \subsection{Sources et canaux}
@@ -86,33 +85,32 @@ Chaque mois & 45 min de synthèse & Actualiser le comparatif ; adopter, poursuiv
 \subsection{Organisation des données}
 Une fiche Markdown par signal, nommée \texttt{V-AAAA-MM-JJ-sujet}, rassemble : question, source et fiabilité, version, protocole, observations, limites, décision et prochain contrôle. Le registre relie ces fiches aux plans et aux preuves. Git conserve textes et décisions ; les rushes, modèles et rendus restent sur les disques de production. Une durée identique est un indice d'appariement, jamais une preuve suffisante sans contrôle du contenu et du timecode.
 \newpage
-\section{Synthèse : ce que les retakes enseignent}
-\subsection{La conformation précède la génération}
-Le rapport initial du 10 septembre distingue le montage Resolve (25\,023 images), le montage de travail \texttt{NATION V2\_1.mp4} (24\,995 images) et la bobine VFX \texttt{NATION\_V2.MOV} (3\,141 images), tous à 25 i/s. Ces objets ne sont pas interchangeables. La numérotation est ensuite ancrée sur le plan 42 sélectionné dans Resolve ; l'état final décrit \textbf{11 interventions sur 10 passages}, les plans 42 et 44 se superposant.\src{3,4}
+\section{Analyse critique : comparer pour décider}
+\subsection{Plan 68 : conserver les comédiens du tournage}
+\begin{center}
+\includegraphics[width=\linewidth]{img/p068_v1_v2.jpg}
+\end{center}
+{\small\textbf{Figure 2 -- Plan 68, changement de méthode.} En haut, la proposition générative V1 ; en bas, la V2 qui reprend les trois comédiens d'origine sur le décor créé, avec les traces de pas. La différence de cadrage et de costumes rend visible l'enjeu de fidélité aux prises de vues.\src{9}}
 
-\textbf{Leçon de veille :} avant de comparer des outils de génération, je dois vérifier leur insertion dans le montage. Un résultat réussi sur le mauvais plan ou la mauvaise plage ne résout pas le brief.
+Le brief V2 demande de reprendre les personnages du tournage. L'image la plus spectaculaire n'est donc pas nécessairement la réponse au projet. \textbf{Je garde la génération pour le décor et le compositing pour préserver les acteurs.} Le fond du 68 sert ensuite aux plans 89 et 90 : sa validation précède leur fabrication.
 
-\subsection{Trois observations qui deviennent des règles}
-{\small\renewcommand{\arraystretch}{1.17}
-\begin{tabularx}{\linewidth}{@{}p{26mm}Y Y@{}}
-\toprule
-\textbf{Cas} & \textbf{Constat des rapports} & \textbf{Décision méthodologique}\\ \midrule
-Torii et dunes & Porte commune aux 53/88/145 ; famille de dune partagée, décors raccordés aux acteurs du tournage. & Tester les éléments réutilisables au niveau de la séquence ; éviter une génération indépendante pour chaque plan.\\
-Plan 68 & 55 images conservées d'un point de vue reconstruit ; cadrage et costumes restent à valider. & Isoler la reconstruction générative comme cas à risque ; ne pas confondre vidéo calculée et intention respectée.\\
-Plan 44 & 213 EXR source, 4096 $\times$ 2304, livrés en flottant 16 bits ; la passe 32 bits interrompue est signalée incomplète. & Vérifier la complétude et la précision effectives ; le nom du format ne suffit pas à qualifier un master.\\
-\bottomrule
-\end{tabularx}}\par{\footnotesize Source : rapports du 10 septembre.\src{4}}
+\subsection{Plan 215 : vérifier le diagnostic avant de corriger}
+\noindent\begin{minipage}[t]{0.46\linewidth}
+\vspace{0pt}\includegraphics[width=\linewidth]{img/p215_diagnostic.jpg}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.51\linewidth}
+\vspace{0pt}\small
+\textbf{Figure 3 -- Deux instants du plan 215.} La planche de diagnostic identifie l'enfant porté par l'homme. Ce qui avait été décrit comme un dédoublement dans le rapport V1 correspond à deux personnes.\src{9}
 
-\subsection{Ce qui est livré, ce qui reste ouvert}
-L'état final rapporte une bobine de \textbf{2\,012 images, soit 80,48 secondes}, en 1280 $\times$ 720 à 25 i/s, muette, avec des EXR de revue. Il mentionne le décodage complet, les comptes d'images, des contrôles début/milieu/fin et deux exports témoins Resolve. Ce sont des \textbf{contrôles rapportés}, pas un nouvel audit image par image réalisé pour ce dossier.\src{4}
+Le journal retrouve la plaque personnages et relie le manque de lisibilité à la perte de contraste dans le composite. Une restitution est démontrée sur les images 310 à 331 ; le suivi reste à reprendre sur le plan entier. La version livrée conserve donc le composite sans cette correction.
 
-Les EXR \texttt{REVIEW\_SDR} dérivent des composites SDR : ils ne remplacent pas les masters HDR en résolution source. Restent notamment la validation du 68, le contact au sol du 53 et les franges ou ombres des Torii et de la tour. Le dédoublement final du personnage au 215 est signalé dans le composite source. Les modèles exécutés localement sont Boogu Image Edit, Wan 2.1 VACE 1.3B et BiRefNet ; aucun modèle API n'est déclaré utilisé.\src{4}
+\textbf{Leçon :} retourner aux sources peut invalider la première interprétation du défaut.
+\end{minipage}
 
-\begin{focus}
-\textbf{Analyse critique.} Le bénéfice documenté est la production d'une proposition de revue traçable. Les rapports ne fournissent ni comparaison chronométrée avec une méthode classique, ni coût global, ni bilan énergétique. Je ne peux donc pas conclure à un gain chiffré, à une économie carbone ou à une validation de diffusion.
-\end{focus}
+\subsection{Un même outil, des décisions différentes}
+Le rapport V2 retient le traitement \emph{reference-to-video} sur les plans 47, 88 et 145, mais l'écarte sur le 215 : il modifie l'ambiance, les costumes et fait disparaître un enfant. Le 215 est repris par compositing localisé.\src{9} Ma grille de veille doit donc évaluer \textbf{un usage sur un plan}, plutôt que classer un modèle comme bon ou mauvais.
 
-La veille débouche ainsi sur une priorité : \textbf{mesurer le temps jusqu'au plan accepté}, en incluant installation, préparation, calcul, tri et finitions. Je suivrai le nombre de versions rejetées et leur motif ; ces données éclaireront le coût de la cohérence, souvent absent des démonstrations.
+
 \newpage
 \section{État du marché et orientations au rendu}
 \subsection{Trois familles à comparer au 11 septembre 2026}
@@ -126,15 +124,15 @@ Chaos Arena / Vantage & Le programme VPG présente une chaîne depuis les outils
 \bottomrule
 \end{tabularx}}
 
-Ce panorama ciblé suggère une coexistence de chaînes spécialisées plutôt qu'un remplacement démontré du moteur temps réel par la génération. Dans mon corpus, l'IA est utile lorsque sa tâche est délimitée et son résultat recomposé. Les agents peuvent soutenir l'inventaire et les rapports ; une exécution réussie ne leur confère pas la validation artistique.
+Les retakes illustrent une chaîne hybride : ComfyUI prépare ou transforme des éléments, puis le compositing assure leur intégration. La campagne V1 utilise des modèles locaux ; la V2 associe traitements locaux et Comfy Cloud.\src{4,9} Le choix dépend du plan, de la conservation des prises de vues et des contraintes de calcul.
 
 \subsection{VP Gathering 2026 : exploiter un moment fort de veille}
 L'événement s'est tenu du 14 au 16 avril à Breda.\src{8} Dans le programme du 15 avril, je retiens trois entrées : une session sur les risques de décision et de validation en VP ; une présentation de la chaîne Chaos Arena depuis les outils 3D ; une intervention sur les compromis environnementaux.\src{7} Elles prolongent respectivement les manques de \emph{NoClip}, le besoin de continuité de \emph{NATION} et l'absence de mesures énergétiques.
 
-\textbf{Exploitation documentaire :} pour chaque entrée, ma fiche associe le programme à une question de test : qui valide avant le plateau ? Comment conserve-t-on les mêmes éléments entre étapes ? Quel périmètre mesure-t-on ? Le programme prouve les thèmes annoncés, pas les résultats des démonstrations. Aucune rencontre ni présence personnelle au VPG n'est attestée ici.
+\textbf{Lecture du programme :} ces trois thèmes deviennent des questions de veille : qui valide avant le plateau ? Comment conserve-t-on les mêmes éléments entre étapes ? Quel périmètre mesure-t-on ? Ils orientent les prochains essais et les échanges professionnels.
 
 \subsection{Recommandations et perspectives}
-Je retiens dès maintenant la conformation, les éléments communs, l'archivage des exécutions et les deux recettes technique/artistique. Le prochain essai comparera un traitement IA à un compositing classique sur une même retake, avec temps humain, calcul et motifs de rejet. J'ajouterai les mesures de ressources avant toute conclusion environnementale. Les changements de point de vue génératifs restent soumis à une validation renforcée de l'identité. Les pistes prospectives du dossier pro restent des hypothèses tant qu'elles ne passent pas ce protocole.
+Je retiens trois priorités : valider les références communes avant les plans qui en dépendent ; préserver les prises de vues dès que l'identité est en jeu ; archiver les essais écartés avec leur motif. Le prochain comparatif mesurera le temps humain, le calcul et les corrections nécessaires pour une même retake en IA et en compositing classique. Les rapports actuels ne permettent pas de chiffrer le gain global ni le bilan énergétique.
 
 \vspace{3pt}
 {\footnotesize
@@ -142,11 +140,12 @@ Je retiens dès maintenant la conformation, les éléments communs, l'archivage 
 {}[1] E. Baron, \emph{Dossier professionnel SPV -- NoClip}, chap. 4--6, état du dépôt.\\
 {}[2] \emph{references/input.md}, § 8, corpus NATION archivé le 08/09/2026.\\
 {}[3] NATION, \emph{État de conformation}, dossier RETAKES\_20260910, état intermédiaire.\\
-{}[4] NATION, \emph{Feuille de route VFX} et \emph{État production reprise}, même dossier, état final v001. Extraits et empreintes conservés dans le contexte de veille.\\
+{}[4] NATION, \emph{Feuille de route VFX} et \emph{État production reprise}, même dossier, état final v001. \\
 {}[5] Epic Games, \href{https://dev.epicgames.com/documentation/en-us/unreal-engine/in-camera-vfx-overview-in-unreal-engine}{In-Camera VFX Overview} (documentation évolutive).\\
-{}[6] ComfyUI, \href{https://docs.comfy.org/api-reference/cloud/workflow/submit-a-workflow-for-execution}{Submit a workflow for execution} (graphe JSON ; source documentaire, pas usage du cloud).\\
+{}[6] ComfyUI, \href{https://docs.comfy.org/api-reference/cloud/workflow/submit-a-workflow-for-execution}{Submit a workflow for execution} (structure des graphes JSON).\\
 {}[7] VP Gathering, \href{https://vpgathering.com/industry-day/}{Programme Industry Day, 15 avril 2026}.\\
 {}[8] BUas / VPG, \href{https://www.b2match.com/e/vp-gathering-2026/components/65001}{Présentation officielle de l'édition 2026}.\\
-\textcolor{muted}{Le rapport du 9 septembre reste à intégrer dès identification de la source.}
+{}[9] NATION, \emph{Brief V2, État de livraison V2 et Journal d'exécution}, 11/09/2026. Figures : planches de contrôle de cette campagne, versions de revue.\\
+\textcolor{muted}{Rédaction et mise en forme assistées par IA ; validation du contenu : Etienne Baron.}
 }
 \end{document}

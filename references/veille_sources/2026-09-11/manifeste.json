@@ -1,0 +1,37 @@
+[
+  {
+    "source": "D:\\NATION\\RETAKES_20260911\\05_QC\\COMPARATIF_V1_V2_P047.jpg",
+    "archive": "sources_veille\\img\\p047_v1_v2.jpg",
+    "sha256": "7b5eb1c20289314c4a9e1c52ae9c37402a3f263a75757bff25523dfd34c51ee5"
+  },
+  {
+    "source": "D:\\NATION\\RETAKES_20260911\\05_QC\\COMPARATIF_V1_V2_P068.jpg",
+    "archive": "sources_veille\\img\\p068_v1_v2.jpg",
+    "sha256": "a957f199f1a005ac741d174030df9a2b1cb53336853b37c86e6e1ab0dd9fd749"
+  },
+  {
+    "source": "D:\\NATION\\RETAKES_20260911\\05_QC\\P215_DIAGNOSTIC_ENFANT.jpg",
+    "archive": "sources_veille\\img\\p215_diagnostic.jpg",
+    "sha256": "7a142b6ea713ee86097e026de03736c5eabec5fa18c796dd78b6c6583e5cb655"
+  },
+  {
+    "source": "D:\\NATION\\RETAKES_20260911\\00_SUPERVISION\\ETAT_LIVRAISON_V2.md",
+    "archive": "references\\veille_sources\\2026-09-11\\ETAT_LIVRAISON_V2.md",
+    "sha256": "0794b649673d36e7fa2a0daf80655cab605755bffb23b37529829504025b1afb"
+  },
+  {
+    "source": "D:\\NATION\\RETAKES_20260911\\00_SUPERVISION\\JOURNAL_EXECUTION.md",
+    "archive": "references\\veille_sources\\2026-09-11\\JOURNAL_EXECUTION.md",
+    "sha256": "240fe4180d0b4eeba2105750df35b722168495d5495b56d901ee41f689df7c84"
+  },
+  {
+    "source": "D:\\NATION\\RETAKES_20260911\\00_SUPERVISION\\FEUILLE_DE_ROUTE_V2.md",
+    "archive": "references\\veille_sources\\2026-09-11\\FEUILLE_DE_ROUTE_V2.md",
+    "sha256": "7f4474fd94456cb39246fd418de6eafd7e4eb473756aebc85a81222b8e0acf74"
+  },
+  {
+    "source": "D:\\NATION\\Retake Nation V2.md",
+    "archive": "references\\veille_sources\\2026-09-11\\BRIEF_V2.md",
+    "sha256": "5ace67e8acec4c5b4a3f014541ed3584e57617a627dcfd68b47b2d0d85764c2d"
+  }
+]

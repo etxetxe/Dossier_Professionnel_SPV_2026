@@ -19,3 +19,6 @@ Déclencheur : méthodologie ou dossier de veille. Routage : ../../CONTEXT.md.
 - PDF : ../../SPV_BARON_IA_Pipelines_VFX_Hybrides.pdf.
 - Contexte : ../../references/veille.md et registre de veille.
 - Médias de production et modèles hors dépôt.
+
+## Illustrations
+Utiliser les planches QC selectionnees dans sources_veille/img avec legende et date de campagne ; provenance dans references/veille.md section 6. Ces seules copies editoriales sont versionnees. Ne pas retoucher les preuves visuelles.
