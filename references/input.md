@@ -34,6 +34,7 @@
 | 6 | Contenu par chapitre | Quoi va dans quel chapitre |
 | 7 | Garde-fous | Règles rédactionnelles |
 | 8 | Corpus *NATION* | Année de veille et de travail, matière de la soutenance |
+| 9 | Retours post-dossier (1er oct. 2026) | Réponses de l'auteur : chaleur, équipe, DA, fond vert, régie, budget, carbone, grille VP |
 
 ---
 
@@ -556,3 +557,89 @@ Procédure d'extraction et piège `ffmpeg` :
 
 Dossier autonome : voir veille.md pour les sources, limites et statut du rapport du 9.
 Le corpus historique du paragraphe 8 conserve son perimetre.
+
+---
+
+## 9. Retours post-dossier de l'auteur (1er octobre 2026)
+
+> **Source de vérité pour les ajouts de la soutenance qui ne figurent pas dans le PDF.** Elles
+> proviennent d'un entretien guidé (7 questions) mené à partir de la liste de zones d'ombre
+> `Comment palier aux dysfonctionnemen.txt` (hors dépôt). **Le dossier PDF reste inchangé.**
+> Quand une réponse nuance le PDF, le deck le dit explicitement (« jugement affiné »).
+
+### 9.1 Chaleur et dysfonctionnement du matériel
+- Contexte : **40 °C à l'ombre** ; ventilation activée sur le mur LED **et** les stations de travail.
+- Hypothèse : environ **une chance sur deux** que l'usage répété et la montée en température aient
+  rendu le tracker inutilisable. Cause toujours non établie.
+- Facteur humain : préparation tardive, donc stress, donc moins de discernement.
+- Mesures : (1) **check-list de diagnostic** à dérouler en cas de dysfonctionnement ; (2) **second tracker**
+  prêt à monter ; (3) liaison étroite avec les partenaires techniques **jusqu'au jour J**, avec retours
+  d'expérience positifs comme négatifs.
+- Constat : **Zeiss ne publie pas** de données de tenue thermique / environnementale du tracker.
+
+### 9.2 Travailler avec l'équipe
+Séquence retenue : **0** donner du sens au collectif (sortir du « film d'exercice », aborder le projet
+avec le plaisir de faire ensemble ; l'auteur n'aime pas le mot « team-building ») → **1** identifier les
+profils de lead (naturellement la réalisation) et une personne de **planification interne à l'équipe**
+(rôle de type chargé de production, à l'image d'Arnaud, chargé de production de l'école) → **2** distribuer le
+cadre de chaque rôle ; celui du superviseur : **trancher tôt** pour éviter que la réalisation se disperse
+(origine de la **double casquette**) → **3** réunions régulières de validation. *Arnaud a aussi été
+opérateur tracking caméra* (cumul des deux fonctions ; le devis du PDF ne cite que la seconde).
+
+### 9.3 Choix de tournage et direction artistique
+- **Plan fixe** : compensé par davantage d'itérations de cadrage (cadrage de toute façon ébauché).
+- **Drap noir** : a **coupé une scène** en plan large / cadrage général sur le personnage.
+- **Flicker** : son absence est un **manque conséquent** pour le rendu final ; il aurait pu interagir davantage
+  avec le raccord lumière. **Jugement affiné** : le PDF (ch. 4) juge au contraire l'absence de flicker sans
+  conséquence ; décision : **le PDF reste tel quel**, la nuance est portée à l'oral.
+- **Skateboard** : l'auteur a trop investi dans l'idée de faire rouler un skateboard devant le mur LED ;
+  non retenue, malgré le thème de la transgression et du dépassement des limites.
+
+### 9.4 Fond vert (bonnes pratiques)
+Éclairer **l'arrière-plan et le premier plan séparément** ; faire la **mise au point et l'ouverture sur le
+sujet**. Fond vert écarté pour *NoClip* : il fait perdre l'**éclairage ambiant global** qui donne aux
+Backrooms leur atmosphère (« un mélange de poisseux et de mort »). Le PDF l'emploie néanmoins pour les
+inserts (dispositif B). **NATION n'est pas présenté dans l'exposé : il est réservé au Q&A (annexes).**
+
+### 9.5 Feuille de route de la régie à l'arrivée des équipes extérieures
+- **Veille du tournage, après les répétitions lumière : brief général.** Distance minimale au mur LED
+  (éviter de l'endommager), ne jamais passer devant la caméra, ne pas faire faire une tâche à un autre corps
+  de métier que celui qui en a la charge.
+- Binômes : machinistes / électriciens ; superviseur / réalisation / DoP / technicien 3D ; assistant caméra / DoP.
+- Rôles : l'**opérateur 3D agit sur les ordinateurs uniquement** ; le superviseur gère le plateau et ne reprend
+  la main sur l'ordinateur que sur retour de la réalisation ou de l'image.
+- Jalons indispensables : **allumage, calibration, tests tracking caméra et optiques, raccords lumière**, adossés
+  à la check-list du § 9.1.
+
+### 9.6 Budget VP et bilan carbone (chiffres de la soutenance)
+**Périmètre : partie VP uniquement** (pas de décor réel, pas de comparaison décor construit, pas de scénario
+transport). Détail des hypothèses : `stages/05-slides/references/deck.md` § 6.
+
+| Poste | Valeur | Source / hypothèse |
+|-------|--------|--------------------|
+| Location VP (1,5 jour, test lumière inclus) | **≈ 25 000 €** | Ordre de grandeur donné par l'auteur ; à discuter en amont avec la production ; non issu d'une grille |
+| Masse salariale VP | **≈ 6 177 €** | Minima PAV 01/01/2026, lignes du devis du PDF : 1 jour de plateau VP par poste + fabrication 3D + compositing + assets ; hors skatepark |
+| Mur LED (centre + 2 latéraux) | 26,74 m² | Dimensions du PDF : 4,88 × 2,74 + 2 × (2,44 × 2,74) |
+| Puissance mur | **292 W/m² moyen** · 580 W/m² max | Fiche Sony ZRD-VP15EB (1,56 mm), valeurs « < » |
+| Énergie mur, 8 h | **68,7 kWh** (max : 136,5) | Méthode Sightled : P × heures, + 10 % d'auxiliaires |
+| Stations | 2 kWh | 1 kWh par station × 2 (render A6000, supervision 2080) |
+| Éclairage | 2,1 kWh | Panneau bicolore 229 W (réf. Aputure amaran 200x S) + tube 36 W (réf. Nanlite PavoTube II 30X) × 8 h |
+| **Total** | **≈ 72,8 kWh** (borne haute 140,6) | |
+| Facteur d'émission | 0,052 kgCO2e/kWh | ADEME, Base Empreinte (socle de Carbon'Clap / Ecoprod), électricité France continentale |
+| **Émissions** | **≈ 3,8 kgCO2e** (borne haute 7,3) | Avec le mix RTE 2024 (22 g/kWh) : ≈ 1,6 kgCO2e |
+
+Le **mur LED pèse 94 %** de la consommation : c'est le levier de sobriété principal.
+
+### 9.7 Quel projet est adapté à la production virtuelle
+- Atouts : **reflets**, **optiques non conventionnelles**, **lumières dynamiques**, **effets SFX** (fumée, projections
+  d'eau). Condition : des **équipes bien rodées**, ce qui limite l'expérimentation de jeunes réalisateurs.
+- Culture : l'Allemagne a davantage exploré la VP du côté du **jeu télévisé et de l'interactivité** que la France,
+  plus centrée sur le média linéaire. Repère vérifiable : **SWR, *Fehler im System*, studio 6 de Baden-Baden,
+  24–25 octobre 2025**, mur Sony VERONA 10 × 4 m, 3 caméras HDC-3500 trackées (OCELLUS). *La référence
+  « Breda 2026 / double ghost frame » citée par l'auteur n'a pas été retrouvée : à vérifier avant de la citer.*
+- **Cinq questions avant de choisir la VP** (à poser avec la réalisation et la production dès l'écriture) :
+  1. Le décor est-il réel ou non ? 2. S'il est réel, peut-on le rendre tangible sans artifice ?
+  3. Quelle place a le décor dans la mise en scène (hors champ, arrière-plan, etc.) ?
+  4. Y a-t-il plusieurs décors très différents à enchaîner ? 5. Quel coût y consacrer, **en rapport à son
+  importance** (un rapport, pas un prix) ?
+

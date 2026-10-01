@@ -17,7 +17,8 @@
 | 2 | Charte : palette et typographie |
 | 3 | Grammaire des diapos (classes et blocs) |
 | 4 | Médias et étanchéité git |
-| 5 | Structure narrative attendue |
+| 5 | Structure narrative attendue (15 min) |
+| 6 | Hypothèses de calcul (budget, carbone) |
 
 ---
 
@@ -133,17 +134,40 @@ jamais sur GitHub ». Le HTML doit rester à la **racine** pour que
 
 ## 5. Structure narrative attendue
 
-Six parties, 37 diapos, ≈ 20 min hors questions :
+Six parties, **18 diapos d'exposé + merci**, **15 min visées** (14 min 10 chronométrées), puis **annexes A1 à A10**
+non projetées, réservées au Q&A. Un en-tête de partie (`<!-- header: … -->`) remplace les intertitres.
+L'exposé ne présente **pas** NATION (décision de l'auteur, `input.md` § 9.4) :
 
 | Partie | Contenu | Source |
 |--------|---------|--------|
-| I | Le projet supervisé : *NoClip*, dispositif A, prévu contre réel | Ch. 1 à 3 |
-| II | Le jour J : incident tracking, arbitrage curatif | Ch. 4 § 4 |
-| III | Les images : acquis (raccord lumière) / perdu (parallaxe), point nodal | Ch. 4 § 1 à 3 |
-| IV | Auto-critique : manquements, adéquation du dispositif, dispositif D | Ch. 4 § 5 à 7 |
-| V | L'année sans entreprise : veille, Creative Machines, jam, corpus *NATION* | Ch. 5 + `input.md` § 8 |
-| VI | Veille et projet : IA 2026, GUI→CLI, harnais, ICM, écoproduction, projet pro | Ch. 6 |
+| I | Le projet supervisé : *NoClip*, dispositifs, prévu contre réel | Ch. 1 à 3 |
+| II | Le jour J et la régie : chaleur et tracker, feuille de route, mobilisation d'équipe | Ch. 4 § 4 + `input.md` § 9.1, 9.2, 9.5 |
+| III | Les images : acquis/perdu, choix de tournage et DA, point nodal, fond vert | Ch. 4 § 1 à 3 + `input.md` § 9.3, 9.4 |
+| IV | Budget VP et bilan carbone chiffrés | `input.md` § 9.6 + § 6 du présent fichier |
+| V | Quel projet pour la VP : dispositif inadapté, atouts, grille en cinq questions | Ch. 4 + `input.md` § 9.7 |
+| VI | L'année sans entreprise, veille outillée (CLI, harnais, ICM), projet professionnel | Ch. 5 et 6 |
 
 Règle de fond : **le deck ne réécrit rien**. Chaque affirmation doit être traçable à une
 section du dossier ou à une pièce du corpus *NATION*. Si une idée n'existe pas en amont,
 elle s'écrit d'abord dans `input.md`, puis descend dans le deck (Pattern 5).
+
+---
+
+## 6. Hypothèses de calcul (budget, carbone)
+
+Les chiffres des diapos 11 et 12 se **recalculent** ; aucun ne doit apparaître sans cette trace.
+
+| Grandeur | Formule | Résultat |
+|----------|---------|----------|
+| Surface mur | 4,88 × 2,74 + 2 × (2,44 × 2,74), dimensions du dossier ; plafond exclu | 26,74 m² |
+| Énergie mur | surface × 292 W/m² (moyen, Sony ZRD-VP15EB) × 8 h × 1,10 (auxiliaires, méthode Sightled) | 68,7 kWh |
+| Borne haute mur | surface × 580 W/m² (maximum) × 8 h × 1,10 | 136,5 kWh |
+| Stations | 2 × 1 kWh (render A6000, supervision 2080) | 2,0 kWh |
+| Éclairage | (229 W panneau + 36 W tube) × 8 h | 2,1 kWh |
+| Total / borne haute | somme | 72,8 / 140,6 kWh |
+| Émissions | kWh × 0,052 kgCO2e/kWh (ADEME, Base Empreinte, électricité France continentale) | 3,8 / 7,3 kg |
+| Masse salariale VP | lignes du devis du dossier : 1 jour de plateau par poste + 3D + compositing + assets, hors décor réel | 6 177 € |
+
+Sources : fiche Sony VERONA ZRD-VP15EB (puissance), Sightled (méthode), ADEME (facteur), Aputure amaran 200x S et
+Nanlite PavoTube II 30X (références de puissance, **modèles non précisés dans le dossier**). La méthode Ecoprod
+(Carbon'Clap) s'appuie sur le même facteur ADEME : le chiffre officiel se produit dans l'outil, pas dans le deck.
