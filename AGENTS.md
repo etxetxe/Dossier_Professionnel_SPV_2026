@@ -52,6 +52,7 @@ Dossier-Professionnel-SPV/
 | `references/input.md` | Fond | Sources, matériel plateau, crédits, devis, voix, garde-fous, corpus *NATION* (§ 8). |
 | `stages/05-slides/references/deck.md` | Forme (deck) | Chaîne Marp, charte sombre, grammaire des diapos, étanchéité des médias. |
 | `stages/05-slides/references/marp-setup.md` | Init (deck) | Node / Marp CLI / ffmpeg, contrôle PNG. |
+| `stages/05-slides/output/fiche-revision-soutenance.md` | Sortie (oral) | Minutage 15 min, chiffres, pièges, Q&A d'entraînement. |
 
 > **Règle d'or :** avant toute action, lire le contrat d'étape (`stages/NN-*/CONTEXT.md`),
 > qui pointe vers la seule section utile de la couche 3. Forme du PDF → `system.md` ;
