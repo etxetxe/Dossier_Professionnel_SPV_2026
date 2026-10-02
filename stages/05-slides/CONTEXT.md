@@ -58,4 +58,6 @@
 |----------|-------------|--------|
 | Support de soutenance | racine : `Soutenance_SPV_NoClip_BARON.html` | HTML autonome (16:9) |
 | Source du deck | `sources_slides/soutenance.md` + `theme.css` | Markdown + CSS |
-| Fiche de révision orale | `output/fiche-revision-soutenance.md` | Markdown |
+| Support de soutenance (plan B) | racine : `Soutenance_SPV_NoClip_BARON.pdf` | PDF, sans vidéos (affiches seules) |
+| Fiche de révision orale | `output/fiche-revision-soutenance.md` + `.pdf` | Markdown + PDF |
+| Fiche de saisie Carbon'Clap | `output/fiche-saisie-carbonclap.md` | Markdown |

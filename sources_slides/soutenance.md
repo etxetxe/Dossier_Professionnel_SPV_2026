@@ -45,8 +45,8 @@ Ryan est piégé dans les ***Backrooms*** : bureaux abandonnés, jaune monochrom
 
 <div class="infobox">
 <span class="t">Règle d'arbitrage du dossier</span>
-Décor réel au skatepark (début, fin) · <strong>mur LED</strong> pour les plans où la lumière jaune baigne
-l'acteur · <strong>fond vert</strong> pour les inserts et gros plans.
+Décor réel au skatepark (début, fin) · <strong>mur LED</strong> pour les Backrooms, là où la lumière jaune baigne
+l'acteur. Le fond vert, envisagé pour les inserts, <strong>n'a pas été utilisé</strong>.
 </div>
 
 </div>
@@ -68,8 +68,8 @@ plutôt que moquette (une moquette claire renvoie le jaune du mur).</p>
 </div>
 
 <!--
-50 s. Poser le projet vite : le jury a lu le dossier. Insister sur la règle d'arbitrage (trois dispositifs)
-et sur le fait que le matériel appartient à l'école. Les deux simplifications sont les décisions amont
+50 s. Poser le projet vite : le jury a lu le dossier. Insister sur la règle d'arbitrage (décor réel au début et à la fin,
+mur LED pour les Backrooms ; pas de fond vert au tournage) et sur le fait que le matériel appartient à l'école. Les deux simplifications sont les décisions amont
 que le tournage a validées.
 -->
 
@@ -192,7 +192,8 @@ mais ne l'ont pas éprouvée : le brief de la veille est le document qui m'a man
 <div class="infobox" style="margin-top:26px">
 <span class="t">D'où la double casquette</span>
 Sur un projet de cette taille, il faut quelqu'un qui décide du découpage <strong>en connaissant le coût de fabrication
-de chaque plan</strong>. C'est la direction dans laquelle je veux faire évoluer mon profil.
+de chaque plan</strong>. Ce n'est pourtant pas le poste que je vise : je vais plutôt vers un <strong>profil freelance solo,
+plus versatile</strong> (diapo 18).
 </div>
 
 <!--
@@ -274,6 +275,11 @@ le plan de netteté, devient approximative.
 
 Faute de relevé, l'ouverture a été choisie **à vue** : arrière-plan trop net, texture du mur qui remonte.
 
+<div class="notebox">
+<span class="t">Conséquence visible : un moiré</span>
+La trame du mur est trop nette pour la caméra : un <strong>moiré apparaît sur l'écran LED</strong> à l'image.
+</div>
+
 <div class="infobox">
 <span class="t">Ma règle</span>
 <strong>Aucun plan LED sans relevé écrit</strong> du point nodal de l'optique montée, de la distance au mur et de l'ouverture.
@@ -281,7 +287,8 @@ Trois valeurs, une ligne dans le rapport image.
 </div>
 
 <!--
-30 s. Slide technique : point nodal, frustum, nDisplay, profondeur de champ. Finir sur la règle.
+30 s. Slide technique : point nodal, frustum, nDisplay, profondeur de champ. Annoncer la conséquence visible : le moiré
+sur l'écran, à l'image. Finir sur la règle.
 -->
 
 ---
@@ -298,7 +305,8 @@ Trois valeurs, une ligne dans le rapport image.
 - **Mise au point et ouverture sur le sujet** : le fond n'est pas la référence de netteté.
 - **Distance sujet–fond** suffisante pour limiter le *spill* vert, corrigé ensuite par le *despill* au compositing.
 
-<p class="legende">Utilisé dans le dossier pour les <strong>inserts et gros plans</strong> (dispositif B, cyclo vert de l'école).</p>
+<p class="legende">Prévu au dossier pour les <strong>inserts et gros plans</strong> (dispositif B, cyclo vert de l'école),
+<strong>mais non utilisé au tournage</strong> : ces pratiques sont celles que j'appliquerais.</p>
 
 </div>
 <div>
@@ -314,7 +322,7 @@ Devant un fond vert, il n'y a plus la lumière diffuse du décor qui donne aux B
 </div>
 
 <!--
-60 s. Deux pratiques centrales (éclairage séparé, netteté sur le sujet), une limite de fond. Ne pas parler de
+60 s. Deux pratiques centrales (éclairage séparé, netteté sur le sujet), une limite de fond. Dire d'emblée que le fond vert n'a pas été utilisé sur NoClip. Ne pas parler de
 NATION ici : réservé aux questions.
 -->
 
@@ -510,7 +518,8 @@ rendue en temps utile. Dire clairement le manque.
 
 ### Les outils deviennent adressables
 Les logiciels se pilotent de plus en plus **en ligne de commande et par script** : c'est ce qui les rend adressables par
-un agent (cas d'Unreal Engine 6 et de Verse). Le **scripting** redevient discriminant pour un superviseur.
+un agent (cas d'Unreal Engine 6 et de Verse). Concrètement, un superviseur qui sait scripter <strong>automatise ses propres
+tâches</strong> (relevés, rapports, préparation de scène) et <strong>branche un agent sur l'éditeur</strong> depuis un terminal.
 
 <div class="infobox">
 <span class="t">Mon garde-fou</span>
@@ -546,36 +555,38 @@ propriétaire » : la ligne de partage porte sur la nature de la donnée, pas su
 <div>
 
 ### Court terme
-**Opérateur** en structure de plateau LED ou de prestation VFX temps réel : opérateur 3D, assistant superviseur,
-ingénierie plateau.
+**Continuer à fabriquer mes outils** en codage agentique supervisé.
 
-<p class="legende">Pas un repli : l'expérience de plateau répétée est ce qui me manque.</p>
+**Hacker les principes de la VP** pour en faire un outil **low-cost et open source**.
 
 </div>
 <div>
 
 ### Moyen terme
-**Superviseur VFX à double casquette**, en amont du découpage.
+**Creative technologist** dans le champ des **arts plastiques**.
 
-<p class="legende">Sa valeur : dire quel dispositif ne pas utiliser.</p>
+<p class="legende">Mes ambitions techniques y sont plus envisageables que dans l'audiovisuel, beaucoup plus formaté.
+Et pourquoi pas investir l'<strong>interactif</strong>, l'<strong>électronique</strong>, la <strong>robotique</strong>.</p>
 
 </div>
 <div>
 
 ### En parallèle
-Le **framework de documents de travail** pour le suivi audiovisuel : notes de supervision, rapports image,
-comptes rendus de test.
+Le **framework personnalisé** de **documents et logiciels** de travail pour le suivi audiovisuel : notes de supervision,
+rapports image, comptes rendus de test.
 
 </div>
 </div>
 
 <div class="infobox" style="margin-top:22px">
 <span class="t">Ce que NoClip m'a appris</span>
-Décider tôt, écrire ce que je décide, et savoir refuser un dispositif que le projet ne justifie pas.
+Décider tôt, écrire ce que je décide, et savoir refuser un dispositif que le projet ne justifie pas. D'où un cap
+<strong>freelance solo, plus versatile</strong>, plutôt qu'un poste de superviseur à double casquette.
 </div>
 
 <!--
-40 s. Trois horizons, puis la phrase de clôture. Le court terme est un choix raisonné.
+40 s. Trois horizons, puis la phrase de clôture. Dire que je n'ai pas trouvé mon cap dans la double casquette
+mais dans un profil freelance solo, versatile : le PDF (ch. 5) formule un autre projet, ce sont mes choix post-formation.
 -->
 
 ---

@@ -1,7 +1,7 @@
 # Fiche de révision — soutenance orale SPV (15 min)
 
 > Support : `Soutenance_SPV_NoClip_BARON.html` (18 diapos d'exposé + merci, puis annexes A1 à A10, non projetées).
-> Matière : `references/input.md` § 8 et § 9. Comment s'entraîner : lire la colonne « Dire », puis refaire sans la lire.
+> Matière : `references/input.md` § 8 et § 9. Comment s'entraîner : lire le fil par diapo (§ 2), puis refaire l'exposé sans le lire.
 
 ## 1. Minutage (cible : 15 min, marge 30 s)
 
@@ -31,14 +31,14 @@ Cumul 14 min 10 : il reste **50 s de marge**. Si vous dépassez à la diapo 8, c
 ## 2. Le fil en une phrase par diapo
 
 1. J'annonce : un projet supervisé, un diagnostic, des règles concrètes, une année sans entreprise.
-2. Court-métrage de 5 min ; ma mission = les séquences Backrooms ; trois dispositifs (mur LED, fond vert, décor réel) ; matériel de l'école.
+2. Court-métrage de 5 min ; ma mission = les séquences Backrooms ; décor réel au début et à la fin, mur LED pour les Backrooms, **fond vert envisagé mais non utilisé** ; matériel de l'école.
 3. Rien n'était prêt : la répétition de la veille n'a pas eu lieu, et c'est le jalon qui protège le tournage.
 4. 40 °C, tracker HS, cause inconnue ; je mets une check-list, un second tracker, une liaison fabricant.
 5. Brief la veille après les répétitions lumière ; le jour J : allumage, calibration, tests tracking/optiques, raccords lumière.
-6. Quatre étapes : sens du collectif, leads, cadre, réunions ; d'où la double casquette.
+6. Quatre étapes : sens du collectif, leads, cadre, réunions ; la double casquette répond au besoin, mais **ce n'est pas mon cap** (freelance solo, diapo 18).
 7. Acquis : raccord lumière. Perdu : parallaxe.
 8. Chaque choix technique a un gain et un coût artistique ; je corrige moi-même mon jugement sur le flicker.
-9. Point nodal non mesuré, donc ouverture « à vue » ; ma règle : un relevé écrit avant chaque plan LED.
+9. Point nodal non mesuré, donc ouverture « à vue » et **moiré visible sur l'écran LED** ; ma règle : un relevé écrit avant chaque plan LED.
 10. Bonnes pratiques fond vert ; pas pour NoClip, on perd l'ambiance « poisseux et mort ».
 11. 25 k€ de location (ordre de grandeur) + 6,2 k€ de salaires aux minima ≈ 31 k€.
 12. 72,8 kWh, 3,8 kg CO₂e ; le mur LED pèse 94 %.
@@ -46,8 +46,8 @@ Cumul 14 min 10 : il reste **50 s de marge**. Si vous dépassez à la diapo 8, c
 14. La VP excelle sur reflets, optiques, lumière dynamique, SFX ; à condition d'équipes rodées ; exemple SWR.
 15. Cinq questions, avec la réalisation et la production, dès l'écriture.
 16. Veille IA, Creative Machines, jam ; ce que ça n'a pas apporté : le plateau.
-17. Outils pilotables par agent ; garde-fou « versionner » ; frontière pour la méthode, local pour la donnée sensible.
-18. Court terme opérateur, moyen terme double casquette ; la phrase de clôture.
+17. Outils pilotables par agent ; **un superviseur qui sait scripter automatise ses tâches et branche un agent sur l'éditeur** ; garde-fou « versionner » ; frontière pour la méthode, local pour la donnée sensible.
+18. Court terme : fabriquer mes outils en codage agentique supervisé, hacker la VP en low-cost open source ; moyen terme : Creative technologist en arts plastiques (interactif, électronique, robotique) ; en parallèle : framework personnalisé de documents et logiciels.
 
 ## 3. Chiffres à connaître par cœur
 
@@ -78,7 +78,8 @@ Cumul 14 min 10 : il reste **50 s de marge**. Si vous dépassez à la diapo 8, c
 | **« Breda 2026 / double ghost frame »** | Non vérifié. Ne citez que ce que vous pouvez défendre : SWR a fait tourner le mur au double de la cadence de production (source Sony). |
 | **Carbone « officiel »** | C'est un calcul d'activité × facteur ADEME, pas un export Carbon'Clap. Le chiffre officiel se ferait dans l'outil Ecoprod. |
 | **Éclairage** : modèles | Le dossier ne les nomme pas ; les 229 W et 36 W sont des références représentatives. |
-| **Fond vert** : « vous n'avez pas utilisé de fond vert ? » | Si : pour les inserts et gros plans (dispositif B). Écarté pour les plans d'ambiance. |
+| **Fond vert** : le PDF le prévoit pour les inserts (dispositif B) et vous dites qu'il n'a pas été utilisé | Assumer l'écart : « prévu au dossier, non utilisé au tournage ; le dossier reste tel quel. » |
+| **Projet professionnel** : le PDF (ch. 5) vise opérateur puis double casquette | Assumer : « ce sont mes choix post-formation : freelance solo versatile, Creative technologist. Le dossier reflète mon état de réflexion de juin. » |
 | **Cause du tracker** | « Non établie. » Ne jamais affirmer la chaleur ; dire « une chance sur deux ». |
 
 ## 5. Questions probables et réponses courtes
@@ -95,8 +96,8 @@ Donner du sens au collectif avant de planifier, nommer des leads, fixer le cadre
 **La VP était-elle le bon choix pour NoClip ?**
 Non, pas en l'état : plans fixes, petite équipe, charge en post. Mais pour l'ambiance et le raccord lumière sur le visage, le mur LED a livré ce que le fond vert ne pouvait pas.
 
-**Pourquoi pas un fond vert pour tout ?**
-On perd l'éclairage ambiant global qui donne aux Backrooms leur atmosphère.
+**Pourquoi pas de fond vert sur NoClip ?**
+On perd l'éclairage ambiant global qui donne aux Backrooms leur atmosphère. Il était envisagé pour les inserts, il n'a pas été utilisé.
 
 **Quel projet convient à la VP ?**
 Reflets, optiques non conventionnelles, lumières dynamiques, SFX ; avec des équipes rodées ; grille en cinq questions, avec la réalisation et la production dès l'écriture.
@@ -110,6 +111,15 @@ Environ 73 kWh pour 8 h, soit 3,8 kg CO₂e ; 94 % viennent du mur LED : on gagn
 **Pourquoi un modèle propriétaire alors que vous défendez l'ouvert ?**
 La ligne passe par la nature de la donnée : frontière pour la méthode et les documents publiables, local pour les rushes et scénarios non déposés.
 
+**Où vous voyez-vous après la formation ?**
+Court terme : continuer à fabriquer mes outils en codage agentique supervisé et hacker les principes de la VP pour en faire un outil low-cost open source. Moyen terme : Creative technologist dans les arts plastiques, où mes ambitions techniques sont plus envisageables que dans l'audiovisuel, plus formaté ; pourquoi pas interactif, électronique, robotique.
+
+**Pourquoi pas la double casquette réalisation / supervision VFX ?**
+Elle répond au besoin identifié sur NoClip, mais je ne la vise pas : je vais vers un profil freelance solo, plus versatile.
+
+**Que veut dire « le scripting devient discriminant » ?**
+Un superviseur qui sait scripter automatise ses propres tâches (relevés, rapports, préparation de scène) et branche un agent sur l'éditeur depuis un terminal.
+
 **Qu'est-ce que NATION ? (annexes)**
 Projet personnel mars–septembre 2026 : décor de désert entièrement fabriqué en post à partir de rushs sur fond vert et d'une maquette ; 654 clips, 10 plans, 16 rendus ; c'est le dispositif D mis en pratique. Annexes A4 à A10.
 
@@ -118,7 +128,7 @@ Projet personnel mars–septembre 2026 : décor de désert entièrement fabriqu�
 1. Citez les trois jalons que la préparation a sautés. *(blockout, tests plateau, répétition technique)*
 2. Quelles sont les quatre étapes de la mobilisation d'équipe ? *(sens, leads, cadre, réunions)*
 3. Dans quel ordre se déroule la mise en route du plateau ? *(allumage, calibration, tracking + optiques, raccords lumière)*
-4. Qu'est-ce que le point nodal et quelle est votre règle ? *(trois valeurs écrites avant chaque plan)*
+4. Qu'est-ce que le point nodal, quelle conséquence visible et quelle règle ? *(moiré sur l'écran LED ; trois valeurs écrites avant chaque plan)*
 5. Donnez les cinq questions de la grille VP.
 6. Chiffres : kWh totaux, kg CO₂e, part du mur LED, budget VP total.
 7. Quelle est la différence entre le jour VP du devis et le devis total du PDF ?

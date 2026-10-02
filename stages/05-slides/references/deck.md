@@ -47,6 +47,9 @@ npx @marp-team/marp-cli sources_slides/soutenance.md \
   des chemins **relatifs** (cf. § 4).
 - Le HTML se lit hors ligne, dans n'importe quel navigateur. Navigation : flèches,
   `F` plein écran, `P` mode présentateur (affiche les notes `<!-- … -->`).
+- **Export PDF** (plan B si le navigateur échoue) : même commande avec `--pdf --allow-local-files --output
+  Soutenance_SPV_NoClip_BARON.pdf`, depuis une copie de `soutenance.md` posée à la racine (mêmes chemins que le HTML).
+  Les balises `<video>` n'y sont pas jouables ; leurs affiches restent visibles. Chromium requis (voir `CHROME_PATH`).
 - Contrôle visuel de mise en page : ajouter `--images png --output <dossier>/slide.png`
   (nécessite un navigateur Chromium ; sur cette machine, définir
   `CHROME_PATH` vers `msedge.exe`).

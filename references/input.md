@@ -34,7 +34,7 @@
 | 6 | Contenu par chapitre | Quoi va dans quel chapitre |
 | 7 | Garde-fous | Règles rédactionnelles |
 | 8 | Corpus *NATION* | Année de veille et de travail, matière de la soutenance |
-| 9 | Retours post-dossier (1er oct. 2026) | Réponses de l'auteur : chaleur, équipe, DA, fond vert, régie, budget, carbone, grille VP |
+| 9 | Retours post-dossier (1er et 2 oct. 2026) | Réponses de l'auteur : chaleur, équipe, DA, fond vert, régie, budget, carbone, grille VP, corrections du 2 oct. |
 
 ---
 
@@ -598,8 +598,8 @@ opérateur tracking caméra* (cumul des deux fonctions ; le devis du PDF ne cite
 ### 9.4 Fond vert (bonnes pratiques)
 Éclairer **l'arrière-plan et le premier plan séparément** ; faire la **mise au point et l'ouverture sur le
 sujet**. Fond vert écarté pour *NoClip* : il fait perdre l'**éclairage ambiant global** qui donne aux
-Backrooms leur atmosphère (« un mélange de poisseux et de mort »). Le PDF l'emploie néanmoins pour les
-inserts (dispositif B). **NATION n'est pas présenté dans l'exposé : il est réservé au Q&A (annexes).**
+Backrooms leur atmosphère (« un mélange de poisseux et de mort »). **Correction du 2 oct. : aucun fond vert n'a été
+utilisé au tournage** ; le PDF le prévoit pour les inserts (dispositif B), le deck le dit « envisagé, non utilisé ». **NATION n'est pas présenté dans l'exposé : il est réservé au Q&A (annexes).**
 
 ### 9.5 Feuille de route de la régie à l'arrivée des équipes extérieures
 - **Veille du tournage, après les répétitions lumière : brief général.** Distance minimale au mur LED
@@ -643,3 +643,19 @@ Le **mur LED pèse 94 %** de la consommation : c'est le levier de sobriété pri
   4. Y a-t-il plusieurs décors très différents à enchaîner ? 5. Quel coût y consacrer, **en rapport à son
   importance** (un rapport, pas un prix) ?
 
+### 9.8 Corrections du 2 octobre 2026 (relecture du deck)
+
+- **Fond vert :** non utilisé au tournage (voir § 9.4). Le PDF (tableau des time codes, dispositif B) dit le contraire :
+  l'écart est assumé à l'oral, **le PDF reste inchangé**.
+- **Double casquette :** n'est **pas** la direction visée. Cap retenu après la formation : **profil freelance solo,
+  plus versatile**, présenté comme un choix post-formation. Le PDF (ch. 5) formule encore « opérateur » puis
+  « superviseur VFX à double casquette » : autre écart à assumer.
+- **Moiré :** conséquence visible du point nodal non mesuré (ouverture « à vue ») : un **moiré apparaît sur l'écran LED**
+  à la caméra.
+- **Scripting :** « le scripting redevient discriminant » jugé trop vague ; reformulé : un superviseur qui sait scripter
+  automatise ses tâches (relevés, rapports, préparation de scène) et branche un agent sur l'éditeur depuis un terminal.
+- **Projet professionnel :** *court terme* : continuer à fabriquer ses outils en **codage agentique supervisé**, **hacker les
+  principes de la VP** en outil **low-cost open source**. *Moyen terme* : **Creative technologist** dans le champ des
+  **arts plastiques** (ambitions techniques plus envisageables que dans l'audiovisuel, plus formaté), avec pourquoi pas
+  l'**interactif**, l'**électronique**, la **robotique**. *En parallèle* : **framework personnalisé** de **documents et
+  logiciels** de travail.
